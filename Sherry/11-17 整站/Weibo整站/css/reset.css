@@ -1,0 +1,21 @@
+body,
+h1,
+h2,
+h3,
+h4,
+p{
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+    color: #494949;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+img{
+    vertical-align: top;
+    border: none;
+}

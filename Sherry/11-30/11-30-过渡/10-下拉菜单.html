@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			ul,
+			li{
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			body,
+			h2{
+				margin: 0;
+			}
+			.wrap{
+				width: 400px;
+				margin: 100px auto;
+				
+			}
+			.wrap h2{
+				height: 40px;
+				font: 30px/40px "微软雅黑";
+				text-align: center;
+				background-color: #ccc;
+			}
+			.wrap ul{
+				height: 0;
+				opacity: 0;
+				overflow: hidden;
+				transition: 1s;
+			}
+			.wrap li{
+				font: 20px/2 "微软雅黑";
+				border: 1px solid #000;
+				transition: 1s;
+			}
+			.wrap:hover ul{
+				height: 210px;
+				opacity: 1;
+			}
+			.wrap li:hover{
+				color: #fff;
+				background-color: #000;
+				text-indent: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<h2>妙味课堂</h2>
+			<ul>
+				<li>html 从开始到放弃</li>
+				<li>css 从开始到放弃</li>
+				<li>js 从开始到放弃</li>
+				<li>vue 从开始到放弃</li>
+				<li>react 从开始到放弃</li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style media="screen">
+body,
+h2,
+dl,
+dd,
+p,
+h3{
+    margin:0px;
+}
+ul,
+ol{
+    margin:0px;
+    padding:0px;
+    list-style: none;
+}
+img{
+    vertical-align: top;
+    border: none;
+}
+a{
+    text-decoration: none;
+    color: #3d3d3d;
+}
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.box{
+    width: 970px;
+    height: 676px;
+    border: 5px solid #000;
+    margin:0 auto;
+}
+.left{
+    width: 199px;
+    height: 676px;
+    float:left;
+    padding-left: 15px;
+}
+.center{
+    width: 484px;
+    height: 676px;
+    float:left;
+    margin-left: 12px;
+}
+.right{
+    width: 232px;
+    height: 676px;
+    float:right;
+    padding-right: 10px;
+}
+.left h2{
+    font:18px/50px "微软雅黑";
+    color: #000;
+}
+.tvshow img{
+    padding:1px;
+    border: 1px solid #ddd;
+}
+.tvshow span{
+    display: block;
+    text-align: center;
+    font:14px/37px "宋体";
+    color: #3d3d3d;
+}
+.tvshow em{
+    color: #7d7d7d;
+    font-style: normal;
+}
+.tvshow{
+    padding-bottom: 1px;
+}
+.dy dt, .dy dd{
+    float: left;
+    font:12px/22px "宋体";
+}
+.dy dt{
+    color: #989898;
+}
+.dy dd{
+    color: #3d3d3d;
+}
+.lx{
+    float: left;
+    width: 112px;
+}
+.nf{
+    float: left;
+}
+.tvshow p{
+    float: left;
+    font:12px/22px "宋体";
+    color: #989898;
+}
+.tvshow p a{
+    color: #3e3e3e;
+}
+.weishi h3{
+    font:bold 14px/41px "微软雅黑";
+    color: #414141;
+}
+.tv_table{
+    padding-top: 5px;
+    font:12px/24px "宋体";
+    color: #3f3f3f;
+}
+.tv_table dt{
+    width: 61px;
+    height: 24px;
+    float: left;
+    border:1px solid #000;
+    margin-top: -1px;
+    text-align: center;
+    background: #fbfbfb;
+}
+.tv_table dd{
+    width: 135px;
+    height: 24px;
+    float: left;
+    border: 1px solid #000;
+    margin-left: -1px;
+    margin-top: -1px;
+    text-indent: 8px;
+}
+.tv_table dd span{
+    text-indent: 0;
+    color: #999;
+}
+.tv_table .nomargin{
+    margin-top: 0;
+}
+.jjsy{
+    padding-top: 24px;
+}
+.jjsy h3{
+    font:bold 14px/29px "微软雅黑";
+    color: #414141;
+}
+.list li{
+    font:12px/22px "宋体";
+    color: #3c3c3c;
+}
+.center header{
+    width: 468px;
+    height: 41px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-left: 16px;
+    position: relative;
+}
+.menu{
+    padding-right: 24px;
+}
+.menu a{
+    float: left;
+    padding:0 10px;
+    border: 1px solid #e6e6e6;
+    font:14px/28px "宋体";
+    margin-top:12px;
+    margin-right: 2px;
+}
+.menu a:hover{
+    border-bottom:1px solid #fff;
+}
+.more{
+    position: absolute;
+    right: 0px;
+    top:10px;
+    font:12px/31px "宋体";
+    color: #3e3e3e;
+}
+.pro{
+    padding-top:8px;
+}
+.pro li{
+    width: 104px;
+    height: 187px;
+    float: left;
+    margin:  0 0 24px 17px;
+}
+.pro_img{
+    height: 144px;
+    position: relative;
+}
+.pro_img img{
+    padding:1px;
+    border:1px solid #dcdcdc;
+}
+.pro_img span{
+    display: block;
+    width: 94px;
+    height: 20px;
+    background: rgba(0,0,0,.4);
+    position: absolute;
+    left:2px;
+    bottom:2px;
+    font:12px/20px "宋体";
+    color: #fff;
+    text-align: right;
+    padding-right: 6px;
+}
+.pro li p{
+    padding-top:5px;
+}
+.pro_title, .pro_txt{
+    display: block;
+}
+.pro_title{
+    background:
+            url(img/icon1.jpg)
+            no-repeat right 6px;
+    font:14px/21px "宋体";
+    color: #3d3d3d;
+}
+.pro_txt{
+    font:12px/17px "宋体";
+    color: #b5b5b5;
+}
+.fl{
+    padding-top: 6px;
+}
+.fl h3{
+    font:bold 14px/37px "宋体";
+    color: #404040;
+}
+.tv_list{
+    font:12px/23px "宋体";
+    color: #3d3d3d;
+}
+.tv_list dt{
+    font-weight: bold;
+    color: #5c5c5c;
+}
+.tv_list dd, .tv_list dt{
+    float: left;
+    padding-right: 11px;
+}
+.xx{
+    font:12px/31px "宋体";
+    color:#3d3d3d;
+}
+.pf{
+    padding-right: 19px;
+}
+.phb{
+    padding-top: 7px;
+}
+.phb header{
+    height: 47px;
+}
+.phb h3{
+    font: bold 14px/47px "宋体";
+    color: #414141;
+    float: left;
+}
+.phb nav{
+    width: 106px;
+    height: 20px;
+    float: right;
+    padding-top: 15px;
+    font:12px/20px "宋体";
+    color: #979797;
+}
+.phb nav a{
+    border: 1px solid #dbdbdb;
+    float: left;
+    width: 34px;
+    height: 18px;
+    margin-left: -1px;
+    text-align: center;
+}
+.phb nav a:hover{
+    background: #06a1da;
+    border: 1px solid #06a1da;
+    color: #fff;
+}
+.ds_phb li{
+    height: 28px;
+}
+.ds_phb span{
+    float: left;
+}
+.ds_phb .num{
+    width: 20px;
+    height: 16px;
+    background:
+            url(img/icon2.jpg)
+            no-repeat;
+    font:12px/16px "宋体";
+    color: #fff;
+    text-align: center;
+    margin: 6px 8px 0 0 ;
+}
+.ds_phb .name{
+    font:12px/28px "宋体";
+    color: #3d3d3d;
+    width: 170px;
+}
+.name em{
+    font-style: normal;
+    color: #b5b5b5;
+    padding-left: 6px;
+}
+.ds_phb mark{
+    background: none;
+    float:right;
+    font: 12px/28px "微软雅黑";
+    color: red;
+    padding-right: 13px;
+    background:
+            url(img/icon1.jpg)
+            no-repeat right center;
+}
+.ds_phb .bg{
+    background: #fffbfd;
+    color: #000;
+}
+.next{
+    padding:1px;
+    border: 1px solid #ccc;
+    margin-top: 16px;
+}
+</style>
+</head>
+<body>
+    <section class="box">
+        <section class="left">
+            <h2>电视剧</h2>
+            <div class="tvshow">
+                <a href="#">
+                    <img src="img/img1.jpg" alt="">
+                    <span> 瑶山大剿匪<em>（34集全）</em></span>
+                </a>
+                <div class="tv_txt clearfix">
+                    <dl class="dy clearfix">
+                        <dt>导演：</dt>
+                        <dd>张国庆</dd>
+                    </dl>
+                    <dl class="dy clearfix">
+                        <dt>主演：</dt>
+                        <dd>张国庆 张国庆 张国庆</dd>
+                    </dl>
+                    <dl class="dy clearfix lx">
+                        <dt>类型：</dt>
+                        <dd>军旅</dd>
+                    </dl>
+                    <dl class="dy clearfix nf">
+                        <dt>年份：</dt>
+                        <dd>2011</dd>
+                    </dl>
+                    <p>1950年，广西匪情严峻，，大局出发……<a href="#">详细</a></p>
+                </div>
+            </div>
+            <div class="weishi">
+                <h3>卫视同步</h3>
+                <dl class="tv_table clearfix">
+                    <dt class="nomargin">福建卫视</dt>
+                    <dd class="nomargin">仙会倚侠传三<span>(37集全)</span></dd>
+                    <dt>福建卫视</dt>
+                    <dd>仙会倚侠传三<span>(37集全)</span></dd>
+                    <dt>福建卫视</dt>
+                    <dd>仙会倚侠传三<span>(37集全)</span></dd>
+                    <dt>福建卫视</dt>
+                    <dd>仙会倚侠传三<span>(37集全)</span></dd>
+                    <dt>福建卫视</dt>
+                    <dd>仙会倚侠传三<span>(37集全)</span></dd>
+                </dl>
+            </div>
+            <div class="jjsy">
+                <h3>即将上映</h3>
+                <ul class="list">
+                    <li>12.11《人到四十》王志文遇双食记</li>
+                    <li>12.11《人到四十》王志文遇双食记</li>
+                    <li>12.11《人到四十》王志文遇双食记</li>
+                </ul>
+            </div>
+        </section>
+        <section class="center">
+            <header>
+                <nav class="menu clearfix">
+                    <a href="#">同步热播</a>
+                    <a href="#">预告</a>
+                    <a href="#">战争</a>
+                    <a href="#">警匪</a>
+                    <a href="#">伦理</a>
+                    <a href="#">古装</a>
+                </nav>
+                <a class="more" href="#">更多</a>
+            </header>
+            <ul class="pro clearfix">
+                <li>
+                    <div class="pro_img">
+                        <a href="#">
+                            <img src="img/img2.jpg" alt="">
+                            <span>预告片</span>
+                        </a>
+                    </div>
+                    <p>
+                        <span class="pro_title">美人天下</span>
+                        <span class="pro_txt">23-24预告抢先看</span>
+                    </p>
+                </li>
+                <li>
+                    <div class="pro_img">
+                        <a href="#">
+                            <img src="img/img2.jpg" alt="">
+                            <span>预告片</span>
+                        </a>
+                    </div>
+                    <p>
+                        <span class="pro_title">美人天下</span>
+                        <span class="pro_txt">23-24预告抢先看</span>
+                    </p>
+                </li>
+                <li>
+                    <div class="pro_img">
+                        <a href="#">
+                            <img src="img/img2.jpg" alt="">
+                            <span>预告片</span>
+                        </a>
+                    </div>
+                    <p>
+                        <span class="pro_title">美人天下</span>
+                        <span class="pro_txt">23-24预告抢先看</span>
+                    </p>
+                </li>
+                <li>
+                    <div class="pro_img">
+                        <a href="#">
+                            <img src="img/img2.jpg" alt="">
+                            <span>预告片</span>
+                        </a>
+                    </div>
+                    <p>
+                        <span class="pro_title">美人天下</span>
+                        <span class="pro_txt">23-24预告抢先看</span>
+                    </p>
+                </li>
+                <li>
+                    <div class="pro_img">
+                        <a href="#">
+                            <img src="img/img2.jpg" alt="">
+                            <span>预告片</span>
+                        </a>
+                    </div>
+                    <p>
+                        <span class="pro_title">美人天下</span>
+                        <span class="pro_txt">23-24预告抢先看</span>
+                    </p>
+                </li>
+                <li>
+                    <div class="pro_img">
+                        <a href="#">
+                            <img src="img/img2.jpg" alt="">
+                            <span>预告片</span>
+                        </a>
+                    </div>
+                    <p>
+                        <span class="pro_title">美人天下</span>
+                        <span class="pro_txt">23-24预告抢先看</span>
+                    </p>
+                </li>
+                <li>
+                    <div class="pro_img">
+                        <a href="#">
+                            <img src="img/img2.jpg" alt="">
+                            <span>预告片</span>
+                        </a>
+                    </div>
+                    <p>
+                        <span class="pro_title">美人天下</span>
+                        <span class="pro_txt">23-24预告抢先看</span>
+                    </p>
+                </li>
+                <li>
+                    <div class="pro_img">
+                        <a href="#">
+                            <img src="img/img2.jpg" alt="">
+                            <span>预告片</span>
+                        </a>
+                    </div>
+                    <p>
+                        <span class="pro_title">美人天下</span>
+                        <span class="pro_txt">23-24预告抢先看</span>
+                    </p>
+                </li>
+                <li>
+                    <div class="pro_img">
+                        <a href="#">
+                            <img src="img/img2.jpg" alt="">
+                            <span>预告片</span>
+                        </a>
+                    </div>
+                    <p>
+                        <span class="pro_title">美人天下</span>
+                        <span class="pro_txt">23-24预告抢先看</span>
+                    </p>
+                </li>
+                <li>
+                    <div class="pro_img">
+                        <a href="#">
+                            <img src="img/img2.jpg" alt="">
+                            <span>预告片</span>
+                        </a>
+                    </div>
+                    <p>
+                        <span class="pro_title">美人天下</span>
+                        <span class="pro_txt">23-24预告抢先看</span>
+                    </p>
+                </li>
+                <li>
+                    <div class="pro_img">
+                        <a href="#">
+                            <img src="img/img2.jpg" alt="">
+                            <span>预告片</span>
+                        </a>
+                    </div>
+                    <p>
+                        <span class="pro_title">美人天下</span>
+                        <span class="pro_txt">23-24预告抢先看</span>
+                    </p>
+                </li>
+                <li>
+                    <div class="pro_img">
+                        <a href="#">
+                            <img src="img/img2.jpg" alt="">
+                            <span>预告片</span>
+                        </a>
+                    </div>
+                    <p>
+                        <span class="pro_title">美人天下</span>
+                        <span class="pro_txt">23-24预告抢先看</span>
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section class="right">
+            <div class="fl">
+                <h3>电视剧分类</h3>
+                <dl class="tv_list clearfix">
+                    <dt>类型</dt>
+                    <dd>喜剧</dd>
+                    <dd>喜剧</dd>
+                    <dd>喜剧</dd>
+                    <dd>喜剧</dd>
+                    <dd>喜剧</dd>
+                    <dd>喜剧</dd>
+                    <dd>喜剧</dd>
+                    <dd>喜剧</dd>
+                    <dd>喜剧</dd>
+                    <dd>喜剧</dd>
+                    <dd>喜剧</dd>
+                    <dd>喜剧</dd>
+                    <dd>喜剧</dd>
+                    <dd>喜剧</dd>
+                    <dd>喜剧喜剧</dd>
+                    <dd>喜剧</dd>
+                </dl>
+                <dl class="tv_list clearfix">
+                    <dt>明星</dt>
+                    <dd>喜剧</dd>
+                    <dd>喜剧</dd>
+                    <dd>喜剧剧</dd>
+                    <dd>喜剧剧</dd>
+                    <dd>喜剧</dd>
+                    <dd>喜剧剧</dd>
+                    <dd>喜剧</dd>
+                    <dd>喜剧剧</dd>
+                    <dd>喜剧剧</dd>
+                </dl>
+                <dl class="tv_list clearfix">
+                    <dt>地区</dt>
+                    <dd>喜剧</dd>
+                    <dd>喜剧</dd>
+                    <dd>喜剧</dd>
+                    <dd>喜剧</dd>
+                    <dd>喜剧</dd>
+                </dl>
+                <dl class="tv_list clearfix">
+                    <dt>年份</dt>
+                    <dd>2011</dd>
+                    <dd>2010</dd>
+                    <dd>2009</dd>
+                    <dd>2008</dd>
+                    <dd>2007</dd>
+                </dl>
+                <p class="xx">
+                    <a class="pf" href="#">评分最高>></a>
+                    <a href="#">最近更新>></a>
+                </p>
+            </div>
+            <div class="phb">
+                <header>
+                    <h3>电视剧排行榜</h3>
+                    <nav>
+                        <a href="#">昨天</a>
+                        <a href="#">本周</a>
+                        <a href="#">本月</a>
+                    </nav>
+                </header>
+                <ol class="ds_phb">
+                    <li>
+                        <span class="num">01</span>
+                        <span class="name">家产<em>36集全</em></span>
+                        <mark>7.6</mark>
+                    </li>
+                    <li>
+                        <span class="num">02</span>
+                        <span class="name">家产<em>36集全</em></span>
+                        <mark>7.6</mark>
+                    </li>
+                    <li>
+                        <span class="num">03</span>
+                        <span class="name">家产<em>36集全</em></span>
+                        <mark>7.6</mark>
+                    </li>
+                    <li>
+                        <span class="num bg">03</span>
+                        <span class="name">家产<em>36集全</em></span>
+                        <mark>7.6</mark>
+                    </li>
+                    <li>
+                        <span class="num bg">03</span>
+                        <span class="name">家产<em>36集全</em></span>
+                        <mark>7.6</mark>
+                    </li>
+                    <li>
+                        <span class="num bg">03</span>
+                        <span class="name">家产<em>36集全</em></span>
+                        <mark>7.6</mark>
+                    </li>
+                    <li>
+                        <span class="num bg">03</span>
+                        <span class="name">家产<em>36集全</em></span>
+                        <mark>7.6</mark>
+                    </li>
+                    <li>
+                        <span class="num bg">03</span>
+                        <span class="name">家产<em>36集全</em></span>
+                        <mark>7.6</mark>
+                    </li>
+                    <li>
+                        <span class="num bg">03</span>
+                        <span class="name">家产<em>36集全</em></span>
+                        <mark>7.6</mark>
+                    </li>
+                    <li>
+                        <span class="num bg">03</span>
+                        <span class="name">家产<em>36集全</em></span>
+                        <mark>7.6</mark>
+                    </li>
+                </ol>
+                <img class="next" src="img/img3.jpg" alt="">
+            </div>
+        </section>
+    </section>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+            #div{
+                width: 298px;
+                height: 416px;
+                border: 1px solid #cfcfcf;
+                border-top:2px solid #206f96;
+            }
+            #div1{
+                height: 29px;
+                border-bottom:1px solid #cfcfcf;
+                background-image: url(img/bg.jpg);
+            }
+            #div2{
+                height: 57px;
+                background-image:url(img/tubiao1.jpg);
+                background-repeat: no-repeat;
+                background-position: 16px 25px;
+            }
+            #div3{
+                height: 126px;
+                background-image: url(img/tubiao2.jpg);
+                background-color: #f7f7f7;
+                background-repeat: no-repeat;
+                background-position: 9px 51px;
+            }
+            #div4{
+                height: 76px;
+                background-image: url(img/tubiao3.jpg);
+                background-repeat: no-repeat;
+                background-position: 15px 25px;
+            }
+            #div5{
+                height: 127px;
+                background-image: url(img/tubiao4.jpg);
+                background-color: #f7f7f7;
+                background-repeat: no-repeat;
+                background-position: 12px 49px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--
+            1. 从大到小
+            2. 从外到里(嵌套标签)
+        -->
+        <div id="div">
+            <div id="div1"></div>
+            <div id="div2"></div>
+            <div id="div3"></div>
+            <div id="div4"></div>
+            <div id="div5"></div>
+        </div>
+    </body>
+</html>

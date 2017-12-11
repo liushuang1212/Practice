@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.list{
+				width: 500px;
+				border: 1px solid #000;
+			}
+			.list li{
+				overflow: hidden;
+			}
+			p,
+			div{
+				float: left;
+			}
+			div{
+				display: none;
+			}
+			li:hover div{
+				display: block;
+			}
+			li:hover p{
+				width: 300px;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="list">
+			<li>
+				<p>内容内容内容内容内容内容内容内容内容内容内容内容</p>
+				<div>
+					asdasdsadsaasdasdsadsa
+				</div>
+			</li>
+			<li>
+				<p>内容内容内</p>
+				<div>
+					asdasdsadsaasdasdsadsa
+				</div>
+			</li>
+		</ul>
+	</body>
+</html>

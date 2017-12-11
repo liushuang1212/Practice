@@ -1,0 +1,32 @@
+html：
+	超文本标记语言——超过一般文本范畴用于浏览器交流的被规定的语言
+	注意事项：
+		1.首先创建一个.html结尾的文件
+		2.文档申明
+css：
+	层叠样式表
+	常用样式：
+		1.width：单位px
+		2.height：单位px
+		3.border
+			复合属性 border：1px solid #000；
+			标准属性
+				border-width
+				border-style
+				border-color
+
+
+
+
+今日问题：
+
+1 指定方向的复合属性
+
+2 边框+content的宽度概念模糊
+
+3.像素点斜线 
+
+4 边框嵌套
+
+
+miaov.com

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style>
+	#box{
+		width: 400px;
+		height: 200px;
+		padding: 50px;
+		border: 30px solid #000;
+		background: url(img.png) no-repeat #ccc 30px 20px/200px 200px border-box content-box;
+		/*background-size: cover;*/
+		/*background-size: 200px 200px;*/
+		/*background-clip: content-box;
+		background-origin: border-box;*/
+	}
+</style>
+</head>
+<body>
+	<!--
+		background-position/background-size
+		
+		多值写法裁切和原点的先后顺序;
+			原点在前
+			裁切在后
+	-->
+<div id="box"></div>
+</body>
+</html>

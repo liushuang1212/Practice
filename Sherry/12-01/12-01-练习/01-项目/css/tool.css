@@ -1,0 +1,15 @@
+/*居中*/
+.center{
+	width: 900px;
+	margin: 0 auto;
+}
+
+/*清除浮动*/
+.clearFix{
+	zoom: 1;
+}
+.clearFix:after{
+	content: "";
+	clear: both;
+	display: block;
+}

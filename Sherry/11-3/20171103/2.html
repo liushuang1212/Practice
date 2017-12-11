@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style media="screen">
+body,
+h2 {
+    margin:0px;
+}
+ol{
+    margin:0px;
+    padding:0px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #010100;
+}
+.wrap{
+    width: 144px;
+    height: 160px;
+    border:6px solid #c0c0c0;
+    padding:14px;
+    margin:0 auto;
+}
+.it_pro{
+    border:1px solid #ccc;
+    height: 158px;
+}
+.pro_title{
+    background:
+            url(images/icon1.jpg)
+            no-repeat 16px 12px;
+    font:bold 14px/24px "宋体";
+    padding-top:6px;
+    text-indent: 38px;
+}
+.list li a{
+    display: block;
+    font:12px/23px "arial","宋体";
+}
+.list li a:hover{
+    background: url(images/bg.png)
+    no-repeat center center;
+}
+.icon_sp{
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    background:
+            url(images/icon_bg.jpg)
+            no-repeat;
+    margin:4px 7px 0 14px;
+    font:12px/15px "arial";
+    color: #ffdfec;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <section class="wrap">
+        <div class="it_pro">
+            <h2 class="pro_title">IT产品</h2>
+            <ol class="list">
+                <li><a class="icon1" href="#"><span class="icon_sp">1</span>苹果iPhone 4</a></li>
+                <li><a class="icon1" href="#"><span class="icon_sp">1</span>苹果iPhone 4</a></li>
+            </ol>
+        </div>
+    </section>
+    <!--
+        a标签内 不准嵌套块元素（例如：p、section）
+        ol下面的标签必须是li，li中可以嵌套别的元素
+        ul下面的标签必须是li，li中可以嵌套别的元素
+        dl dt dd
+            dl下面必须是dt
+            dt下面必须是dd
+            dd中可以嵌套别的元素
+        h1~h6 不准嵌套块元素（例如：p、section）
+    -->
+</body>
+</html>

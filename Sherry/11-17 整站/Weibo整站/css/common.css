@@ -1,0 +1,156 @@
+.box{
+    width: 100%;
+    height: 100%;
+    min-width: 980px;
+    background-color: #f3f5f5;
+}
+.wrap{
+    width: 980px;
+    margin: 0 auto;
+}
+.clearfix:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+header{
+    
+    width: 100%;
+    height: 48px;
+    background: 
+        url(../img/index_headerbj.jpg)
+        repeat-x;
+    border-bottom: 2px solid #55a9db;
+}
+.logo{
+    float: left;
+    padding-top: 5px;
+}
+.logo img{
+    width: 234px;
+    height: 36px;
+    background: 
+        url(../img/logo.png)
+        no-repeat left top;
+}
+.logo a{
+    display: block;
+}
+.logo a:hover img{
+    background: 
+        url(../img/logo.png)
+        no-repeat left -50px;
+}
+.logo h1{
+    position: absolute;
+    left: -99999em;
+    top: 0;
+}
+.nav_outul{
+    float: left;
+    position: relative;
+}
+.nav_outli{
+    float: left;
+}
+header .nav_outli:nth-of-type(-n+2) .nav_outa{
+    background: 
+        url(../img/header_li_jt.jpg)
+        no-repeat 70px 24px;
+}
+header .nav_outli:nth-of-type(1) ul{
+    position: absolute;
+    left: 0px;
+    top: 48px;
+    z-index: 20;
+}
+header .nav_outli:nth-of-type(2) ul{
+    position: absolute;
+    left: 85px;
+    top: 48px;
+    z-index: 20;
+}
+/* 此处用了css3里的伪类选择器 */
+.nav_outli .nav_outa{
+    display: block;
+    padding-left: 18px;
+    padding-right: 19px;
+    font: 16px/48px "微软雅黑";
+}
+header .nav_outli .nav_outa:hover,
+.login:hover{
+    background-color:#ddd;
+}
+header .nav_outli:first-of-type:hover .nav_inul{
+        height: 110px;;
+}
+header .nav_outli:nth-of-type(2):hover .nav_inul{
+    height: 158px;;
+}
+.nav_inul{
+    height: 0px;
+    overflow: hidden;
+    background-color: #ebebeb;
+    transition: 500ms;
+}
+.nav_inul li{
+    width: 85px;
+    text-align: center;
+}
+.nav_inul li:first-of-type{
+    margin-top: 8px;
+}
+.nav_inul li:last-of-type{
+    margin-bottom: 2px;
+}
+.nav_inul li a{
+    display: block;
+    font: 14px/22px "宋体";
+    margin-bottom: 3px;
+}
+.nav_inul li a:hover{
+    background-color:#ddd;
+}
+.login{
+    float: right;
+    padding-left: 18px;
+    padding-right: 19px;
+    font: 16px/48px "微软雅黑";
+}
+footer{
+    padding-top: 20px;
+    padding-bottom: 21px;
+}
+.copyRight{
+    border-top: 1px solid #e8e8e8;
+    text-align: center;
+    padding-top: 22px;
+}
+.links{
+    margin-bottom: 9px;
+    height: 13px;
+    line-height: 12px;
+}
+.links a{
+    display: inline-block;
+    vertical-align: top;
+    color: #3c7cb3;
+    font-size: 12px;
+}
+.links a:hover{
+    text-decoration: underline;
+}
+.links span{
+    font-size: 12px;
+    margin: 0px 18px;
+}
+.copyRight_txt{
+    height: 13px;
+}
+.copyRight_txt em{
+    display:inline-block;
+    vertical-align: top;
+    font: normal 12px/12px "微软雅黑";
+    color: #999;
+    margin-right: 22px;
+}

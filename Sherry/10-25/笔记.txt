@@ -1,0 +1,17 @@
+背景 
+background-color 背景颜色
+background-image 插入图片 background-image：url(相对所建文件路径 若向上一级则：../）
+    background-repeat重复  （默认水平方向和垂直方向均重复）
+                      水平重复 repeat-x  background-repeat: repeat-x
+                      垂直重复 repeat-y  background-repeat: repeat-y
+                      不重复   no-repeat background-repeat: no-repeat
+    background-position  位置
+			关键词：X轴方向：center left right Y轴方向：top center bottom
+                        两个数值，第一个为水平居左向右位置 第二个为垂直居上向下位置
+                            （其中数值可为负数 例如 -20px -30px background-position: -20px -30px是图片向左20px 图片向上30px）
+    background-attachment 定位（默认为scroll滚动 和滚动条一起动）
+                         固定 fixed 滚动条动，始终处在可视页面所在位置 
+                         滚动 scroll 跟随滚动条一起动
+
+ *背景只作用于添加的这个元素对其他元素的样式不会产生影响
+

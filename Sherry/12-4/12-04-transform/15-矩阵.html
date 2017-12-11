@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#wrap{
+				width:100px;
+				height:105px;
+				padding: 100px;
+				margin: 100px auto;
+				border: 1px solid #000;
+			}
+			#inner{
+				width:100px;
+				height:100px;
+				background-color:red;
+				font: 50px/2 "微软雅黑";
+				text-align: center;
+				color: #fff;
+				transition: 1s;
+			}
+			.line{
+				display: block;
+				height: 5px;
+				background-color: #000;
+			}
+			
+			#wrap:hover #inner{
+				transform: scale( 2 ) translate( 200px );
+				/*( 1,0,0,1,0,0 );
+				translate( 200px )
+					(1,0,0,1,200,0);
+				scale( 2 );
+					(2,0,0,2,400,0);*/
+				/*transform: matrix(2,0,0,2,400,0);*/
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			matrix 矩阵
+
+				默认(1, 0, 0, 1, 0, 0) (a,b,c,d,e,f)
+				
+				translateX:
+					e = e + x;
+				translateY:
+				
+					f = f + y;
+				scaleX:
+				
+					a = a*x;
+					c = c*x;
+					e = e*x;
+				scaleY:
+					b = b*y;
+					d = d*y;
+					f = f*y;
+				skewX:
+				
+					c = Math.tan(x*Math.PI/180)
+				skewY:
+				
+					b = Math.tan(x*Math.PI/180)
+				rotate:
+					a = Math.cos(deg*Math.PI/180)
+					b = Math.sin(deg*Math.PI/180)
+					c = -Math.sin(deg*Math.PI/180)
+					d = Math.cos(deg*Math.PI/180)
+					
+			当transform 中处理了比较多的变化时候,
+				后写的 会先执行得到一个新的矩阵,
+				然后往前依次执行,得到新的矩阵,
+			最终根据最后的结果进行渲染
+				所以说 后写的 先执行, 先写的后执行
+		-->
+		
+		<div id="wrap">
+			<div id="inner">上</div>
+			<span class="line"></span>
+		</div>
+	</body>
+</html>

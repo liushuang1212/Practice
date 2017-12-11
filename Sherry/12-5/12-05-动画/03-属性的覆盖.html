@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{
+				width:100px;
+				height:100px;
+				background-color:red;
+				position: relative;
+				left: 0;
+				top: 0;
+				/*animation: changePos 1s;*/
+				animation-duration: 10s;
+				
+				/*关键帧名字
+				多个属性值之间用“,”隔开
+				多个关键帧动画在一个元素身上时，其中相同的样式后者覆盖前者
+				不建议使用多个*/
+				animation-name: changePos, changeCol;
+			}
+			@keyframes changePos{
+				0%{
+					left: 0;
+					top: 0;
+				}
+				50%{
+					left: 400px;
+					top: 0;
+				}
+				100%{
+					left: 400px;
+					top: 300px;
+				}
+			} 
+			@keyframes changeCol{
+				from{
+					background-color: red;
+					left: 0;
+					top: 0;
+				}
+				
+				to{
+					background-color: cornflowerblue;
+					left: 400px;
+					top: 400px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+	</body>
+</html>

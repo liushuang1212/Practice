@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{
+				width:100px;
+				height:100px;
+				background-color:red;
+				margin-bottom: 100px;
+				position: relative;
+				left: 0;
+				top: 0;
+				
+				animation-name: changePos;
+				animation-duration: 1s;
+				animation-iteration-count: infinite;
+				/*animation-direction: normal;*/
+				/*animation-direction: alternate;*/
+				animation-direction: alternate-reverse;
+				
+				/*animation-direction:
+					设置动画执行的方向
+					normal（默认）
+					alternate：动画应该轮流反向播放
+					alternate-reverse：首次执行动画就开始反向*/
+			}
+			@keyframes changePos{
+				0%{
+					left: 0;
+					top: 0;
+				}
+				50%{
+					left: 400px;
+					top: 0;
+				}
+				100%{
+					left: 400px;
+					top: 300px;
+				}
+			} 
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+	</body>
+</html>

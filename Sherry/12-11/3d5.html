@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+body{
+    margin: 0px;
+}
+.wrap{
+    width: 200px;
+    height: 200px;
+    padding: 100px;
+    margin: 150px auto;
+    perspective: 900px;
+    perspective-origin: center center;
+    
+}
+.content{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    position: relative;
+    transform-style: preserve-3d;
+    /* transition: 100s linear; */
+    
+   
+}
+.content div{
+    width: 200px;
+    height: 200px;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.content div:nth-of-type(1){
+    transform: rotateY(45deg) translateZ(400px);
+    background-image: url(img/1.jpg);
+    
+}
+.content div:nth-of-type(2){
+    transform: rotateY(90deg) translateZ(400px);
+    background-image: url(img/2.jpg);
+   
+}
+.content div:nth-of-type(3){
+    transform: rotateY(135deg) translateZ(400px);
+    background-image: url(img/3.jpg);
+}
+.content div:nth-of-type(4){
+    transform: rotateY(180deg) translateZ(400px);
+    background-image: url(img/4.jpg);
+}
+.content div:nth-of-type(5){
+    transform: rotateY(225deg) translateZ(400px);
+    background-image: url(img/5.jpg);
+}
+.content div:nth-of-type(6){
+    transform: rotateY(270deg) translateZ(400px);
+    background-image: url(img/6.jpg);
+}
+.content div:nth-of-type(7){
+    transform: rotateY(315deg) translateZ(400px);
+    background-image: url(img/7.jpg);
+}
+.content div:nth-of-type(8){
+    transform: rotateY(360deg) translateZ(400px);
+    background-image: url(img/8.jpg);
+ }
+
+@keyframes go{
+    0%{
+        transform: rotate3D(0,1,0,0deg);
+    }
+    12.5%{
+        transform: rotate3D(0,1,0,45deg);
+    }
+    100%{
+        transform: rotate3D(0,1,0,360deg);
+    }
+}
+.wrap:hover .content{
+    animation: go 100s linear infinite;
+
+}
+</style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="content">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    
+</body>
+</html>

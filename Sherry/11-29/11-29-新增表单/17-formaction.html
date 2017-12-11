@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--
+			formaction 在submit 定义一个新的提交地址
+			formnovalidate 取消验证
+		-->
+		<form action="#">
+			<input type="text" required/>
+			<input type="text" required/>
+			<input type="text" required/>
+			<input type="text" required/>
+			<input type="text" required/>
+			
+			<input type="submit" value="提交"/>
+			<input type="submit" value="提交到草稿箱" formaction="http://www.baidu.com" formnovalidate/>
+		</form>
+	</body>
+</html>

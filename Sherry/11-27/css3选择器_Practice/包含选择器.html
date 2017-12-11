@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    .box p{
+        background: pink;
+    }
+    .box span{
+        font-size: 25px;
+        background: red;
+    }
+    #note span{
+        font-size: 40px;
+        background: green;
+    }
+    /* 在此处注意，.box span 和 #note span 都是针对的同一个元素的两个相同属性进行设置，
+    但是#note span 这个包含选择器的优先级高于 .note span的优先级， 所以属性取#note span  的 */
+    </style>
+</head>
+<body>
+    <div class="box" id="note">
+        <p>happy day</p>
+        <span>interesting thing</span>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style media="screen">
+.box{
+    width: 200px;
+    height: 200px;
+    border: 6px solid #000;
+    resize: both;
+    overflow: auto;
+}
+.textareaone{
+    resize: none;
+    padding: 0;
+    margin:0;
+    overflow: hidden;
+}
+
+</style>
+</head>
+<body>
+<textarea class="textareaone" name="name" rows="8" cols="80"></textarea>
+<button>按钮</button>
+<!-- <div class="box"></div> -->
+<!--
+    resize
+        - none
+        - horizontal 水平方向
+        - vertical 垂直方向
+        - both x和y
+* 凡是要更改大小的，都必须配套overflow：auto一起使用
+ -->
+</body>
+</html>

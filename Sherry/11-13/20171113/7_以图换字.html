@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style media="screen">
+.box{
+    width: 80px;
+    height: 20px;
+    /*padding:10px 40px;*/
+    /*font-size: 0px;*/
+    background: url(img/img2.jpg) no-repeat;
+    /*line-height: 80px;
+    overflow: hidden;*/
+    /*text-indent: -9999px;*/
+    /*overflow: hidden;*/
+}
+span{
+    overflow: hidden;
+}
+/*span{
+    display: block;
+    width: 0px;
+    height: 0px;
+}*/
+
+</style>
+</head>
+<body>
+    <div class="box">
+        <span>金牌剧场</span>
+    </div>
+    <!--
+        1.给文字加span标签，设置宽高为0，并且改成block，然后overflow:hidden；
+        2.line-height 超过当前元素的显示区域，给当前元素overflow：hidden；
+        3.给当前元素宽高为0，然后给文字设置font-size，宽高由padding撑开
+        4.text-indent:-999px;
+    -->
+</body>
+</html>

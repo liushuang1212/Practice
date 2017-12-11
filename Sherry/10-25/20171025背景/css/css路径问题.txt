@@ -1,0 +1,13 @@
+1.路径
+	1.html
+	2.html
+
+img：img文件夹下面
+	../img/1.jpg
+
+	xx.jpg
+
+	img/xx.jpg
+
+
+2.外部样式引入

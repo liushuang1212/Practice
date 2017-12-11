@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.wrap{
+				width: 500px;
+				height: 400px;
+				border: 1px solid #000;
+			}
+			#box{
+				width:100px;
+				height:100px;
+				background-color:red;
+				transition: 1s;
+				/*transition-timing-function: ease;
+				transition-timing-function: ease-out;
+				transition-timing-function: ease-in;
+				transition-timing-function: ease-in-out;
+				transition-timing-function: linear;*/
+				transition-timing-function: cubic-bezier(.1,.7,.5,1.5);
+			}
+			#box:hover{
+				width: 500px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			transition-timing-function 动画形式
+				ease
+				ease-out
+				ease-in
+				ease-in-out
+				linear
+				cubic-bezier(.19,1.55,.66,-0.31)
+				http://cubic-bezier.com
+			
+		-->		
+		<div class="wrap">
+			<div id="box"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+            #box{
+                width: 100px;
+                height: 100px;
+                border: 1px solid #000;
+                background: green;
+            }
+            #box2{
+                width: 100px;
+                height: 100px;
+                border: 1px solid red;
+                /*padding:50px;*/
+                background: blue;
+                /*padding: 20px 60px;*/
+                /*padding: 20px 60px 80px;*/
+                /*padding: 0 0 80px 100px;*/
+                padding-top:20px;
+                padding-right:60px;
+                padding-bottom:80px;
+                padding-left:100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box"></div>
+        <div id="box2">1211212</div>
+    </body>
+    <!--
+        padding:内填充
+            - 边框以内的区域进行填充
+            - padding不计算在宽度以及高度内
+            - 背景不会受到padding的影响，依旧从左上角开始
+        padding 接受多值
+            - 1个 上下左右
+            - 2个 上下 左右
+            - 3个 上 左右 下
+            - 4个 上 右 下 左
+        接受单方向指定：
+                padding-top:20px;
+                padding-right:60px;
+                padding-bottom:80px;
+                padding-left:100px;
+    -->
+</html>

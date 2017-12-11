@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#wrap,
+			#box{
+				width:400px;
+				height:400px;
+			}
+			#wrap{
+				border: 1px solid #000;
+			}
+			#box{
+				background:url( 1.PNG ) center no-repeat;
+				background-size: 50px 50px;
+				/*display: none;*/
+				opacity: 0;
+				transition: 1s;
+			}
+			#wrap:hover #box{
+				background-size: 100px 100px;
+				/*display: block;*/
+				opacity: 1;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="box"></div>
+		</div>
+	</body>
+</html>

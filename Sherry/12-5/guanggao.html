@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+body{
+    margin: 0px;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align: top;
+    border: none;
+}
+img{
+    width: 200px;
+    height: 150px;
+
+}
+li{
+    float: left;
+}
+ul{
+    animation: move 10s linear infinite;
+    width: 1400px;
+    
+}
+.clearfix:after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.box{
+    width: 200px;
+    height: 150px;
+    border: 3px solid red;
+    margin: 100px auto;
+    overflow: hidden;
+  
+}
+ul:hover{
+    animation-play-state: paused;
+}
+/* 一共是7张,第一张和第七张一样的
+    第一次: 显示第一张
+    transform: translateX(0px);
+    第二次: 第一张到第二张
+    transform: translateX(-100px);
+    第三次: 显示第二张
+    transform: translateX(-100px);
+    第四次: 第二张到第三张
+    transform: translateX(-200px);
+    第五次: 显示第三张
+    transform: translate(-200px);
+    第六次: 第三张到第四张
+    transform: translate(-300px);
+    第七次: 显示第四张
+    transform: translate(-300px);
+    第八次: 第四张到第五张
+    transform: translate(-400px);
+    第九次: 显示第五张
+    transform: translate(-400px);
+    第十次: 第五张到第六张
+    transform: translate(-500px);
+    第十一次: 显示第六张
+    transform: translate(-500px);
+    第十二次: 第六张到第七张
+    transform: translate(-600px);
+ 
+*/
+
+@keyframes move{
+    0%{
+        transform: translateX(0px);
+    }
+    8.33%
+    {
+        transform: translateX(0px);
+    }
+    16.66%{
+        transform: translateX(-200px);
+    }
+    25%{
+        transform: translateX(-200px);
+    }
+    33.32%{
+        transform: translate(-400px);
+    }
+    41.65%{
+        transform: translate(-400px);
+    }
+    50%{
+        transform: translate(-600px);
+    }
+    58.31%{
+        transform: translate(-600px);
+    }
+    66.64%{
+        transform: translate(-800px);
+    }
+    75%{
+        transform: translate(-800px);
+    }
+    83.33%{
+        transform: translate(-1000px);
+    }
+    91.66%{
+        transform: translate(-1000px);
+    }
+    100%{
+        transform: translate(-1200px);
+    }
+    
+}
+</style>
+</head>
+<body>
+    <div class="box">
+    <ul class="clearfix">
+        <li>
+            <a href="#"><img src="img/1.jpg" alt=""></a>
+        </li>
+        <li>
+            <a href="#"><img src="img/2.jpg" alt=""></a>
+        </li>
+        <li>
+            <a href="#"><img src="img/3.jpg" alt=""></a>
+        </li>
+        <li>
+            <a href="#"><img src="img/4.jpg" alt=""></a>
+        </li>
+        <li>
+            <a href="#"><img src="img/5.jpg" alt=""></a>
+        </li>
+        <li>
+            <a href="#"><img src="img/6.jpg" alt=""></a>
+        </li>
+        <li>
+            <a href="#"><img src="img/1.jpg" alt=""></a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

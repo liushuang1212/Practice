@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{
+				width:100px;
+				height:100px;
+				background-color:red;
+				/*只写下面的这条样式是无效的,
+				 一定要写上过渡持续时间*/
+				/*transition-property: width;*/
+				/*transition-property: all;*/
+				/*transition-property: none;*/
+				transition-property: height;
+				
+				transition-duration: 1s;
+				
+			}
+			#box:hover{
+				width: 500px;
+				height: 300px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			transition-property 过渡样式(需要过渡的css属性)
+
+				all 所有样式
+				none 没有
+				attr 具体的样式
+					过渡只支持加给数值类的样式
+					颜色？
+			
+		-->
+		<div id="box"></div>
+	</body>
+</html>

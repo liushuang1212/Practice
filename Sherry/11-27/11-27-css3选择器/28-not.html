@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*选中body中所有元素 除了 class为abc的元素*/
+			body *:not(.abc){
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="abc">div</div>
+		<p>p</p>
+		<span class="abc">span</span>
+	</body>
+</html>

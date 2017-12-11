@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+input{
+    background: red;
+}
+input:disabled{
+    background: pink;
+}
+
+/* 表单控件禁用状态下 （disabled）
+    - 样式书写格式 选择器:disabled 写入所要加的样式 */
+input:enabled{
+    color: blue;
+}
+/* 表单控件可使用状态下（enabled)
+    - 样式书写格式 选择器：enabled 写入所要加的样式 */
+input:focus{
+    background: #fff;
+}
+/* 表单控件获得焦点状态下（focus） 
+    - 样式书写格式 选择器:focus 写入所要加的样式
+    - 关于focus 当其中一个元素或得焦点，上一个获得焦点的元素的焦点就会消失，只有一个焦点的存在*/
+</style>
+</head>
+<body>
+    <input type="text" value="text1" disabled>
+    <input type="text" value="text2">
+    <input type="text" value="text3">
+    <input type="text" value="text4">
+    <input type="text" value="text5">
+</body>
+</html>

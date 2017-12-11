@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.list{
+				width: 400px;
+				border: 1px solid #000;
+			}
+			.text{
+				float: left;
+			}
+			.icons{
+				margin: 0;
+				width: 200px;
+				background-color: #f00;
+				float: left;
+				display: none;
+			}
+			.list li:hover .icons{
+				display: block;
+			}
+			.list li:hover .text{
+				width: 180px;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="list">
+			<li>
+				<div class="text">我们真的很非常太不一样 - 吕小雨[中国]</div>
+				<p class="icons">图片们图片们图片们</p>
+				
+			</li>
+		</ul>
+	</body>
+</html>

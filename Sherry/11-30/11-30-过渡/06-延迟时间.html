@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#wrap{
+				width: 800px;
+				height: 500px;
+				border: 1px solid #000;
+				position: relative;
+			}
+			#wrap div{
+				width:100px;
+				height:100px;
+				position: absolute;
+			}
+			.red{
+				background-color: red;
+				left: 0;
+				top: 0;
+				/*transition-duration: 1s;*/
+				/*transition-property: width;*/
+				/*transition-property: height,width;*/
+				
+				/*transition: 1s width,3s height;*/
+				
+				/*transition-delay: 1s;*/
+				
+				transition: 1s width,3s 1s height;
+			}
+			#wrap:hover .red{
+				width: 200px;
+				height: 300px;
+				background-color: blue;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!--
+			transition-delay 延迟时间
+		-->
+		<div id="wrap">
+			<div class="red"></div>
+		</div>
+	</body>
+</html>

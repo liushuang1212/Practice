@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+    .wrap{
+        width: 400px;
+        height: 500px;
+        position: relative;
+        border: 1px solid #000;
+    }
+    .wrap div{
+        width: 50px;
+        height: 50px;
+       
+        
+    }
+    .red{
+        background-color:red;
+        position: absolute;
+        left: 0px;
+        top: 0px; 
+        transition:
+            1s left, 
+            2s 1s top;  
+     }
+    .green{
+        background-color:green;
+        position: absolute;
+        bottom: 0px;
+        right: 0px; 
+        transition: 
+            1s right,
+            2s 1s bottom;  
+    }
+    
+ .wrap:hover .red{
+     left: 350px;
+     top: 450px;
+ }
+ .wrap:hover .green{
+     bottom: 450px;
+     right: 350px;
+ }
+
+</style>
+</head>
+<body>
+    <div class="wrap">
+    <div class="red"></div>
+    <div class="green"></div>
+</div>
+
+</body>
+</html>

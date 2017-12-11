@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--
+			datalist: 定义input可能出现的值
+				内部内容为option
+				通过input的list的属性把input和datalist关联起来
+				list属性值是datalist的Id
+		-->
+		<form action="#" >
+			<label for="subject">学科:</label>
+			<input type="text" id="subject" list="l" />
+			<datalist id="l">
+				<option>HTML</option>
+				<option>CSS</option>
+				<option>JS</option>
+				<option>VUE</option>
+			</datalist>
+			<input type="submit" value="提交"/>
+		</form>
+		
+	</body>
+</html>

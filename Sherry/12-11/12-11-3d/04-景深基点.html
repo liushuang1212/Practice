@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#wrap{
+				width:100px;
+				height:100px;
+				padding: 100px;
+				border: 1px solid #000;
+				margin: 100px auto;
+				perspective: 500px;
+				perspective-origin: 150px 150px;
+				transition: .5s;
+				/*perspective-origin: left center;*/
+				/*perspective-origin: 0px 150px;*/
+				/*perspective-origin: 0px 50%;*/
+			}
+			#inner{
+				width:100px;
+				height:100px;
+				background-color:red;
+				font: 50px/2 "微软雅黑";
+				text-align: center;
+				color: #fff;
+				transform: rotateY(45deg);
+			}
+			#wrap:hover{
+				/*transform: translateZ( 200px );*/
+				/*transform: rotateY( 45deg );*/
+				perspective-origin: 300px 150px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			景深基点：
+
+				作用改变视角
+					两个参数：
+						x y
+						默认为 center center
+							具体数值
+							百分比
+							关键字
+			
+		-->
+		<div id="wrap">
+			<div id="inner">上</div>
+		</div>
+	</body>
+</html>

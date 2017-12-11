@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style media="screen">
+    .box{
+        width: 800px;
+        height: 800px;
+        border:5px solid #000;
+        display: table;
+        position: relative;
+    }
+    .box span{
+        /*display: table-cell;*/
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: auto;
+        height: auto;
+    }
+    .box img{
+        position: relative;
+        left:-50%;
+        top:-50%;
+        vertical-align: top;
+    }
+</style>
+</head>
+<body>
+    <div class="box">
+        <span>
+            <img src="img/1.jpg" alt="">
+        </span>
+    </div>
+</body>
+</html>

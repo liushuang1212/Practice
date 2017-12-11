@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+.box{
+    font: 20px Arial;
+}
+.box div:first-child{
+    color: blue;
+}
+.box p:first-child{
+    color: red;
+}
+/* 其中first-child ，找到class为box的元素，选中所有的p，并且这个p要是其父级的第一个子级元素（显然，在HTML中，box中所有的p被选中，但是第一个p是其父级的第二个子级元素，所以样式没有添加 */
+.box div:last-child{
+    color: pink;
+}
+/* 其中last-child, 找到class为box的元素，选中所有的div,并且这个div要是其父级的最后一个元素（显然，在html中，box中所有的div被选中，并且div是其父级的最后一个子级元素 */
+</style>
+</head>
+<body>
+    <div class="box">
+        <div>div1</div>
+        <p>p1</p>
+        <div>div2</div>
+        <p>p2</p>
+        <div>div3</div>
+        <p>p3</p>
+        <div>div4</div>
+    </div>
+</body>
+</html>

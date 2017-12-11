@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#wrap{
+				width:100px;
+				height:100px;
+				padding: 100px;
+				border: 1px solid #000;
+				margin: 100px auto;
+				perspective: 300px;
+			}
+			#inner{
+				width:100px;
+				height:100px;
+				background-color:red;
+				transition: .5s;
+				/*transform-style: flat;*/
+				transform-style: preserve-3d;
+			}
+			#content{
+				width:100px;
+				height:100px;
+				background-color:yellow;
+				transform: rotateX(60deg);
+			}
+			#wrap:hover #inner{
+				transform: rotateY( 45deg );
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			子元素3d效果
+				transform-style: preserve-3d;
+					保留子元素的3d变换效果
+					加在有3d变换效果的元素的父级身上的
+				transform-style: flat;（默认）
+					不保留子元素的3d变换效果
+			
+		-->
+		<div id="wrap">
+			<div id="inner">
+				<div id="content"></div>
+			</div>
+		</div>
+	</body>
+</html>

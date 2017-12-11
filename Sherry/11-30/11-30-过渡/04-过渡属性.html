@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#wrap{
+				width: 500px;
+				height: 300px;
+				border: 1px solid #000;
+			}
+			.inner{
+				width:100px;
+				height:100px;
+				background-color:red;
+				/*float: left;*/
+				/*margin-left: 0px;*/
+				transition: 1s;
+			}
+			#wrap:hover .inner{
+				/*float: right;*/
+				/*注意下面这条也不是数值的改变*/
+				/*margin-left: auto;*/ 
+				
+				margin-left: 50px;
+				
+				/*下面这条是数值上的改变*/
+				background-color: #00f;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!--
+			transition-property 过渡样式(需要过渡的css属性)
+
+				all 所有样式
+				none 没有
+				attr 具体的样式
+					过渡只支持加给数值类的样式
+					颜色？
+			
+		-->
+		<div id="wrap">
+			<div class="inner"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{
+				width:100px;
+				height:100px;
+				margin: 200px auto;
+				position: relative;
+				text-align: center;
+				left: -50px;
+				font: 50px/2 "微软雅黑";
+				color: #fff;
+				background-color: cornflowerblue;
+				transform: rotate( 45deg );
+				transform-origin: right bottom;
+			}
+			#box:hover{
+				animation: shake .3s;
+			}
+			/*
+			第1次
+				15deg
+			第2次
+				75deg
+			第3次
+				30deg
+			第4次
+				60deg
+			第5次
+				45deg
+			*/
+			@keyframes shake{
+				0%{
+					transform: rotate(45deg);
+				}
+				20%{
+					transform: rotate(15deg);
+				}
+				40%{
+					transform: rotate(75deg);
+				}
+				60%{
+					transform: rotate(30deg);
+				}
+				80%{
+					transform: rotate(60deg);
+				}
+				100%{
+					transform: rotate(45deg);
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="box">上</div>
+	</body>
+</html>

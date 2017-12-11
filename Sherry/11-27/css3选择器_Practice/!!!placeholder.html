@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+input::-webkit-input-placeholder{
+    color: green;
+    background: pink;
+}
+/* input::-moz-placeholder{
+    background: pink; 
+    color: green;
+    opacity: 1;
+    } */
+/* 其中，在谷歌浏览器中关于placeholder的样式格式为： ::-webkit-input-placeholder   这里面的webkit 是告诉内核为webkit的浏览器的操作
+在谷歌浏览器中是用webkit
+在火狐浏览器中，它的内核不是webkit ,所以写这个是没用的，至于写什么，要自己去查一下 ,关于火狐浏览器，样式为：  ::-moz-placeholder{background:red; opacity:1;}  火狐浏览器除了内核不同之外还有个关于透明度的问题*/
+在IE10以及以上，样式为： :-ms-input-placeholder{color: green; background: pink;}(注意其中为一个冒号奥)
+</style>
+<title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="请输入姓名">
+    <input type="text" value="请输入用户名">
+    <!-- 在这里注意value和placeholder的区别
+            - 输入框内，如果输入文字，自带的文字会自动消失，删除所有输入内容，自带的文字会重新还原，这种情况用placeholder
+            - 输入框内的文字需要手动删除自带的文字，并且当所有的内容清空后，自带的文字不再出现，这种情况用value -->
+</body>
+</html>

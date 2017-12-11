@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style media="screen">
+div{
+    width: 100px;
+    height: 100px;
+}
+.div1{
+    background: red;
+}
+.div2{
+    background: green;
+    position: absolute;
+    left:0px;
+    top: 0px;
+}
+.div3{
+    background: blue;
+}
+.box{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    /*position: relative;*/
+    background: orange;
+}
+.divn{
+    width: 600px;
+    height: 600px;
+    background: #ccc;
+    margin:50px;
+    position: relative;
+    /*position: absolute;*/
+    /*position: static; 静态定位*/
+}
+span{
+    background-color: red;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+section{
+    background: blue;
+    position: absolute;
+    color:#fff;
+}
+</style>
+</head>
+<body>
+    <div class="divn">
+        <div class="box">
+            <div class="div1"></div>
+            <div class="div2"></div>
+            <div class="div3"></div>
+        </div>
+    </div>
+    <!-- <span>1212121</span> -->
+    <!-- <section>
+        梁长路
+    </section>
+    <p>152121212121551</p> -->
+
+
+
+</body>
+<!--
+    position
+        - absolute 绝对定位
+            特性：
+                1. 定位不在基于自己初始位置
+                    1) 寻找具有定位属性的父级，基于具有定位属性的父级进行定位
+
+                    2) 基于document（可视区）
+
+                2. 脱离文档流，页面中不再占位
+                3. 层级的提升
+                4. 触发BFC
+                5. 内嵌元素支持宽高
+                6. 不设置宽度的时候由内容撑开
+ -->
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*选中wrap 下的所有div,并且这个div是他所在父级的第二个子元素*/
+			.wrap div:nth-child(2){
+				background-color: red;
+			}
+			
+			.wrap div:nth-last-child(2){
+				background-color: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div>div1</div>
+			<p>p1</p>
+			<div>div2</div>
+			<p>p2</p>
+			<div>div3</div>
+			<p>p3</p>
+			<div>div4</div>
+			<p>p4</p>
+		</div>
+	</body>
+</html>

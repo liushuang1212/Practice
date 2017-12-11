@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{
+				width:100px;
+				height:100px;
+				background-color:red;
+				border-radius: 10px;
+				margin: 100px auto;
+				/*阴影可以加多个,使用逗号隔开*/
+				/*box-shadow: 
+					0 0 10px #000,
+					10px 10px 10px coral, 
+					-20px -15px 10px green;*/
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+		<script>
+			var box = document.getElementById("box");
+			var arr = [ "red", "yellow", "green", "blue" ];
+			var str = "";
+			for (var i = 0; i < 4000; i++) {
+				str += "0 0 100px "+ arr[i%4] +","
+			}
+			str = str.substring(0,str.length-1);
+//			alert( str )
+			box.style.boxShadow = str;
+		</script>
+	</body>
+</html>

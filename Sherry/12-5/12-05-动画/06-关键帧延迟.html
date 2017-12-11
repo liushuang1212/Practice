@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{
+				width:100px;
+				height:100px;
+				background-color:red;
+				position: relative;
+				left: 0;
+				top: 0;
+				
+				animation-name: changePos;
+				animation-duration: 3s;
+				/*animation-delay:
+					动画执行的延迟
+					单位:毫秒 | 秒
+					* */
+				/*animation-delay: 1s;*/
+				animation-delay: 1000ms;
+			}
+			@keyframes changePos{
+				0%{
+					left: 0;
+					top: 0;
+				}
+				50%{
+					left: 400px;
+					top: 0;
+				}
+				100%{
+					left: 400px;
+					top: 300px;
+				}
+			} 
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+	</body>
+</html>

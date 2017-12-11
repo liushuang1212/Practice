@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{
+				width:100px;
+				height:100px;
+				background-color:red;
+				transition: 1s;
+			}
+			#box:hover{
+				transform: scale(2);
+				/*会开启GPU加速*/
+			}
+			.line{
+				width: 400px;
+				height: 5px;
+				display: inline-block;
+				vertical-align: top;
+				background-color: #000;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+		<span class="line"></span>
+	</body>
+</html>

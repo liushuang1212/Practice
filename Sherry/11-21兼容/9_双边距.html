@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style media="screen">
+    body{
+        margin:0px;
+    }
+    .box{
+        /*width: 600px;*/
+    }
+    .box div{
+        width: 100px;
+        height: 100px;
+        background: red;
+        float: left;
+        margin:20px;
+        display: inline;
+    }
+</style>
+</head>
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+    <!--
+        ie6下，双边距问题的产生，
+        给块元素加浮动以后，添加横向margin
+        那个横向的第一个和最后一个都会产生双倍的横向margin值
+
+        解决方法：display:inline
+    -->
+</body>
+</html>

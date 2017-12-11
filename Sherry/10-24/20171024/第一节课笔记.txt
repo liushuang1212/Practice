@@ -1,0 +1,139 @@
+前端关注要点：
+	1.酷炫的网页交互
+	2.提升了用户体验
+	3.复杂的业务逻辑
+
+网站开发流程：
+	1.网站策划
+	2.网页设计
+	3.前端开发
+	4.后端开发
+	5.测试上线
+
+前端需要掌握的技能：
+	1.html
+	2.css
+	3.js
+
+HTML：
+	HyperText Markup Language - 超文本标记语言
+		超文本：超过一般文本范畴
+		标记：标签<div></div>
+		语言：和浏览器沟通的方式
+
+CSS：
+	Cacsading Style Sheets - 层叠样式表
+	美化网站
+
+
+写网站思路步骤：
+	1.创建文件夹（存放html、css、图片等）
+	2.新建一个页面（.html结尾）
+	3.页面基础结构
+		<!doctype html> - 文档申明：告诉浏览器是一个html文件
+		<html> - html代码开始的位置
+			<head> - 头部信息：非可视区域的内容
+				<title>标题</title>
+				<meta charset="UTF-8"> - 编码
+			</head>
+			<body> - 可视区内容
+				<div></div>
+				<!--
+					html注释标签
+					div标签特性：
+						1.不设置宽度的情况，撑满父级宽度
+						2.不设置高度的情况，根据内容撑开
+				-->
+			</body>
+		</html>- html代码结束的位置
+
+		** 这里要注意两点：
+			1.标签嵌套：
+				并列标签
+					<div></div>
+					<div></div>
+				嵌套标签
+					<div>
+						<div></div>
+						<div></div>
+					</div>
+			2.标签类型：
+				双标签:
+					<div></div>
+				单标签：
+					<meta>
+
+	4.可视区的内容写在<body></body>
+	5.写一个<div></div>
+	6.因为div没有样式，页面中不可见，这时我们需要用css
+	7.css样式的添加三种方式：
+		1.行间样式
+			<div style="width:100px;border:1px solid #000;"></div>
+		2.内部样式添加
+			1.通过style标签，写在head标签内
+			2.把样式和标签绑定，通过id
+				ID：
+					1.页面命名只可以有一个（不可以重复）
+					2.开头不可以数字、中文、特殊字符（除-_）
+					3.具有语义化
+		3.外部样式添加：
+			1.创建一个.css结尾的页面
+			2.通过link引入
+				<link rel="stylesheet" href="xx.css">
+					1.rel- 引入文件的申明
+					2.stylesheet - 样式表
+					3.href - 链接
+		** /* css注释标签 */
+
+	8.书写样式
+		常见样式
+			1.width:1px;- 宽
+			2.height:1px; - 高
+			3.border
+				复合样式：
+					border:1px solid #000;
+					border-top:1px solid #000;
+				标准的书写：
+					border-width —— 边框宽度（px）
+					border-style ——边框样式
+						- solid 直线
+						- dashed 虚线
+						- dotted 点虚线
+					border-color ——边框颜色
+						- 关键词 red
+						- 十六进制 #000000
+						- rgb rgb(255，255，255)
+				border多值书写：
+					一个值：上下左右
+					两个值：上下 左右
+					三个值：上 左右 下
+					四个值：上 右 下 左
+				指定方向：
+					border-top-width
+					border-top-style
+					border-top-color
+					
+					border-right-width
+					border-right-style
+					border-right-color
+	
+					border-bottom-width
+					border-bottom-style
+					border-bottom-color
+
+					border-left-width
+					border-left-style
+					border-left-color
+					
+					** 指定方向根据关键词：left right bottom top这些值
+
+			** 案例 ： 三角形
+				思路：
+					1.同一个元素，两条边框相交的地方是斜线
+					2.该元素宽高为0，三角形宽度由边框去撑开
+					3.后一条样式会覆盖前面的样式
+					4.边框不计算在元素的宽高内
+ 
+	
+ 
+	

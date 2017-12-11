@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.icon{
+				display: inline-block;
+				width: 100px;
+				height: 100px;
+				border: 1px solid #000;
+			}
+			
+			input{
+				display: none;
+			}
+			
+			/*input:checked{
+				opacity: .3;
+			}*/
+			
+			input:checked+span{
+				background: url(check.png);
+				background-size: cover;
+			}
+			
+			/*.check{
+				background: url(check.png);
+				background-size: cover;
+			}*/
+		</style>
+	</head>
+	<body>
+		<label for="male">man</label>
+		<input type="radio" name="sex" id="male" checked/>
+		<span class="icon"></span>
+		<label for="female">woman</label>
+		<input type="radio" name="sex" id="female"/>
+		<span class="icon"></span>
+	</body>
+</html>

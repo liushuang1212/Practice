@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#checkBox{
+				display: none;
+			}
+			#wrap{
+				display: block;
+				width: 200px;
+				height: 100px;
+				background-color: #fff;
+				border-radius: 50px;
+				box-shadow: 0 0 10px #333;
+			}
+			#wrap span{
+				display: block;
+				width: 100px;
+				height: 100px;
+				background-color: #fff;
+				
+				border-radius: 50px;
+				box-shadow: 0 0 10px #666;
+				transition: .5s;
+			}
+			input:checked+label span{
+				margin-left: 100px;
+			}
+			input:checked+#wrap{
+				background-color: yellowgreen;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<input type="checkbox" id="checkBox" />
+			<label for="checkBox" id="wrap">
+				<span></span>
+			</label>
+		</div>
+	</body>
+</html>

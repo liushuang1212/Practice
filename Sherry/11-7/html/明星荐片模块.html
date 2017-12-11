@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    body,
+    h2,
+    dl,
+    dd,
+    h3,
+    p{
+        margin: 0px;
+    }
+    ul{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+    img{
+        vertical-align: top;
+    }
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+ 
+    .box{
+        width: 1000px;
+        height: 550px;
+        background: 
+            url(../img/bj.png)
+            no-repeat;
+    }
+    
+    .upstair .first  {
+        float: left;
+        width: 348px;
+        margin-left: 68px;
+        margin-top: 52px;
+        padding-top: 30px;
+        padding-left: 32px;
+        padding-right: 31px;
+        background: #fff;
+    }
+    .first .star{
+        font: 18px/36px "宋体";
+        color: #fff;
+        width: 348px;
+        background:#e7788d;
+        text-indent: 26px;
+    } 
+    .first .handsome{
+        float: left;
+        padding: 5px 3px 5px 5px;
+    }
+    .first .txt{
+         float: right;
+        width: 174px;
+        height: 130px;
+        background: #f4f4f4;
+        padding-left: 11px;
+        padding-right: 35px;
+    }
+    .txt .zxn{
+        font: 16px/41px "宋体";
+        color: #000;
+    }
+    .txt .director,
+    .txt p{
+        font: 12px/26px "宋体";
+        color: #6a6a6a;
+        height: 26px;
+    }
+    .txt dt,
+    .txt dd{
+        float: left;
+    }
+    .first .content{
+        margin-top: 20px;
+    }
+    .first .content:after{
+        content:'';
+        display: block;
+        clear: both;
+    }
+    .upstair .link{
+        font: 14px/38px "宋体";
+        margin-top: 18px;
+        
+    }
+    .upstair .link li{
+        background:
+            url(../img/point.png)
+            no-repeat 0px 16px;
+        text-indent: 16px;
+
+    }
+    .upstair .link span{
+    color: #939393;
+    float: right;
+    text-indent: 0px;
+    }
+    .upstair .second{
+
+        float: left;
+        width: 348px;
+        margin-left: 30px;
+        margin-top: 52px;
+        padding-top: 30px;
+        padding-left: 32px;
+        padding-right: 31px;
+        background: #595959;
+    }
+    .second .star{
+        font: 18px/24px "宋体";
+        color: #e7788d;
+        width: 348px;
+        text-indent: 11px;
+        border-left: 6px solid #e7788d;
+        padding: 6px 0px;
+    }
+    .second .content{
+        margin-top: 20px;
+        background:
+          #353535 
+            url(../img/handsome.png)
+            no-repeat 5px 5px;
+         border-bottom: 5px solid #353535;
+    }
+    
+                     
+    .second .txt{
+        float: right;
+        
+    } 
+    .second .content:after{
+        content:'';
+        display: block;
+        clear: both;
+    } 
+    .second .content .txt{
+        padding-right: 35px;
+    }
+    .second .zxn{
+        color: #fff;
+    }
+    .second .director
+    .second p{
+        color:#909090;
+    }
+    .second .link li{
+        background: none;
+        }
+    .second a{
+        color: #fff;
+    }
+    .second .link span{
+        color: #939393;
+    }
+    .upstair:after{
+        content:'';
+        display: block;
+        clear: both;
+        
+
+    }
+
+    </style>
+</head>
+<body>
+    <section class="box">
+        <ul class="upstair">
+            <li class="first">
+                <h2 class="star">明星推荐</h2>
+                <div class="content">
+                
+                <img class="handsome" src="../img/handsome.png">
+                <div class="txt">
+                    <h3 class="zxn">周秀娜荐片：让子弹飞</h3>
+                    <dl class="director">
+                        <dt >主演：</dt>
+                        <dd >胡歌/刘涛/王凯/黄维德</dd>
+                        
+                    </dl>
+                    
+                    <dl class="director" >
+                        <dt>类型： </dt>
+                        <dd>剧情/古装/励志</dd>
+                       
+                    </dl>
+                    <p>点评：我最近最喜欢的就是这…</p>
+                </div>
+            </div>
+            <ul class="link">
+                <li><a href="#">《巴别塔》：好的故事引人深思</a><span>阿朵</span></li>
+                <li><a href="#">《洛杉矶之战》：外星人真的那么弱智？</a><span>丁子峻</span></li>
+                <li><a href="#">《让子弹飞》：姜文是我的偶像</a><span>周秀娜</span></li>
+                <li><a href="#">《剑雨》：武侠里也可以有爱情</a><span>叶念琛</span></li>
+                <li><a href="#">《春风沉醉的夜晚》：非常真实</a><span>如小果</span></li>
+            </ul>
+            </li>
+            <li class="second">
+                    <h2 class="star">明星推荐</h2>
+                    <div class="content">
+                     <div class="txt">
+                        <h3 class="zxn">周秀娜荐片：让子弹飞</h3>
+                        <dl class="director">
+                            <dt >主演：</dt>
+                            <dd >胡歌/刘涛/王凯/黄维德</dd>
+                        </dl>
+                        
+                        <dl class="director" >
+                            <dt>类型：</dt>
+                            <dd>剧情/古装/励志</dd>
+                         </dl>
+                        <p>点评：我最近最喜欢的就是这…</p>
+                    </div>
+                </div>
+                <ul class="link">
+                    <li><a href="#">《巴别塔》：好的故事引人深思</a><span>阿朵</span></li>
+                    <li><a href="#">《洛杉矶之战》：外星人真的那么弱智？</a><span>丁子峻</span></li>
+                    <li><a href="#">《让子弹飞》：姜文是我的偶像</a><span>周秀娜</span></li>
+                    <li><a href="#">《剑雨》：武侠里也可以有爱情</a><span>叶念琛</span></li>
+                    <li><a href="#">《春风沉醉的夜晚》：非常真实</a><span>如小果</span></li>
+                </ul>
+
+            </li>
+        </ul>
+
+    </section>
+</body>
+</html>

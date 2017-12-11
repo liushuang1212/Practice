@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#wrap{
+				width:100px;
+				height:100px;
+				padding: 100px;
+				margin: 100px auto;
+				border: 1px solid #000;
+			}
+			#inner{
+				width:100px;
+				height:100px;
+				background-color:red;
+				font: 50px/2 "微软雅黑";
+				text-align: center;
+				color: #fff;
+				transition: 1s;
+				background: url(1.png) left no-repeat #ccc;
+				
+				transform-origin: left;
+			}
+			
+			#wrap:hover #inner{
+				/*transform: scale( 2 );*/
+				transform: rotate( 180deg );
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+				transform-origin: left;
+					如果之写上 x轴方向的 关键字, 那么 y轴方向 会当做center处理
+		-->
+		
+		<div id="wrap">
+			<div id="inner">上</div>
+		</div>
+	</body>
+</html>

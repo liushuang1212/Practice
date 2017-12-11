@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#wrap{
+				width:100px;
+				height:100px;
+				padding: 100px;
+				margin: 100px auto;
+				border: 1px solid #000;
+			}
+			#inner{
+				width:100px;
+				height:100px;
+				background-color:red;
+				font: 50px/2 "微软雅黑";
+				text-align: center;
+				color: #fff;
+				transition: 1s;
+			}
+			
+			#wrap:hover #inner{
+				/*transform: skew( 45deg );*/
+				/*transform: skew( -45deg );*/
+				
+				/*transform: skewX( 45deg );*/
+				transform: skewY( 45deg );
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			
+		-->
+		
+		<div id="wrap">
+			<div id="inner">上</div>
+		</div>
+	</body>
+</html>

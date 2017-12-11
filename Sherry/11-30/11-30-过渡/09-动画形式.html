@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.wrap{
+				width: 800px;
+				border: 1px solid #000;
+			}
+			.wrap div{
+				width:200px;
+				height:80px;
+				background-color:red;
+				color: #fff;
+				font: bold 30px/3 "微软雅黑";
+				margin-bottom: 10px;
+				transition: 2s;
+			}
+			.wrap div:nth-of-type(1){
+				transition-timing-function: ease;
+			}
+			.wrap div:nth-of-type(2){
+				transition-timing-function: ease-in;
+			}
+			.wrap div:nth-of-type(3){
+				transition-timing-function: ease-out;
+			}
+			.wrap div:nth-of-type(4){
+				transition-timing-function: ease-in-out;
+			}
+			.wrap div:nth-of-type(5){
+				transition-timing-function: linear;
+			}
+			.wrap div:nth-of-type(6){
+				transition-timing-function: cubic-bezier(.1,.7,.5,1.5);
+			}
+			.wrap:hover div{
+				width: 800px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			transition-timing-function: ease;
+			transition-timing-function: ease-out;
+			transition-timing-function: ease-in;
+			transition-timing-function: ease-in-out;
+			transition-timing-function: linear;
+			transition-timing-function: cubic-bezier(.1,.7,.5,1.5)
+		-->
+		<div class="wrap">
+			<div>ease</div>
+			<div>ease-in</div>
+			<div>ease-out</div>
+			<div>ease-in-out</div>
+			<div>linear</div>
+			<div>cubic-bezier</div>
+		</div>
+	</body>
+</html>

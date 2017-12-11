@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+.box div{
+    width: 100px;
+    height: 80px;
+    background: black;
+    font: 20px/2 Arial;
+    text-align: center;
+}
+.box div:first-of-type{
+    background: red;
+
+}
+.box div:nth-of-type(2){
+    background: green;
+}
+.box div:last-of-type{
+    background: yellow;
+}
+</style>
+</head>
+<body>
+    <div class="box">
+        <div>div1</div>
+        <div>div2</div>
+        <div>div3</div>
+    </div>
+</body>
+</html>

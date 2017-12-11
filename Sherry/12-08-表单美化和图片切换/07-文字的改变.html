@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box:before{
+				content: "1234";
+			}
+			#box:hover:before{
+				animation: go .3s infinite;
+			}
+			
+			@keyframes go{
+				0%{content: "2125";}
+				50%{content: "4129";}
+				100%{content: "2613";}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">内容</div>
+	</body>
+</html>

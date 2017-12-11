@@ -1,0 +1,306 @@
+.content{
+    width: 100%;
+    height: 100%;
+    background: 
+        #e4e4e4
+        url(../img/banner_for_website.jpg)
+        no-repeat center -50px;
+}
+.banner{
+    height: 89px;
+    padding-top: 27px;
+}
+.banner h2{
+    height: 64px;
+    text-indent: -9931px;
+    overflow: hidden;
+    background:  
+        url(../img/wiki_logo_lumpsugar.png)
+            no-repeat 24px 0px;
+}
+.main{
+    width: 948px;
+    height: 1429px;
+    margin: 0 auto;
+    border: 1px solid #b6b6b6;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.main_nav{
+    float: left;
+    width: 197px;
+    height: 100%;
+    border-left: 2px solid #fdfdfd;
+    background-color: #f7f7f7;
+}
+.search{
+    padding-top: 36px;
+    padding-bottom: 21px;
+    width: 159px;
+    height: 25px;
+    margin: 0 auto;
+    font-size: 0px;
+     /*避免子级内嵌块元素换行产生间隙  */
+}
+.kuang{
+    width: 128px;
+    height: 23px;
+    border: 1px solid #c2c0c0;
+    background-color: #fff;
+    display: inline-block;
+    vertical-align: top;
+}
+.search a{
+    display: inline-block;
+    vertical-align: top;
+}
+.nav_details{
+    border-bottom: 1px solid #c8c8c8;
+    margin-left: 17px;
+    margin-right: 20px;
+}
+.nav_details .nav_details_li{
+    font-size: 0px;
+    margin-bottom: 18px;
+}
+.nav_details .nav_img{
+    display: block;
+    width: 100%;
+    height: 18px;
+}
+.nav_details img{
+    width: 19px;
+    height: 17px;
+    background: 
+    url(../img/wiki_icons.png)
+    no-repeat 0px -60px;
+}
+.nav_details .nav_details_li:first-of-type img {
+    background: 
+    url(../img/wiki_icons.png)
+    no-repeat left top;
+}
+.nav_details span{
+    display: inline-block;
+    vertical-align: top;
+    font: 14px/18px "宋体";
+    text-indent: 5px;
+}
+.nav_details em{
+    display: inline-block;
+    vertical-align: top;
+    width: 18px;
+    height: 18px;
+    background:  
+        url(../img/wiki_ui.png)
+        no-repeat -8px -28px;
+}
+.nav_details a:hover em{
+    background-position: 10px -28px;
+}
+.nav_details a:active em{
+    background-position: -26px -28px;
+}
+.nav_details .nav_details_li:nth-of-type(2):hover .direction{
+    display: block;
+}
+/* 做成了hover的效果，其实应该是点击的效果，现在还没加。 */
+.direction{
+    display: none;
+    border-bottom: 1px solid #c8c8c8;
+    padding-top: 24px;
+}
+.direction li{
+    padding-bottom: 13px;
+}
+.direction li:last-of-type{
+    padding-bottom: 18px;
+}
+.direction a{
+    display: block;
+    font: 12px/12px "微软雅黑";
+    color: #3c7cb3;
+    padding-left: 25px;
+}
+.direction a:hover{
+    text-decoration: underline;
+}
+.main_content{
+    width: 749px;
+    float: left;
+    height: 100%;
+    border-top: 1px solid #fcfcfc;
+    background: linear-gradient(#f4f4f4 0,#fff 36px);
+}
+.language{
+    height: 36px;
+    font-size: 0px;
+    padding-left: 653px;
+    padding-top: 11px;
+    
+}
+.language p{
+    display: inline-block;
+    vertical-align: top;
+    font: 12px/14px Arial;
+}
+.language a{
+    display: inline-block;
+    vertical-align: top;
+    color: #3c7cb3;
+}
+.language a:hover{
+    text-decoration: underline;
+}
+.language span{
+    display: block;
+    text-indent: 4px;
+    font: 12px/14px "微软雅黑";
+    color: #3c7cb3;
+}
+.wiki_index{
+    padding-right: 19px;
+    padding-left: 40px;
+}
+.main_tag h2{
+    padding-bottom: 2px;
+    border-bottom: 1px dotted #ccc;
+    font: bold 14px/30px "微软雅黑"; 
+    color: #333;
+}
+.tag_img{
+    margin-top: 20px;
+    width: 73px;
+    height: 73px;
+    background: 
+        url(../img/index_pic.png)
+        no-repeat left top;
+}
+.wiki_index .main_tag:nth-of-type(2) .tag_img{
+    background-position: left -173px;
+}
+.wiki_index .main_tag:nth-of-type(3) .tag_img{
+    background-position: left -75px;
+}
+.tag_title{
+    display: inline-block;
+    vertical-align: top;
+    padding-bottom: 42px;
+}
+.tag_title h3{
+    padding-top: 15px;
+}
+.tag_title h3 a{
+    display: block;
+    font: 20px/32px "微软雅黑";
+    color: #3c7cb3;
+}
+.tag_title h3 a:hover{
+    text-decoration: underline;
+}
+.tag_title{
+    width: 565px;
+    font: 12px/20px "微软雅黑";
+    color: #333;
+}
+.tag_buttons li{
+    float: left;
+    width: 130px;
+    margin-right: 10px;
+    margin-bottom: 46px;
+}
+.tag_buttons a{
+    display: block;
+    font: 14px/26px "微软雅黑";
+    color: #3c7cb3;
+    box-shadow: inset 0 0 1px 0 #f7fbfc;
+    text-align: center;
+    border: 1px solid #d5e0e8;
+    height: 28px;
+    background: linear-gradient(#f5fafc 0,#f1f7fa 14px,#edf4f9 28px);
+}
+.more_documents h2{
+    padding-top: 61px;
+    padding-bottom: 2px;
+    border-bottom: 1px dotted #ccc;
+    font: bold 14px/30px "微软雅黑";
+    color: #333;
+    background:    
+        url(../img/line.png)
+        no-repeat center top; 
+}
+.more_documents_ul{
+    padding-bottom: 169px;
+}
+.more_documents_ul li{
+    float: left;
+    width: 305px;
+    padding-right: 35px;
+    margin-right: 10px;
+    padding-bottom: 8px;
+}
+.more_documents_ul li:nth-of-type(2n){
+    margin-right: 0px;
+}
+.more_documents_ul h3{
+    padding-top: 21px;
+    font-size: 0px;
+}
+.more_documents_ul h3 em{
+    display: inline-block;
+    vertical-align: top; 
+    width: 29px;
+    height: 19px;
+    background: 
+        url(../img/index_pic.png)
+        no-repeat left -268px;
+}
+.more_documents_ul li:nth-of-type(2) em{
+    background-position: left -296px;
+}
+.more_documents_ul li:nth-of-type(3) em{
+    background-position: left -324px;
+}
+.more_documents_ul li:nth-of-type(4) em{
+    background-position: left -349px;
+}
+.more_documents_ul li:nth-of-type(5) em{
+    background-position: left -376px;
+}
+.more_documents_ul li:nth-of-type(6) em{
+    background-position: left -402px;
+}
+.more_documents_ul h3 a{
+    display: inline-block;
+    vertical-align: top;
+    font: bold 14px/18px "微软雅黑";
+    color: #3c7cb3; 
+}
+.more_documents_ul h3 a:hover{
+    text-decoration: underline;
+}
+.documents_txt{
+    padding-top: 11px;
+    font: 12px/20px "微软雅黑";
+}
+.documents_txt a{
+    color:#3c7cb3;
+}
+.documents_txt a:hover{
+    text-decoration: underline;
+}
+.update{
+    height: 18px;
+    border-top: 1px solid #e5e5e5;
+    font: 12px/18px "微软雅黑";
+    color: #333;
+    text-indent: 526px;
+}
+
+footer{
+    padding-top: 0px;
+    background-color: #e4e4e4;
+}
+.copyRight{
+    border-top: 0px;
+}

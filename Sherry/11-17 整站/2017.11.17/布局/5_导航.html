@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style media="screen">
+a{
+    text-decoration: none;
+    color: #fff;
+}
+nav a{
+    float: left;
+    padding:0 15px;
+    background: url(img2/nav.png) repeat-x;
+    margin:0 15px;
+    height: 40px;
+    position: relative;
+}
+.right{
+    width:28px;
+    height: 40px;
+    background: url(img2/navR.png) no-repeat;
+    position: absolute;
+    top: 0;
+    right: -28px;
+}
+.left{
+    width:28px;
+    height: 40px;
+    background: url(img2/navL.png) no-repeat;
+    position: absolute;
+    top: 0;
+    left: -28px;
+}
+nav a:hover{
+    background: url(img2/navH.png) repeat-x;
+
+}
+nav a:hover .left{
+    background-image: url(img2/navHL.png);
+}
+nav a:hover .right{
+    background-image: url(img2/navHR.png);
+}
+</style>
+</head>
+<body>
+<nav>
+    <a href="#">
+        首页
+        <span class="right"></span>
+    </a>
+    <a href="#">
+        <span class="left"></span>
+        首页
+        <span class="right"></span>
+    </a>
+</nav>
+</body>
+</html>

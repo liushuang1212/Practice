@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#wrap{
+				width:100px;
+				height:100px;
+				padding: 100px;
+				margin: 100px auto;
+				border: 1px solid #000;
+			}
+			#inner{
+				width:100px;
+				height:100px;
+				background-color:red;
+				font: 50px/2 "微软雅黑";
+				text-align: center;
+				color: #fff;
+				transition: 1s;
+			}
+			
+			#wrap:hover #inner{
+				/*具体度数*/
+				/*transform: rotate( 180deg );*/
+				/*transform: rotate( -48deg );*/
+				
+				/*圈*/
+				/*transform: rotate( 10turn );*/
+				
+				/*弧度*/
+				/*角度转弧度*/
+					/*角度 * π / 180*/
+				/*transform: rotate( 3.14rad );*/
+				transform: rotate( 1.57rad );
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			旋转
+				单位
+					deg
+					trun
+					rad(弧度)
+					角度转弧度 角度 * π / 180
+			
+		-->
+		<div id="wrap">
+			<div id="inner">上</div>
+		</div>
+	</body>
+</html>

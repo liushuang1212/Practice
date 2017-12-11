@@ -1,0 +1,22 @@
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dd{
+    margin: 0px;
+}
+img{
+    vertical-align: top;
+    border: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}

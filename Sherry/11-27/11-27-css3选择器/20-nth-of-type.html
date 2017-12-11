@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*找到wrap 下的所有div,找到div中的第2个*/
+			.wrap div:nth-of-type(2){
+				background-color: red;
+			}
+			
+			.wrap div:nth-last-of-type(2){
+				background-color: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div>div1</div>
+			<p>p1</p>
+			<div>div2</div>
+			<p>p2</p>
+			<div>div3</div>
+			<p>p3</p>
+			<div>div4</div>
+			<p>p4</p>
+		</div>
+	</body>
+</html>

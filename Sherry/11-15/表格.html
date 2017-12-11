@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+body{
+    margin: 0px;
+}
+img{
+    vertical-align: top;
+}
+table{
+    margin: 0 auto;
+    border-collapse: collapse; 
+    text-align: center; 
+}
+th{
+    padding: 0px;
+}
+td{
+    padding: 0px;
+}
+thead th{
+    border: 1px solid #99b0da;
+    background-color: #dbe3fa;
+    font: bold 14px/30px "宋体";
+    color: #000;
+}
+tbody td{
+    border: 1px solid #99b0da;
+    font: 12px/28px "宋体";
+    color: #000;
+}
+tbody .friday{
+    width: 95px;
+    background-color: #f4f7fc;
+}
+tbody .day{
+    width: 76px;
+    background-color: #f4f7fc;
+}
+tbody .weather{
+    width: 115px;
+}
+tbody .picture{
+    width: 63px;
+    height: 28px;
+    padding-top: 4px;
+}
+thead .wind{
+    width: 94px;
+}
+thead .feeling{
+    width: 95px;
+}
+tbody .sunday{
+    color: #cc0000;
+}
+tbody .hot{
+    color:#e54600;
+}
+tbody .cold{
+    color: #000065;
+}
+tbody tr .white{
+    height: 4px;
+    border: none;
+}
+</style>
+</head>
+<body>
+    
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">日期</th>
+                <th colspan="2" >天气现象</th>
+                <th class="feeling">气温</th>
+                <th class="wind">风向</th>
+                <th class="wind">风力</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="friday" rowspan="2">22日星期五</td>
+                <td class="day">白天</td>
+                <td class="picture"><img src="img/picture1.jpg" alt=""></td>
+                <td class="weather">晴间多云</td>
+                <td class="hot">高温7°</td>
+                <td>无持续风向</td>
+                <td>微风</td>
+            </tr>
+            <tr>
+                <td class="day">夜间</td>
+                <td class="picture"><img src="img/picture2.jpg" alt=""></td>
+                <td class="weather">晴</td>
+                <td class="cold">低温-4°</td>
+                <td>无持续风向</td>
+                <td>微风</td>
+            </tr>
+            <tr>
+                <td class="white"></td>
+            </tr>
+            <tr>
+                <td class="friday sunday" rowspan="2">23日星期六</td>
+                <td class="day">白天</td>
+                <td class="picture"><img src="img/picture3.jpg" alt=""></td>
+                <td class="weather">晴</td>
+                <td class="hot">高温9°</td>
+                <td>无持续风向</td>
+                <td>微风</td>
+            </tr>
+            <tr>
+                <td class="day">夜间</td>
+                <td class="picture"><img src="img/picture4.jpg" alt=""></td>
+                <td class="weather">阴</td>
+                <td class="cold">低温-2°</td>
+                <td>无持续风向</td>
+                <td>微风</td>
+            </tr>
+    </tbody>
+
+    </table>
+
+    
+</body>
+</html>

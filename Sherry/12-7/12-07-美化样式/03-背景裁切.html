@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{
+				width:400px;
+				height:400px;
+				padding: 50px;
+				border: 20px solid rgba(0,0,0,.3);
+				background: url(img.png);
+				/*background-clip: border-box;*/
+				/*background-clip: padding-box;*/
+				/*background-clip: content-box;*/
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			background-clip 背景图裁切（显示位置）
+			属性值
+				border-box
+					背景被裁剪到边框盒。
+				padding-box
+					背景被裁剪到内边距框。
+				content-box
+					背景被裁剪到内容框。
+		-->
+		<div id="box"></div>
+	</body>
+</html>

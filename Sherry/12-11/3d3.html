@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+body{
+    margin: 0px;
+}
+.wrap{
+    width: 300px;
+    height: 300px;
+    padding: 100px;
+    border: 1px solid #333;
+    margin: 200px auto;
+    perspective: 300px;
+    perspective-origin: left center;
+    transition: 2s;
+   
+}
+.inner{
+    width: 200px;
+    height: 200px;
+    background-color: #d0d0d0;
+    margin: 50px auto;
+    
+    transform: rotateY(30deg);
+}
+.wrap:hover{
+     perspective-origin: 500px 250px;
+   
+}
+</style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="inner">下</div>
+    </div>
+    
+</body>
+</html>

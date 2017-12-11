@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#wrap{
+				width:100px;
+				height:100px;
+				padding: 100px;
+				margin: 100px auto;
+				border: 1px solid #000;
+			}
+			#inner{
+				width:100px;
+				height:100px;
+				background-color:red;
+				font: 50px/2 "微软雅黑";
+				text-align: center;
+				color: #fff;
+				transition: 1s;
+			}
+			
+			#wrap:hover #inner{
+				/*缩放为原来的 0.5 倍*/
+				/*transform: scale( .5 );*/
+				
+				/*缩放为原来的 2 倍*/
+				/*transform: scale( 2 );*/
+				
+				/*transform: scaleX( 2 );
+				transform: scaleY( .5 );*/
+				
+				/*x轴 缩放为原来 2 倍 
+				y轴 缩放为原来 0.5 倍 */
+				transform: scale( 2,.5 );
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			缩放
+				scale
+				scaleY
+				scaleX
+		-->
+		
+		<div id="wrap">
+			<div id="inner">上</div>
+		</div>
+	</body>
+</html>

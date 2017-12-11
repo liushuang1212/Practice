@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#wrap{
+				width: 500px;
+				height: 300px;
+				border: 1px solid #000;
+				position: relative;
+			}
+			.inner{
+				width:100px;
+				height:100px;
+				background-color:red;
+				position: absolute;
+				left: 0;
+				top: 0;
+				transition: 1s;
+			}
+			#wrap:hover .inner{
+				/*right: 0;*/
+				left: 400px;
+				top: 200px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!--
+			transition-property 过渡样式(需要过渡的css属性)
+
+				all 所有样式
+				none 没有
+				attr 具体的样式
+					过渡只支持加给数值类的样式
+					颜色？
+			
+		-->
+		<div id="wrap">
+			<div class="inner"></div>
+		</div>
+	</body>
+</html>

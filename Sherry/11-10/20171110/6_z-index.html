@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style media="screen">
+div{
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+.div1{
+    background: red;
+    z-index: 0;
+}
+.div2{
+    background: green;
+    position: relative;
+    z-index:-1;
+    left:30px;
+    top: -30px;
+}
+.div3{
+    background: blue;
+    position: relative;
+    top: -50px;
+    z-index:2;
+}
+span{
+    position:absolute;
+    background:pink;
+    width: 50px;
+    height: 50px;
+    z-index:20;
+}
+</style>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="div2">
+        <span>
+                span
+        </span>
+    </div>
+    <div class="div3">
+    </div>
+
+
+</body>
+<!--
+    z-index 层级
+        - 接受正负值
+        - 数值越大，在越上面
+        - 只能给定位元素
+        - 层级的比较只针对同级
+ -->
+</html>

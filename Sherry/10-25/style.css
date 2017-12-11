@@ -1,0 +1,16 @@
+#box{
+			width: 1000px;
+			height: 800px;
+			border: 1px solid blue;
+			background: #3cdfff  no-repeat url(img/fish.jpg) 60px 80px;
+			/*background-attachment: fixed;*/
+			/*background-color: #3cdfff;
+			background-image: url(img/20160306_124705.jpg);
+			background-repeat: no-repeat;*/
+		}
+#part1{
+	width: 1500px;
+	height: 700px;
+	background: pink url(img/tubiao1.jpg)  fixed center center;
+	background-repeat: no-repeat;
+}

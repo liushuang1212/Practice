@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.wrap{
+				width: 600px;
+				height: 10px;
+				background-color: red;
+				margin: 300px auto;
+				text-align: center;
+				transform: rotate(0deg);
+				transition: 1s;
+			}
+			.wrap input:first-child{
+				float: left;
+			}
+			.wrap input:last-child{
+				float: right;
+			}
+			.dot{
+				width: 10px;
+				height: 10px;
+				background-color: #000;
+				border-radius: 5px;
+				display: inline-block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap" id="wrap">
+			<input id="leftinp" type="range" step="1" min="0" max="10" value="0" />
+			<div class="dot"></div>
+			<input id="rightinp" type="range" step="1" min="0" max="10" value="0" />
+		</div>
+		<script>
+			var rightinp = document.getElementById("rightinp");
+			var wrap = document.getElementById("wrap");
+			var leftinp = document.getElementById("leftinp");
+			
+//			alert( rightinp )
+			rightinp.onchange = function(){
+				var s = rightinp.value - leftinp.value;
+				alert( rightinp.value - leftinp.value );
+				wrap.style.transform = "rotate("+ s*3 +"deg)";
+			}
+			leftinp.onchange = function(){
+				alert( rightinp.value - leftinp.value );
+				var s = rightinp.value - leftinp.value;
+				wrap.style.transform = "rotate("+ s*3 +"deg)";
+			}
+		</script>
+	</body>
+</html>

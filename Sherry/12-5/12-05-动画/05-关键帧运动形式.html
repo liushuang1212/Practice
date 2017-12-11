@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{
+				width:100px;
+				height:100px;
+				background-color:red;
+				position: relative;
+				left: 0;
+				top: 0;
+				
+				animation-duration: 3s;
+				/*animation-timing-function: linear;*/
+				/*animation-timing-function: ease;*/
+				/*animation-timing-function: ease-in;*/
+				/*animation-timing-function: ease-out;*/
+				/*animation-timing-function: ease-in-out;*/
+				animation-timing-function: cubic-bezier(.5,.6,.9,2);
+				/*动画运动形式
+				
+			animation-timing-function
+				linear	动画从头到尾的速度是相同的。
+				ease	默认。动画以低速开始，然后加快，在结束前变慢。
+				ease-in	动画以低速开始。
+				ease-out	动画以低速结束。
+				ease-in-out	动画以低速开始和结束。
+				cubic-bezier(n,n,n,n)	在 cubic-bezier 函数中自己的值。可能的值是从 0 到 1 的数值。*/
+				animation-name: changePos;
+			}
+			@keyframes changePos{
+				0%{
+					left: 0;
+					top: 0;
+				}
+				50%{
+					left: 400px;
+					top: 0;
+				}
+				100%{
+					left: 400px;
+					top: 300px;
+				}
+			} 
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+	</body>
+</html>

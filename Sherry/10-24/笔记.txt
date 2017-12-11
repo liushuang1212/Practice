@@ -1,0 +1,62 @@
+
+百度脑图
+
+写博客 
+
+
+2017-10-24知识点：
+
+语言CSS HTML
+
+HTML 超文本标记语言 Hypertext makeup language
+  1. 建一个后缀为.html的文本
+  2. 标签 固定格式 告诉浏览器为document 类型为HTML的文本 以<html>开始，以</html> 结束
+  3. 单标签 <> 双标签<> </>  标签的嵌套关系：嵌套关系和并列关系 
+  4. 注释固定格式 <!--注释--> 此注释只能自己看到
+   
+CSS  层叠样式表 cascading style sheets  
+  注释格式 /*注释*/
+  div特性 如果不设置宽度就会占满父级的宽度，如果不设置高度，高度就会被内容撑开
+ 
+  添加样式的三种方式：
+     行间样式
+     内部样式
+        div中id命名：1）不含中文 不含关键词 2）同一页面不能有相同的id 3）首字母不能为数字 4）尽可能不要用特殊字符（_ - 除外） 5）具有语义性 （便于识别）
+     外部样式（推荐工作使用）
+        rel - 引入文件类型    stylesheet 样式表   href 文件地址  文件路径
+       用link 引入 单标签link引用 <link rel="stylesheet" href="相对路径">   link单标签引入需写在head双标签里面
+       需要建立一个后缀为.css 的文件，记得保存 
+       
+
+
+
+
+
+   常见样式 宽度 width     背景 background  文字样式 font   文本样式  超链接
+              高度 height    内填充 padding   外填充 margin   盒模型
+              边框 border
+ Border 边框
+           border-width 边框宽度
+           border-color 边框颜色 1) 指定颜色：red green blue transparent透明色; 2) rgb: rgb(red,green,blue) 3) 十六进制：#cfcfcf (如果六位数值相同，只写前三位 eg:#000000 可写为：#000） 
+           border-style  边框样式 solid：实线 dashed：虚线 dotted：点线
+
+           指定方向的边框  top right bottom left 
+                          特定边框指定：一个值 上下左右    border-width:10px; 上下左右宽均为：10px
+                                        两个值 上下  左右  border-width:10px 20px; 上下宽为：10px 左右宽为：20px
+                                        三个值 上 左右 下  border-width:10px 20px 30px; 上：10px 左右:20px 下：30px
+                                        四个值 上 右 下 左（按顺时针方向） border-width:10px 20px 30px 40px; 上：10px 右：20px 下：30px 左：40px
+              
+              通过边框得到一个三角形：
+                               1）样式宽度高度不设或设为0px;
+                               2) 除了想要的三角区域为实线solid，其他区域改为透明格式transparent；
+                               3）border的宽度就是三角形的宽度；
+              特性：同一个元素，两条相交的地方是斜线
+                    在同一个样式设置里面，下面语句是覆盖上面语句的（单独改某个属性需要对其进行覆盖）
+                        border: 3px solid yellow; /* 边框宽度为3px 实线 黄色*/  若后面还有 border-top: 4px dotted black; /*则改为：上边框宽度为4px 点线 黑色 其他边框还是宽度3px 实线 黄色*/ 
+                    边框不算在元素宽高内
+                    
+ 
+
+
+                       
+              

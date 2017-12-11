@@ -1,0 +1,88 @@
+font 字体
+ 
+	font-weight 字体加粗
+        	- 数值（100-500） （700朝上可以看出来  临界值1000）
+        	- 关键词 bold 加粗 bolder更粗
+	font-style 样式
+          	倾斜或正常
+   		- italic 倾斜
+   		- normal 正常
+	font-size 字体大小
+   		- 默认为16px
+   		- 谷歌浏览器最小12px，低于12的不会跟浏览器缩放
+   		- 解决谷歌小于12px的字体，用图片
+	font-family  字体样式
+                中文常用的： 宋体 微软雅黑
+                英文 常用字体：Helvetica Arial （可以不加引号）
+
+                *中英文设定字体的时候：
+                    英文要放在前面，中文放在后面
+                    （英文的字体里面没有设置中文，会向后查找可以用字体）
+                多个字体设定的时候，第一个为首选项，后面的为备选
+	line-height 行高
+		- 在等于高度的情况下就会居中
+       	 	- 需要测量 
+        	- 如果是中文，行高测量
+        		- 文字超过一行情况下         行高=首行文字距下行的距离+文字	（其中若上行文字距下行文字的距离为奇数，则行高分配为文字上方距离为奇数平分中小的那个数，文字下方距离为奇数平分中大的那个数
+        		-文字是一行情况下     行高=首行文字距上边的距离*2+文字高度
+        	- 如果是英文，行高和中文相同，其中英文的高度需要测量
+   	     		- 关于英文高度测量，先做一个大小相同英文的样式，让其自动生成，然后通过PS测量其高度	
+   	
+   		
+   	
+ 	
+       	color 
+   		关键词：red black
+   		十六进制： #f1f1f1 可用PS里的取色器
+		rgb
+   	
+  *font复合样式: 
+   		加粗
+   		样式
+   		字体大小/行高
+		字体样式
+   	 字体+行高的书写
+   	    字体大小/行高
+		行高可以用px
+		行高也可以用倍数    字体大小/倍数   20px/1   行高是字体的一倍行高也是20px   30px/3 行高是字体的3倍行高是90px
+   	    复合样式中必写字体大小/行高 字体
+
+
+
+
+	text-align 文本方向控制
+   	      - center 居中
+   	      - left(默认)向左
+   	      - right向右
+   	text-decoration 文本修饰
+   		- none(默认)无样式
+   		- underline 下划线
+   		- overline 上划线
+   		- line-through 删除线
+   	text-indent 文本缩进
+   		- 以em为单位缩进
+   		- 以px为单位缩进 
+   	em  -单位
+   		-当前这个文字的大小 1em=1个文字的大小
+*宋体的文字在右侧会有1px的空白
+*在win7下，英文字体会是字体大小的一般
+
+   word-spacing 单词间距
+   	- 浏览器不认识单词，所以需要以空格分开，才会有
+   	   word-spacing效果
+   	- 间隔：word-spacing+空格大小
+   	测量一个空格的方式：
+                在页面打上字，然后通过浏览器的文字选中，用ps进行测量
+   	* 空格大小并不固定
+   letter-spacing 字间距
+   	- 单位 px
+   	当文字既有word-spacing 还有letter-spacing时，间隔是：word-spacing+空格大小+letter-spacing*2
+    空格也是作为一个字符存在的，所以当有当有空格时才会有word-spacing，而letter-spacing是针对字符起作用的，所以当word-spacing 和letter-spacing同时存在时，间隔是：word-spacing+空格大小+letter-spacing的两倍
+
+	overflow： hidden 超出隐藏
+   word-break 强制换行
+	break-all
+   white-space 强制不换行
+	nowrap
+
+

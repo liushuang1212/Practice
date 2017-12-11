@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#wrap input{
+				display: none;
+				/*opacity: 0;*/
+			}
+			#wrap label:after{
+				content: "";
+				display: inline-block;
+				vertical-align: top;
+				width: 0px;
+				height: 0px;
+				padding: 10px;
+				border-radius: 10px;
+				border: 1px solid #000;
+				background-clip: content-box;
+				
+				background-color: coral;
+				transition: 1s;
+				
+			}
+			
+			#wrap input:checked+label:after{
+				width: 10px;
+				height: 10px;
+				padding: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<input type="radio" name="sex" value="male" id="male" />
+			<label for="male">男</label>
+			<input type="radio" name="sex" value="female" id="female" />
+			<label for="female">女</label>
+		</div>
+	</body>
+</html>

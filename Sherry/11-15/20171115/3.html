@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style media="screen">
+    div{
+        width: 300px;
+        height: 300px;
+        border: 10px solid #000;
+        position: absolute;
+        left: 0;
+        top: 50px;
+        display: none;
+    }
+</style>
+</head>
+<body>
+    <a href="#">第一个</a>
+    <a href="#">第二个</a>
+    <a href="#">第三个</a>
+    <div>第一个盒子的内容</div>
+    <div>第二个盒子的内容</div>
+    <div>第三个盒子的内容</div>
+    <script>
+        var aNum = document.querySelectorAll('a');
+        var aDiv= document.querySelectorAll('div');
+
+        for(var i=0;i<aNum.length;i++){
+            aNum[i].index = i;
+            aNum[i].onclick = function(){
+
+                for(var j=0;j<aDiv.length;j++){
+                    aDiv[j].style.display='none';
+                }
+                aDiv[this.index].style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

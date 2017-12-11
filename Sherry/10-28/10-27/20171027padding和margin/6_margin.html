@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+            body{
+                color: #fff;
+                margin:0px;
+            }
+            #div1{
+                width: 100px;
+                height: 100px;
+                background: red;
+            }
+            #div2{
+                width: 50px;
+                height: 50px;
+                background: green;
+                margin:10px auto;
+            }
+            #box1,#box2{
+                width: 400px;
+                height: 30px;
+                background: blue;
+            }
+            #box3{
+                width: 450px;
+                height: 400px;
+                background: orange;
+            }
+        </style>
+    </head>
+    <body>
+
+
+        <div id="box3">
+            <!-- 没元素阻止-->
+            <div id="box1">box1</div>
+            <div id="div1">
+                <div id="div2">
+                    div2
+                </div>
+            </div>
+            <div id="box2">box2</div>
+        </div>
+
+
+
+        <!--
+            margin ：
+                1.子级会传递给父级margin值,找到最上面的父级
+                1.如果上面有同级元素，就会停止传递
+            box1 box3 box2 =》 box3和同级元素产生margin
+            div2-》红-》橙
+            div2-》红-》遇到同级就不传递了
+
+        -->
+    </body>
+</html>

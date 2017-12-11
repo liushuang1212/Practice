@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		/*选中wrap下所有的div,
+		这个div是他所在父级的唯一的div*/
+			/*.wrap div:only-of-type{
+				background-color: red;
+			}*/
+		
+		/*选中wrap下所有的div,
+		这个div是他所在父级的唯一子元素*/
+			.wrap div:only-child{
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div>div</div>
+			<p>p</p>
+			<p>p</p>
+			<p>p</p>
+			<p>p</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{
+				width:100px;
+				height:100px;
+				background-color:red;
+				position: relative;
+			}
+			#mask{
+				width:100px;
+				height:100px;
+				background-color:#ccc;
+				position: absolute;
+				left: 10px;
+				top: 10px;
+				z-index: -999;
+				filter: blur(1px);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<div id="mask"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*找到class为wrap的元素,找到他内部的所有div
+			并且这个div是他所在父级的第一个子元素*/
+			.wrap div:first-child{
+				background-color: red;
+			}
+			.wrap p:first-child{
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<p>p</p>
+			<div>div1</div>
+			<p>p</p>
+			<div>div2</div>
+			<div>div3</div>
+			<div>div4</div>
+		</div>
+	</body>
+</html>

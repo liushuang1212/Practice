@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#wrap{
+				width:100px;
+				height:100px;
+				padding: 100px;
+				margin: 100px auto;
+				border: 1px solid #000;
+			}
+			#inner{
+				width:100px;
+				height:100px;
+				background-color:red;
+				font: 50px/2 "微软雅黑";
+				text-align: center;
+				color: #fff;
+				transition: 1s;
+				/*transform-origin: 100px 0px;
+				transform-origin: 100% 0%;*/
+				transform-origin: right bottom;
+			}
+			
+			#wrap:hover #inner{
+				/*transform: scale( 2 );*/
+				transform: rotate( 180deg );
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			transform-origin
+				具体数值
+					比如 100px
+				百分比
+					以元素自身宽高为100%,进行计算
+				关键字
+					left center right
+					top center bottom
+			
+		-->
+		
+		<div id="wrap">
+			<div id="inner">上</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+body,
+header,
+p,
+h3,
+dl,
+dd{
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+    color: #044dd0;
+}
+img{
+    vertical-align: top;
+    border: none;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.box1{
+    width: 608px;
+    height: 395px;
+    border: 1px solid #e5e5e5;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.intro{
+    background: #eaf9fe;
+    height: 30px;
+    border-bottom: 1px solid #e5e5e7;
+    
+}
+.intro .tv1{
+    font: 14px/31px "宋体";
+    float: left;
+    
+    
+}
+.intro .tv1 a{
+    float: left;
+    border: 1px solid #e5e5e5;
+    margin-top: -1px;
+    margin-left: -1px;
+    padding: 0px 14px;
+}
+.intro .tv1 a:hover{
+    font-weight: bolder;
+    border-bottom:1px solid #fff;
+    background: #fff;
+}
+.intro .tv2{
+     font: 12px/31px "宋体";
+     float: right;
+     /* border-bottom: 1px solid #e5e5e7; */
+     padding-right: 14px;
+     padding-left: 60px;
+     
+}
+.intro .tv2 a{
+    float: left;
+}
+.intro .tv2 img{
+    float: left;
+    padding: 0px 8px;
+}
+.box1 .up{
+    height: 146px ;
+    padding-left: 14px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.gold{
+    height: 42px;
+    float: left;
+}
+.gold .money{
+    height: 42px;
+    float: left;
+}
+.gold .money h3,
+.gold .money em,
+.gold .money span{
+    float: left;
+}
+.gold .money h3{
+    width: 93px;
+    height: 42px;
+    background:
+        url(../images/gold.jpg)
+        no-repeat 0px 14px;
+    text-indent: -999px;
+    overflow: hidden;
+}
+.gold .money em{
+    width: 117px;
+    height: 35px;
+    font: bold italic 16px/35px "黑体";
+    padding-top: 7px;
+    padding-left: 21px;
+    color: #034093;
+    text-indent: -999px;
+    overflow: hidden;
+    background: 
+        url(../images/pill.jpg)
+        no-repeat 21px 14px;
+}
+.gold .money span{
+    font: 12px/31px "微软雅黑";
+    padding-top: 11px;
+    color: #004ccd;
+    padding-left: 8px;
+} 
+.gold ul{
+    float: left;
+    margin-left: 40px;
+}
+.gold li{
+    font: 12px/37px "微软雅黑";
+    color: #004ccd;
+    padding-top: 5px;
+    float: left;
+    margin-left: 6px;
+}
+.box1 .list {
+    float: left;
+    font: 12px/25px "微软雅黑";
+    color: #024bcb;
+    /* padding-bottom: 9px; */
+}
+
+.box1 .list .text .picture{
+    width: 128px;
+    height: 80px;
+    position: relative;
+}
+.box1 .list .text .picture .star1{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.box1 .list .picture .black{
+    width: 128px;
+    height: 18px;
+    background-color: rgba(0,0,0,.45);
+    font: 12px/18px "宋体";
+    color: #fff;
+    text-indent: 6px;
+    position: absolute;
+    left: 0px;
+    top: 61px;
+
+}
+.box1 .list .picture .hd{
+    position: absolute;
+    left: 107px;
+    top: 64px;
+}
+.box1 .list .upup{
+    float: left;
+}
+
+.box1 .list .text{
+        float: left;
+} 
+.box1 .list .rright{
+    float: left;
+    margin-left: 36px;
+}
+.box1 .list a{
+    float: left;
+    width: 128px;
+}
+.box1 .list .txt{
+    float: left;
+    line-height: 20px;
+    margin-left: 22px;
+}
+.box1 .list .right{
+    margin-left: 43px;
+}
+
+.city .movie1{
+    width: 123px;
+    height: 73px;
+    background-color: #fff;
+    border-right: 1px solid #c5c5c5;
+    border-bottom: 1px solid #c5c5c5;
+    position: relative;
+
+}
+.city .movie2{
+    width: 123px;
+    height: 73px;
+    background-color: #fff;
+    border-right: 1px solid #c5c5c5;
+    border-bottom: 1px solid #c5c5c5;
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+}
+.city .movie4{
+    width: 124px;
+    height: 76px;
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+
+} 
+.city .movie3{
+    width: 124px;
+    height: 76px;
+    position: relative;
+}
+.city .movie3 .black{
+    width: 124px;
+    height: 20px;
+    background: rgba(0,0,0,.4);
+    position: absolute;
+    left: 0px;
+    top: 56px;
+    color: #fff;
+    text-indent: 2px;
+    font: 12px/19px "微软雅黑";
+    padding-bottom: 1px;
+
+}
+.city .movie3 .hd{
+    position: absolute;
+    bottom: 4px;
+    right: 2px;
+}
+.city p{
+    margin-left: -4px;
+
+}
+.city p em{
+    display: block;
+    font: normal 12px/29px "微软雅黑";
+    color: #054bcf;
+   
+}
+.city p span{
+    display: block;
+    font: 12px/11px "微软雅黑";
+    color: #919191;
+   
+}
+.city li{
+    float: left;
+    margin-left: 26px;
+    padding-top: 19px;
+    padding-bottom: 14px;
+}
+.city .margin-small{
+    margin-left: 18px;
+}
+.clearfix:after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.down{
+    padding-left: 14px;
+}
+.down .from,
+.down .start{
+    float: left;
+}
+.down dt,
+.down dd{
+    font: 12px/22px "微软雅黑";
+    float: left;
+}
+.down dt{
+    color: #939393;
+    
+}
+.down dd{
+    color: #014dd4;
+    padding-right: 13px;
+    background: 
+        url(../images/ddsg.jpg)
+        no-repeat 29px top;
+}
+.down .start dd{
+    background: 
+        url(../images/ddsg.jpg)
+        no-repeat 32px top;
+
+}
+.down .from .none,
+.down .start .none{
+    background-image: none;
+}
+.down .start{
+    margin-left: 17px;
+}
+.foot{
+    padding-left: 14px;
+}
+.foot dd,
+.foot dt{
+    float: left;
+    font: 12px/22px "微软雅黑";
+}
+.foot dd{
+    color: #014dd4;
+    padding-right: 13px;
+    background: 
+        url(../images/ddsg.jpg)
+        no-repeat 29px top;
+}
+.foot dt{
+    color: #939393;
+
+}
+.foot .none{
+    background-image: none;
+}
+
+</style>
+</head>
+<body>
+    <div class="box1">
+            
+            <header class="intro clearfix">
+                    <nav class="tv1">
+                            <a href="#">最新电视剧</a><a href="#">大陆剧</a><a href="#">韩剧</a><a href="#">港台剧</a>
+                    </nav>
+                    <nav class="tv2">
+                        <a href="#">爱情有点蓝</a>
+                        <img src="../images/sg.jpg">
+                        <a href="#">风语</a>
+                        <img src="../images/sg.jpg">
+                        <a href="#">欢喜婆婆</a>
+                        <img src="../images/sg.jpg">
+                        <a href="#" class="special">延安爱情</a>
+                    </nav>
+            </header>
+            <div class="up">
+                <div class="gold">
+                    <div class="money">
+                        <h3>金牌剧场</h3>
+                        <em>盘龙云海药业</em>
+                        <span>首席赞助</span>
+                    </div>
+                    <ul>
+                        <li>&gt;&gt;解密《五星红旗》</li>
+                        <li>&gt;&gt;《宫》引发网友口水战</li>
+                    </ul>
+                    </div>
+                    <ul class="list">
+                        <li class="text">
+                            <div class="upup">
+                            <div class="picture">
+                            <img class="star1" src="../images/star1.jpg">
+                            <div class="black"> 
+                                    <p>40集全</p>
+                            </div>
+                                <img class="hd" src="../images/hd.png"></img>
+                            
+                            </div>
+                            <p>《五星红旗》大结局</p>
+                            </div>
+                            <ul class="txt">
+                                <li>央一武侠剧：侠隐记</li>
+                                <li>文章变特种兵：雪豹</li>
+                                <li>新武侠：怪侠一枝梅</li>
+                                <li>新包青天之七侠五义</li>
+                                <li>青春期撞上更年期！</li>
+                            </ul>
+                        </li>
+                        <li class="text rright">
+                            <div class="upup">
+                                <div class="picture">
+                                    <img class="star1" src="../images/star1.jpg">
+                                    <div class="black"> 
+                                            <p>40集全</p>
+                                    </div>
+                                        <img class="hd" src="../images/hd.png"></img>
+                                </div>
+                                <p>《五星红旗》大结局</p>
+                             </div>
+                            <ul class="txt">
+                                <li>凌潇肃唐一菲定情之作</li>
+                                <li>阿Sa蜜恋：呼叫大明星</li>
+                                <li>偶像阵容：幸福最晴天</li>
+                                <li>完整版本：爱情公寓2</li>
+                                <li>韩国原版：妻子的诱惑</li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
+            <ul class="city clearfix">
+                <li class="margin-small">
+                    <div class="movie1">
+                            <div class=" movie2">
+                                <div class="movie4">
+                                <div class="movie3">
+                                    <img class="star1" src="../images/movie1.jpg">
+                                    <div class="black"> 
+                                        <p>更新至6</p>
+                                    </div>
+                                    <img class="hd" src="../images/hd.png"></img>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                   
+                    <p>
+                        <em>江苏卫视：中国远征军</em>
+                        <span>黄志忠张丰毅枪林弹雨</span>
+                    </p>
+                </li>
+                <li>
+                    <div class="movie1">
+                            <div class=" movie2">
+                                <div class="movie4">
+                                <div class="movie3">
+                                    <img class="star1" src="../images/movie1.jpg">
+                                    <div class="black"> 
+                                        <p>更新至6</p>
+                                    </div>
+                                    <img class="hd" src="../images/hd.png"></img>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <p>
+                        <em>江苏卫视：中国远征军</em>
+                        <span>黄志忠张丰毅枪林弹雨</span>
+                    </p>
+                </li>
+                <li>
+                    <div class="movie1">
+                            <div class=" movie2">
+                                <div class="movie4">
+                                <div class="movie3">
+                                    <img class="star1" src="../images/movie1.jpg">
+                                    <div class="black"> 
+                                        <p>更新至6</p>
+                                    </div>
+                                    <img class="hd" src="../images/hd.png"></img>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <p>
+                        <em>江苏卫视：中国远征军</em>
+                        <span>黄志忠张丰毅枪林弹雨</span>
+                    </p>
+                </li>
+                <li>
+                    <div class="movie1">
+                                    <div class=" movie2">
+                                        <div class="movie4">
+                                        <div class="movie3">
+                                            <img class="star1" src="../images/movie1.jpg">
+                                            <div class="black"> 
+                                                <p>更新至6</p>
+                                            </div>
+                                            <img class="hd" src="../images/hd.png"></img>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    <p>
+                        <em>江苏卫视：中国远征军</em>
+                        <span>黄志忠张丰毅枪林弹雨</span>
+                    </p>
+                </li>
+            </ul>
+            <div class="down clearfix">
+                <dl class="from clearfix">
+                    <dt>地区:</dt>
+                    <dd>大陆</dd>
+                    <dd>香港</dd>
+                    <dd>韩国</dd>
+                    <dd>台湾</dd>
+                    <dd class="none">美国</dd>
+                </dl>
+                <dl class="start clearfix">
+                        <dt>上映:</dt>
+                        <dd>2010</dd>
+                        <dd>2009</dd>
+                        <dd>2008</dd>
+                        <dd>2007</dd>
+                        <dd>2006</dd>
+                        <dd>2005</dd>
+                        <dd class="none">2004</dd>
+                    </dl>
+            </div>
+            <dl class="foot clearfix">
+                <dt>类型:</dt>
+                <dd>言情</dd>
+                <dd>古装</dd>
+                <dd>都市</dd>
+                <dd>家庭</dd>
+                <dd>偶像</dd>
+                <dd>历史</dd>
+                <dd>警匪</dd>
+                <dd>搞笑</dd>
+                <dd>军事</dd>
+                <dd>武侠</dd>
+                <dd>时装</dd>
+                <dd>神话</dd>
+                <dd>农村</dd>
+                <dd class="none">科幻</dd>
+            </dl>
+        </div>
+</body>
+</html>

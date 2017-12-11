@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+body,
+p{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img{
+    vertical-align: top;
+    border: none;
+}
+.list li{
+    float: left;
+    width: 250px;
+    height: 300px;
+    background: yellow;
+    margin: 10px 20px 0;
+} 
+.list .picture{
+    width: 246px;
+    height: 200px;
+    background: red;
+    border: 2px solid pink;
+    margin: 0 auto;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.list img{
+    /* border: 2px solid blue; */
+    max-width: 100px;
+    max-height: 80px;
+}
+.list p{
+    text-align: center;
+} 
+</style>
+</head>
+<body>
+    <ul class="list">
+        <li>
+            <div class="picture">
+            <img src="img/img1.jpg" alt="">
+            </div>
+            <p> 需要居中的第一张图片</p>
+        </li>
+        <li>
+            <div class="picture">
+                <img src="img/img2.jpg" alt="">
+            </div>
+            <p> 需要居中的第二张图片</p>
+        </li>
+        <li>
+                <div class="picture">
+                    <img src="img/img3.jpg" alt="">
+                </div>
+                <p> 需要居中的第三张图片</p>
+            </li>
+    </ul>
+    
+</body>
+</html>

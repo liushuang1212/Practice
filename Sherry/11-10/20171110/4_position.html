@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style media="screen">
+div{
+    width: 100px;
+    height: 100px;
+}
+.div1{
+    background: red;
+}
+.div2{
+    background: green;
+    position:relative;
+    top:0px;
+    left:0px;
+}
+.div3{
+    background: blue;
+    position:relative;
+}
+</style>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</body>
+<!--
+    position 定位
+        - relative 相对定位
+            特性：
+                1.只写position是没有任何效果
+                2.在初始位置依旧占位，不脱离文档流
+                3.元素加了定位之后，层级也被提升
+                但是如果两个元素都具备定位，那么写在后面的会覆盖前面的
+                4.基于自己原来的位置进行坐标的计算
+
+                left/top/right/bottom
+ -->
+</html>

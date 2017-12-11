@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{
+				width:100px;
+				height:100px;
+				background-color:red;
+				transition: 1s;
+			}
+			#box:hover{
+				width: 200px;
+				height: 200px;
+				background-color: #0f0;
+			}
+			.line{
+				width: 400px;
+				height: 5px;
+				display: inline-block;
+				vertical-align: top;
+				background-color: #000;
+				transition: 1s;
+			}
+			/*#box:hover+.line{
+				margin-top: -100px;
+			}*/
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+		<span class="line"></span>
+	</body>
+</html>

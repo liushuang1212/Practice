@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+body{
+    margin: 0px;
+}
+.wrap{
+    width: 100px;
+    height: 100px;
+    padding: 100px;
+    border: 1px solid #000;
+    margin: 200px auto;
+    perspective: 600px;
+}
+.outside{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    transition: 3s;
+    transform-style: preserve-3d;
+}
+.inside{
+    width: 100px; 
+    height: 100px;
+    background-color: blue;
+    transform: rotateY(60deg);
+    
+}
+.wrap:hover .outside{
+    transform:rotateY(360deg);
+}
+
+</style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="outside">
+            <div class="inside"></div>
+        </div>
+    </div>
+</body>
+</html>

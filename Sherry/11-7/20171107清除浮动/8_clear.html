@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style media="screen">
+            section{
+                width: 200px;
+                /*height:120px;*/
+                border: 1px solid #000;
+            }
+            .box{
+                width:150px;
+                height: 30px;
+                float: left;
+                background: green;
+            }
+            .box1{
+                width:150px;
+                height: 30px;
+                float: right;
+                background: pink;
+            }
+            .clearfix{
+                clear: both;
+            }
+            .marg{
+                margin-top:40px;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="box">121212</div>
+            <div class="box1 marg">121212</div>
+            <div class="box marg">121212</div>
+            <div class="box">121212</div>
+            <div class="box">121212</div>
+            <div class="box">121212</div>
+            <div class="box1">4545</div>
+            <div class="box1">121212</div>
+            <div class="box1">121212</div>
+            <br clear="all">
+            <!-- <img width="300" style="" src="" alt=""> -->
+        </section>
+        <!--
+        第一种：
+        在浮动的最后加一个标签
+            <div class="clearfix"></div>
+            .clearfix{
+                clear: both;
+            }
+        第二种:
+        在浮动元素的最后加一个标签
+        <br clear="all">
+        clear - all/left/right
+         -->
+
+    </body>
+</html>

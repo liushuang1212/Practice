@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style media="screen">
+body{
+    margin:0px;
+}
+.nav{
+    margin:30px;
+}
+.nav a{
+    float: left;
+    padding:0 15px;
+    margin:0 15px;
+    font:bold 14px/40px "宋体";
+    color: #fff;
+    text-decoration: none;
+    background: url(../img2/nav.png) repeat-x;
+    position: relative;
+}
+.nav span{
+    position: absolute;
+    top: 0;
+    width: 28px;
+    height: 40px;
+}
+.navL{
+    left:-28px;
+    background: url(../img2/navL.png);
+}
+.navR{
+    right:-28px;
+    background: url(../img2/navR.png);
+}
+.nav a:hover{
+    color: #000;
+    background-image: url(../img2/navH.png);
+}
+.nav a:hover .navL {
+    background-image: url('../img2/navHL.png')
+}
+.nav a:hover .navR {
+    background-image: url('../img2/navHR.png')
+}
+</style>
+</head>
+<body>
+<nav class="nav">
+    <a href="#">首页<span class="navR"></span>
+    </a>
+
+    <a href="#"><span class="navL"></span>关们<span class="navR"></span>
+    </a>
+    <a href="#"><span class="navL"></span>关们<span class="navR"></span>
+    </a>
+    <a href="#"><span class="navL"></span>关们<span class="navR"></span>
+    </a>
+    <a href="#"><span class="navL"></span>关们
+    </a>
+</nav>
+</body>
+</html>

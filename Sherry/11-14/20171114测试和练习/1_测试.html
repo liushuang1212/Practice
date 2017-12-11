@@ -1,0 +1,213 @@
+n,<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+</head>
+<body>
+<h2>请说明浮动有什么样的特征？</h2>
+<ol>
+    <li>一行显示</li>
+    <li>支持宽高</li>
+    <li>控制浮动方向，遇到父级边界和上一个具有浮动的元素</li>
+    <li>解决margin重叠问题</li>
+    <li>触发BFC</li>
+    <li>不设置宽高由内容撑开</li>
+    <li>脱离文档流</li>
+    <li>提升层级</li>
+    <li>一行显示不下的时候，会换行显示</li>
+</ol>
+<h2>有多少种方法可以清除浮动？</h2>
+<ol>
+    <li>设置浮动元素的父级，添加伪类{content:'';display:block;clear:both;}</li>
+    <li>最后一个浮动元素的后面添加<br clear="all"></li>
+    <li>最后一个浮动元素的后面添加<div class="clearfix"></div>
+        {clear:both;}
+        *必须是个块标签
+    </li>
+    <li>触发BFC（父级）</li>
+    <li>固定高度</li>
+</ol>
+<h2>如何使一个宽200px高300px的div在屏幕中水平垂直居中？</h2>
+<ol>
+    <li>
+        margin填充区域
+    </li>
+    <li>
+        vertical-align:middle
+            1.加给父级（display:table-cell）
+            2.加给子集（居中方式根据同级的子集元素最高的那个，进行居中，为了让元素排列到一行，需要给他们都加上inline-block，注意：这里的最高的子集需要和父级的高度一致，才可以产生视觉上的效果，看着貌似是居中的）
+    </li>
+    <li>
+        定位——根据可视区（absolute）。
+        利用到left和top可以接受百分比的值
+        同时接受margin，进行居中
+    </li>
+</ol>
+<h2>标签嵌套的注意事项有哪些？</h2>
+<ol>
+    <li>ul里面必须是li</li>
+    <li>ol里面必须是li</li>
+    <li>dl里面必须是dt dd</li>
+    <li>dt里面不嵌套块</li>
+    <li>内嵌里面不嵌套块</li>
+    <li>a里面不嵌套a</li>
+    <li>h1-h6之间不要嵌套块标签</li>
+    <li>p标签中不建议嵌套块</li>
+</ol>
+<h2>默认样式的清除有哪些？</h2>
+<ol>
+    <li>margin:body,h1-h6,p,dl,dd</li>
+    <li>img:vertical-align:top;border:none;</li>
+    <li>a:text-decoration:none;color#000;</li>
+    <li>ul/ol margin/padding/list-style:none</li>
+</ol>
+<!-- body,h1-h6,p,dl,dd{margin:0;}margin的方向
+img
+下面存在间隙，ie存在默认边框
+-->
+<h2>如何利用边框写出一个三角形？（请写明具体代码）</h2>
+<ol>
+    <li>边框的接边是斜线</li>
+</ol>
+<h2>BFC的作用是什么？有哪些触发条件？</h2>
+<dl>
+    <dt>BFC触发是触发谁的</dt>
+    <dd>浮动元素的父级，触发BFC</dd>
+    <dt>BFC的作用是什么</dt>
+    <dd>1.包含浮动元素，让浮动（子集）参与计算</dd>
+    <dd>2.margin传递的问题</dd>
+    <dd>3.不被浮动元素覆盖</dd>
+    <dt>触发条件</dt>
+    <dd>1.float不为none</dd>
+    <dd>2.overflow不为visible</dd>
+    <dd>3.display：inline-block/display:table-cell/display:table-caption</dd>
+    <dd>4.position:fixed/absolute</dd>
+</dl>
+<h2>添加样式的方式有哪些？请分别说明各种方法的优缺点？</h2>
+<dl>
+    <dt>行间样式（在标签内通过style=""）</dt>
+    <dd>
+        优点：优先级高
+    </dd>
+    <dd>
+        缺点：
+            不符合样式、行为、结构的分离标准
+            代码可读性差
+            不能复用（代码多余）
+    </dd>
+    <dt>内部样式（在head中添加style，然后通过选择器进行样式于标签的绑定）</dt>
+    <dd>
+        优点：
+            代码可读性较高
+            可以进行单页面的复用
+            代码不多余
+    </dd>
+    <dd>
+        缺点：
+            不可以进行多页面复用
+            不利于维护
+    </dd>
+    <dt>外部样式（通过link标签引入一个.css后缀的文件）</dt>
+    <dd>
+        优点：
+            代码可读性高
+            可以多页面进行复用
+            利于维护修改
+    </dd>
+    <dd>
+        缺点：
+            优先级低
+            增加http请求
+            第一打开页面的时候会慢，后期会有缓存，打开速度正常
+            当前页面下有多余代码
+    </dd>
+</dl>
+<h2>请列出基础选择器的优先级顺序？</h2>
+<p>!important>style>id>class>tag>*</p>
+<h2>有多少种样式可以使元素的宽度由内容撑开？以及有多少种样式可以使元素脱离文档流?</h2>
+<dl>
+    <dt>有多少种样式可以使元素的宽度由内容撑开</dt>
+    <dd>
+        display:inline
+        display:inline-block
+        float:left/right
+        position:absolute/fixed
+    </dd>
+    <dt>以及有多少种样式可以使元素脱离文档流?</dt>
+    <dd>
+        float:left/right
+        position:absolute/fixed
+    </dd>
+</dl>
+<h2>margin的特性有哪些？</h2>
+<ol>
+    <li>不计算在元素宽高内</li>
+    <li>影响背景</li>
+    <li>上下margin有传递问题（嵌套）</li>
+    <li>margin-top、margin-left可用于定位</li>
+    <li>同级的情况，上元素的下margin会和下元素的上margin叠加，以大的为准</li>
+    <li>边框以外填充</li>
+</ol>
+<h2>请写出块，内嵌和内嵌块分别都有什么特征？</h2>
+<dl>
+    <dt>块</dt>
+    <dd>1.独占一行</dd>
+    <dd>2.不设置高度内容撑开</dd>
+    <dd>3.不设置宽度撑满父级</dd>
+    <dd>4.支持所有样式</dd>
+    <dt>内嵌</dt>
+    <dd>1.在一行显示</dd>
+    <dd>2.不支持宽高</dd>
+    <dd>3.换行产生间隙</dd>
+    <dd>4.上下margin/padding支持有问题</dd>
+    <dt>内嵌块</dt>
+    <dd>1.一行显示</dd>
+    <dd>2.支持所有样式</dd>
+    <dd>3.换行产生间隙</dd>
+    <dd>3.下方存在间隙，所以用vertical-align:top</dd>
+</dl>
+<h2>请分别写出你熟知的块、内嵌和内嵌块标签</h2>
+<dl>
+    <dt>块</dt>
+    <dd>div,p,ul,ol,li,dd,dt,dl,header,nav,section,footer,aside,article</dd>
+    <dt>内嵌</dt>
+    <dd>span,a,mark,time,cite,em,strong</dd>
+    <dt>内嵌块</dt>
+    <dd>img</dd>
+</dl>
+<h2>a标签中的伪类有哪些？分别是什么意思以及注意书写顺序是什么？</h2>
+<pre>
+a:link——未点击
+a:visited——点击过后
+a:hover——鼠标经过
+a:active——鼠标点击中
+</pre>
+<h2>target在a标签中有什么作用？有哪些属性？</h2>
+<dl>
+    <dt>target在a标签中有什么作用</dt>
+    <dd>定义链接打开的方式</dd>
+    <dt>有哪些属性</dt>
+    <dd>
+        _blank 在新的窗口打开
+        _self 在当前窗口打开
+    </dd>
+</dl>
+<h2>inline-block带来的问题如何解决？</h2>
+<ol>
+    <li>
+        <pre>
+            换行产生间隙：
+                1.不换行
+                2.父级加font-size：0
+                3.white-space：pre
+        </pre>
+
+    </li>
+    <li>
+        下方产生间隙，文本对齐方式不统一
+            vertical-align:top
+    </li>
+</ol>
+</body>
+</html>

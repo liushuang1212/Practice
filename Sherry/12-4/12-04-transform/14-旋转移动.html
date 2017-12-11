@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#wrap{
+				width:100px;
+				height:105px;
+				padding: 100px;
+				margin: 100px auto;
+				border: 1px solid #000;
+			}
+			#inner{
+				vertical-align: top;
+				width:100px;				
+				height:100px;
+				background-color:red;
+				font: 50px/2 "微软雅黑";
+				text-align: center;
+				color: #fff;
+				transition: 1s;
+			}
+			.line{
+				display: block;
+				height: 5px;
+				background-color: #000;
+			}
+			
+			#wrap:hover #inner{
+				/*transform: translateX( 300px );
+				transform: rotate( 360deg );*/
+				
+				/*transform: translateX( 300px ) rotate( 360deg );*/ 
+				transform: rotate( 360deg ) translateX( 300px ); 
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			
+		-->
+		
+		<div id="wrap">
+			<div id="inner">上</div>
+			<span class="line"></span>
+		</div>
+	</body>
+</html>

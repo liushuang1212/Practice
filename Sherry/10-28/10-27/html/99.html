@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 900px;
+            height: 621px;
+            background-image: url(../img/bj2.png);
+            padding-top: 29px;
+            font: 16px/36px "宋体";
+            text-indent: 48px;
+        }
+
+        .box1 {
+            width: 260px;
+            height: 573px;
+        }
+
+        .box2 {
+            margin-left: 16px;
+            background-color: #fff;
+            color: #3a3a3a;
+        }
+
+        .box3 {
+            margin-left: 310px;
+            margin-top: -573px;
+            background-color: #15b7de;
+            color: #fffef9;
+        }
+
+        .box4 {
+            margin-left: 619px;
+            margin-top: -573px;
+            background-color: #e15771;
+            color: #fffef9;
+        }
+
+        .yc {
+            /* height: 128px; */
+            border-bottom: 1px solid #d2d2d2;
+            /* padding-bottom:  */
+        }
+
+        .yc1 {
+            background: url(../img/ykh1.png) no-repeat 232px 22px;
+            padding-top: 11px;
+        }
+
+        .yc2 {
+            background: url(../img/dh1.png) no-repeat 20px 13px;
+        }
+
+        .yc3 {
+            background: url(../img/ykh1.png) no-repeat 232px 10px;
+            padding-bottom: 9px;
+        }
+
+        .ec {
+
+            border-bottom: 1px solid #d2d2d2;
+        }
+
+        .ec1 {
+            background: url(../img/yq1.png) no-repeat 20px 21px;
+            padding-top: 10px;
+        }
+
+        .ec2 {
+            padding-bottom: 10px;
+        }
+
+        .sc {
+            border-bottom: 1px solid #d2d2d2;
+        }
+
+        .sc1 {
+            padding: 10px 0;
+            background: url(../img/ykh1.png) no-repeat 232px 20px;
+        }
+
+        .fc {
+            border-bottom: 1px solid #d3d3d3;
+        }
+
+        .fc1 {
+            padding-top: 11px;
+        }
+
+        .fc2 {
+            padding-bottom: 9px;
+        }
+
+
+        .wc1 {
+            padding-top: 11px;
+            background: url(../img/ykh1.png) no-repeat 232px 21px;
+        }
+
+        .wc2 {
+            padding-bottom: 21px;
+        }
+
+        .yc1-1 {
+            background-image: url(../img/ykh2.png);
+        }
+
+        .yc2-1 {
+            background-image: url(../img/dh2.png);
+        }
+
+        .yc3-1 {
+            background-image: url(../img/ykh2.png);
+        }
+
+        .ec1-1 {
+            background-image: url(../img/yq2.png);
+        }
+
+        .sc1-1 {
+            background-image: url(../img/ykh2.png)
+        }
+
+        .wc1-1 {
+            background-image: url(../img/ykh2.png)
+        }
+
+        .yc11 {
+            background-image: url(../img/ykh3.png);
+        }
+
+        .yc21 {
+            background-image: url(../img/dh3.png);
+        }
+
+        .yc31 {
+            background-image: url(../img/ykh3.png);
+        }
+
+        .ec11 {
+            background-image: url(../img/yq3.png);
+        }
+
+        .sc11 {
+            background-image: url(../img/ykh3.png)
+        }
+
+        .wc11 {
+            background-image: url(../img/ykh3.png)
+        }
+
+        .box2 .yc1:hover,
+        .box2 .yc2:hover,
+        .box2 .yc3:hover,
+        .box2 .ec1:hover,
+        .box2 .ec2:hover,
+        .box2 .ec div:hover,
+        .box2 .sc1:hover,
+        .box2 .fc1:hover,
+        .box2 .fc2:hover,
+        .box2 .wc1:hover,
+        .box2 .wc2:hover {
+            background-color: #f6f6f6;
+        }
+
+        .box3 .yc1:hover,
+        .box3 .yc2:hover,
+        .box3 .yc3:hover,
+        .box3 .ec1:hover,
+        .box3 .ec2:hover,
+        .box3 .ec div:hover,
+        .box3 .sc1:hover,
+        .box3 .fc1:hover,
+        .box3 .fc2:hover,
+        .box3 .wc1:hover,
+        .box3 .wc2:hover {
+            background-color: #000000;
+        }
+
+        .box4 .yc1:hover,
+        .box4 .yc2:hover,
+        .box4 .yc3:hover,
+        .box4 .ec1:hover,
+        .box4 .ec2:hover,
+        .box4 .ec div:hover,
+        .box4 .sc1:hover,
+        .box4 .fc1:hover,
+        .box4 .fc2:hover,
+        .box4 .wc1:hover,
+        .box4 .wc2:hover {
+            background-color: #e8788e;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box1 box2">
+            <div class="yc">
+                <div class="yc1"> 工具栏（T）</div>
+                <div class="yc2"> 状态栏（B） </div>
+                <div class="yc3"> 浏览器栏（E）</div>
+
+            </div>
+            <div class="ec">
+                <div class="ec1">缩略图（H）</div>
+                <div>平铺（S）</div>
+                <div>图标（N）</div>
+                <div>列表（L）</div>
+                <div class="ec2">详细信息（D）</div>
+            </div>
+            <div class="sc">
+                <div class="sc1">排列图标（I）</div>
+
+            </div>
+            <div class="fc">
+                <div class="fc1">选择详细信息（C）…</div>
+                <div class="fc2">自定义文件夹（F）…</div>
+
+            </div>
+            <div class="wc">
+                <div class="wc1">转到（O）</div>
+                <div class="wc2">刷新（R）</div>
+            </div>
+        </div>
+        <div class="box1 box3">
+            <div class="yc">
+                <div class="yc1 yc1-1"> 工具栏（T）</div>
+                <div class="yc2 yc2-1"> 状态栏（B） </div>
+                <div class="yc3 yc3-1"> 浏览器栏（E）</div>
+
+            </div>
+            <div class="ec">
+                <div class="ec1 ec1-1">缩略图（H）</div>
+                <div>平铺（S）</div>
+                <div>图标（N）</div>
+                <div>列表（L）</div>
+                <div class="ec2">详细信息(D)</div>
+            </div>
+            <div class="sc">
+                <div class="sc1 sc1-1">排列图标（I）</div>
+
+            </div>
+            <div class="fc">
+                <div class="fc1">选择详细信息（C）…</div>
+                <div class="fc2">自定义文件夹（F）…</div>
+
+            </div>
+            <div class="wc">
+                <div class="wc1 wc1-1">转到（O）</div>
+                <div class="wc2">刷新（R）</div>
+            </div>
+        </div>
+        <div class="box1 box4">
+            <div class="yc">
+                <div class="yc1 yc11"> 工具栏（T）</div>
+                <div class="yc2 yc21"> 状态栏（B） </div>
+                <div class="yc3 yc31"> 浏览器栏（E）</div>
+
+            </div>
+            <div class="ec">
+                <div class="ec1 ec11">缩略图（H）</div>
+                <div>平铺（S）</div>
+                <div>图标（N）</div>
+                <div>列表（L）</div>
+                <div class="ec2">详细信息（D）</div>
+            </div>
+            <div class="sc">
+                <div class="sc1 sc11">排列图标（I）</div>
+
+            </div>
+            <div class="fc">
+                <div class="fc1">选择详细信息（C）…</div>
+                <div class="fc2">自定义文件夹（F）…</div>
+
+            </div>
+            <div class="wc">
+                <div class="wc1 wc11">转到（O）</div>
+                <div class="wc2">刷新（R）</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

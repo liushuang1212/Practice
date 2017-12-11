@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style media="screen">
+.box{
+    width: 300px;
+    border:10px solid orange;
+    /*height: 450px;*/
+}
+.div1{
+    width: 300px;
+    height: 150px;
+    background: red;
+    float: left;
+}
+.div2{
+    width: 300px;
+    height: 150px;
+    background: green;
+    float: left;
+}
+.div3{
+    width: 300px;
+    height: 150px;
+    background: blue;
+    float:right;
+}
+.clearfix{
+    clear: both;
+    width:100px;
+    height: 100px;
+    background: pink;
+}
+.box:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+</style>
+</head>
+<body>
+    <div class="box">
+        <!-- before -->
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <!-- after -->
+        <!-- <br clear="all"> -->
+        <!-- <div class="clearfix"></div> -->
+        <!-- <span class="clearfix"></span> -->
+        <!--
+            clear:
+                1. 只对它前面的元素起效
+                2. 清除前面指定方向上的浮动
+                3. 块元素或者br 为了达到换行拉开距离的效果
+
+            before
+            after
+        -->
+
+    </div>
+</body>
+</html>

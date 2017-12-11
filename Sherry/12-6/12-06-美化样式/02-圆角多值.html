@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{
+				width:100px;
+				height:200px;
+				background-color:red;
+				/*为元素设置圆角*/
+				/*border-radius: 10px;*/
+				/*border-radius: 10px 50px;*/
+				/*border-radius: 10px 50px 20px;*/
+				border-radius: 0px 10px 20px 30px;
+				
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<!--
+			border-radius
+				1个值
+					四个角
+				2个值
+					( 左上右下 )( 右上左下 )
+				3个值
+					(左上)( 右上左下 )( 右下 )
+				4个值
+					(左上)(右上)(右下)(左下)
+		-->
+		<div id="box"></div>
+	</body>
+</html>

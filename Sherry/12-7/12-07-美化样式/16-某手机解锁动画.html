@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				background-color: #000;			
+			}
+			.title{
+				font: bold 150px/1.5 "微软雅黑";
+				text-align: center;
+				color: #fff;
+				background: linear-gradient(
+					30deg,
+					transparent 0%,
+					transparent 30%,
+					#fff 50%,
+					transparent 70%,
+					transparent 100%
+				) -1000px 0 no-repeat;
+				color: rgba(255,255,255,0.3);
+				-webkit-background-clip: text;
+				animation: go 2s infinite;
+			}
+			/*.title:hover{
+				background-position-x: 1000px;
+			}*/
+			@keyframes go{
+				from{
+					background-position-x: -1000px;
+				}
+				to{
+					background-position-x: 1000px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<h2 class="title">滑动来解锁</h2>
+	</body>
+</html>

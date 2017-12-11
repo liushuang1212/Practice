@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+div{
+    width: 300px;
+    height: 400px;
+    border: 1px solid pink;
+    font: 15px/2 "微软雅黑";
+}
+.up:first-letter{
+    font-size: 30px;
+    color: red;
+}
+.down span{
+    font-size: 30px;
+    color: red;
+    float: left;
+}
+/* 注意想要的效果
+    - 如果想要，只是改变首字母的大小，颜色之类，就用first-letter   
+            - 书写格式 选择器:first-letter 写入要加的样式
+    - 如果想要，需要文字对第一个字母环绕的效果，要用单独的标签来包首字母，对此标签设置样式并让其浮动，脱离文档流来实现文字环绕效果 */
+</style>
+</head>
+<body>
+    <div class="up">今天天气不错，阳光普照，适合出游今天天气不错，阳光普照，适合出游今天天气不错，阳光普照，适合出游今天天气不错，阳光普照，适合出游今天天气不错，阳光普照，适合出游今天天气不错，阳光普照，适合出游今天天气不错，阳光普照，适合出游</div>
+    <div class="down"><span>今</span>天天气不错，阳光普照，适合出游今天天气不错，阳光普照，适合出游今天天气不错，阳光普照，适合出游今天天气不错，阳光普照，适合出游今天天气不错，阳光普照，适合出游今天天气不错，阳光普照，适合出游今天天气不错，阳光普照，适合出游</div>
+</body>
+</html>

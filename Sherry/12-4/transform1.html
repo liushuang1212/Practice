@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .box{
+            width: 200px;
+            height: 50px;
+            background-color: orange;
+            transition: 1s;
+        }
+        .box:hover{
+            transform: scale(2);
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            margin-top: 100px;
+            background-color: red;
+            transition: 5s;
+        }
+        .box1:hover{
+            transform: rotate(2turn);
+        }
+        .box2{
+            width: 100px; 
+            height: 100px;
+            background-color: green;
+            transition: 2s;
+            float: right;
+        }
+        .box2:hover{
+            transform: rotate(.3rad);
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            background-color: blue;
+            transition: 1s;
+            font: 40px/100px "宋体";
+            color: #fff;
+            text-align: center;
+            transform-origin: center;
+        }
+        .box3:hover{
+            transform: scale(2,.5);
+        }
+        .box4{
+            width: 300px;
+            height: 100px;
+            background: black;
+            font: 40px/100px "宋体";
+            color: #fff;
+            text-align: center;
+            margin: 0 auto;
+            transition: 2s;
+            /* transform-origin: left bottom; */
+            
+        }
+        .box4:hover{
+            transform: skew(60deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3">下</div>
+    <div class="box4">晨</div>
+    
+</body>
+</html>

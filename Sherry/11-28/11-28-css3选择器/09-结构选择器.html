@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			
+			/*.list li{
+				border: 3px solid #000;
+			}*/
+			
+			/*父级选择器>子级选择器*/
+			/*选择到父级下一级的子元素*/
+			.list>li{
+				border: 3px solid #000;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="list">
+			<li>第1项</li>
+			<li>
+				第2项
+				<ul>
+					<li>2-1</li>
+					<li>2-2</li>
+					<li>2-3</li>
+				</ul>
+			</li>
+			<li>第3项</li>
+			<li>第4项</li>
+			<li>第5项</li>
+		</ul>
+	</body>
+</html>

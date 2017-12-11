@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>A</title>
+<style media="screen">
+table{
+    /*border-spacing: 0px;*/
+    border-collapse: collapse;
+    width: 300px;
+}
+td,th{
+    padding:0;
+    /*vertical-align: bottom;*/
+}
+</style>
+</head>
+<body>
+    <table border="1">
+        <caption>课程表</caption>
+        <thead>
+            <tr>
+                <th colspan="2"></th>
+                <th>周一</th>
+                <th>周二</th>
+                <th>周三</th>
+                <th>周四</th>
+                <th>周五</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">上午</td>
+                <td>1</td>
+                <td>语文</td>
+                <td>语文</td>
+                <td>语文</td>
+                <td>语文</td>
+                <td>语文</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>数学</td>
+                <td>数学</td>
+                <td>语文</td>
+                <td>数学</td>
+                <td>语文</td>
+            </tr>
+            <tr>
+                <td rowspan="2">下午</td>
+                <td>3</td>
+                <td>数学</td>
+                <td>数学</td>
+                <td>语文</td>
+                <td>数学</td>
+                <td>语文</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>数学</td>
+                <td>数学</td>
+                <td>语文</td>
+                <td>数学</td>
+                <td>语文</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="7">1</td>
+            </tr>
+        </tfoot>
+    </table>
+<!--
+    border - 表格的边框
+    cellspacing - 单元格的间距（th或者td加了margin）
+    *border-spacing 样式表内用这个
+
+    cellpadding - 单元格的内填充（th或者td加了padding）
+    * padding
+
+
+    样式表：
+    border-spacing 单元格间距
+    border-collapse  合并边框
+
+    默认样式
+        th，td —— padding：0
+        table - border-collapse
+
+    行间样式：
+        rowspan 行合并 垂直方向合并
+        colspan 列合并 水平方向的合并
+
+    元素在单元格内，默认垂直居中状态
+    对齐方式的修改使用：vertical-align
+
+    table
+    caption
+    thead
+        tr - th
+    tbody
+        tr - td
+    tfoot
+        tr - td
+    内容写在
+        caption
+        th
+        td
+        内部可以添加内容
+ -->
+</body>
+</html>

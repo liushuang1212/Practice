@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#wrap{
+				width:100px;
+				height:100px;
+				padding: 100px;
+				border: 1px solid #000;
+				margin: 100px auto;
+				perspective: 1000px;
+			}
+			#inner{
+				width:100px;
+				height:100px;
+				transition: .5s;
+				background: url(1.jpg) no-repeat center;
+				background-size: contain;
+			}
+			#wrap:hover #inner{
+				transform: translateZ( 990px );
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			景深
+
+				站在多远的距离看元素
+			注意，景深加给3d的元素的父级
+			
+		-->
+		<div id="wrap">
+			<div id="inner"></div>
+		</div>
+	</body>
+</html>

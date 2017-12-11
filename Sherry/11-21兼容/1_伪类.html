@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style media="screen">
+    .box{
+        width: 100px;
+        height: 100px;
+        border: 1px solid #000;
+    }
+    .box:hover{
+        background: red;
+    }
+    a:hover{
+        color: red;
+        font-size: 40px;
+    }
+    .box:after{
+        content: '你好今天是兼容性';
+    }
+</style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+    <a href="#">百度</a>
+    <!--
+        在ie6一下，除了a标签接受
+        link visited hover active，别的都不可以
+        ie7下，接受给任何元素添加hover
+        ie8开始,接受before和after伪类
+        
+        解决方法：js
+    -->
+</body>
+</html>

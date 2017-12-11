@@ -1,0 +1,301 @@
+.content{
+    width: 100%;
+    height: 100%;
+    background: 
+        #fff
+        url(../img/top_listbj.jpg)
+        repeat-x;
+    padding-top: 60px;
+}
+.content_left{
+    border: 1px solid #f0f0f0;
+    float: left;
+    margin-right: 15px;
+}
+.content_left dt{
+    font: 17px/60px "微软雅黑";
+    border-bottom: 1px solid #f0f0f0;
+    margin: 0px 16px 10px 17px;
+    color: #333;
+}
+.content_left dd{
+    font: 14px/22px "微软雅黑";
+    padding: 7px 29px 9px 17px;
+}
+.content_left a{
+    color: #333;
+    display: block;
+    max-width: 105px;
+}
+.content_left .left_up{
+    padding-bottom: 29px;
+}
+.content_left a:hover{
+    color: #31c27c;
+}
+.content_right{
+    float: left;
+}
+.content_right h1{
+    float: left;
+    font: 24px/64px  "微软雅黑";
+    padding-bottom: 12px;
+}
+.content_right p{
+    float: left;
+    padding: 24px 0px 36px 22px;
+    font: 14px/14px "微软雅黑";
+    color: #333;
+}
+.content_right p a:hover{
+    color: #31c27c; 
+}
+.right_middle a{
+    float: left;
+    margin-right: 6px;
+    border: 1px solid #e7e7e7;
+    font: 14px/36px "微软雅黑";
+}
+.right_middle .middle1{
+    padding-left: 42px;
+    padding-right: 23px;
+    background: 
+        url(../img/top_list_middle1.png)
+        no-repeat 23px 10px;
+}
+.right_middle .middle1:hover{
+    color:#fff;
+    background-image:url(../img/top_list_middleafter1.png);
+    background-color:#31c27c; 
+    border: 1px solid #31c27c;  
+}
+.right_middle .middle2{
+    padding-left: 50px;
+    padding-right: 28px;
+    background: 
+        url(../img/top_list_middle2.png)
+        no-repeat 28px 10px;
+}
+.right_middle .middle2:hover{
+    color:#fff;
+    background-image:url(../img/top_list_middleafter2.png);
+    background-color:#31c27c; 
+    border: 1px solid #31c27c;  
+}
+.right_middle .middle3{
+    padding-left: 57px;
+    padding-right: 35px;
+    background: 
+        url(../img/top_list_middle3.png)
+        no-repeat 35px 10px;
+}
+.right_middle .middle3:hover{
+    color:#fff;
+    background-image:url(../img/top_list_middleafter3.png);
+    background-color:#31c27c; 
+    border: 1px solid #31c27c;  
+}
+.right_middle .middle4{
+    padding-left: 45px;
+    padding-right: 23px;
+    background: 
+        url(../img/top_list_middle4.png)
+        no-repeat 23px 10px;
+}
+.right_middle .middle4:hover{
+    color:#fff;
+    background-image:url(../img/top_list_middleafter4.png);
+    background-color:#31c27c; 
+    border: 1px solid #31c27c;  
+}
+.body_up{
+    font: 14px/14px "微软雅黑";
+    color: #333;
+    padding: 37px 49px 19px 122px;
+}
+.body_up li{
+    float: left;
+}
+.body_up .up_songs{
+    padding-right: 377px;
+}
+.body_up .up_singers{
+    padding-right: 111px;
+}
+.body_middle .middle_first{
+    padding: 20px 0px;
+    padding-right: 49px;
+    font: 14px/40px "微软雅黑";
+}
+.body_middle .middle_first:hover .middle_icons{
+    display: block;
+}
+.body_middle .middle_first:hover .middle_many a:last-of-type{
+    max-width: 69px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.body_middle .middle_first:nth-of-type(2n){
+    background-color: #fbfbfd;
+}
+ .body_middle .middle_first:nth-of-type(1) .middle_number,
+ .body_middle .middle_first:nth-of-type(2) .middle_number,
+.body_middle .middle_first:nth-of-type(3) .middle_number{
+    color: #ff8e7f;
+}
+/*在此用css3中的伪类选择器，还可以用另一种方法，.body_middle .middle_first:nth-of-type(-n+3) */
+
+.middle_number{
+    float: left;
+    width: 40px;
+    font: 24px/40px Arial;
+    text-align: right;
+}
+.middle_rate{
+    float: left;
+    width: 82px;
+    font: 12px/60px "微软雅黑";
+    background: 
+        url(../img/middle_ratebj.png)
+        no-repeat center 8px;
+    text-align: center;
+}
+.middle_many{
+    float: left;
+    max-width: 339px;
+    overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.middle_many a{
+    float: left;
+}
+.middle_many a:hover{
+    color:#31c27c;
+}
+.middle_many a:last-of-type{
+    padding-left: 5px;
+    font: 14px/40px "微软雅黑";
+    max-width: 230px;
+    overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+/* CSS3里面的选择器 last-of-type 在ie8以及ie之下不能兼容 */
+.middle_many a strong{
+    display: inline-block;
+    vertical-align: top;
+    font: normal 14px/40px "微软雅黑";
+    color: #c5c5c5;
+    max-width: 115px;
+    overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.middle_many span{
+    width: 34px;
+    height: 16px;
+    float: left;
+    background: 
+        url(../img/many_self.png)
+        no-repeat left 12px;
+    padding: 12px 0 32px;
+}
+.middle_many em{
+    width: 33px;
+    height: 16px;
+    float: left;
+    background:  
+        url(../img/many_MV.png)
+        no-repeat left 12px;
+        padding: 12px 0 32px;
+    margin-left: 5px;
+}
+.middle_icons{
+    display: none;
+    float: left;
+    width: 206px;
+    height: 60px;
+}
+.middle_icons ul{
+    float:right;
+    margin-top: 7px;
+}
+.middle_icons li{
+    float: left;
+    margin-right: 7px;
+}
+.middle_icons li:last-of-type{
+    margin-right: 0px;
+}
+/* last-of-type 用了css3中的伪类选择器 */
+.middle_icons li a{
+    display: block;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background: 
+        url(../img/middle_icons1.png)
+        no-repeat;
+}
+.middle_icons li:nth-of-type(2) a{
+    background: 
+        url(../img/middle_icons2.png)
+        no-repeat;
+}
+.middle_icons li:nth-of-type(3) a{
+    background: 
+        url(../img/middle_icons3.png)
+        no-repeat;
+}
+.middle_icons li:nth-of-type(4) a{
+    background: 
+        url(../img/middle_icons4.png)
+        no-repeat;
+}
+.middle_name{
+    float: right;
+    font: 14px/40px "微软雅黑";
+    color: #333;
+    width: 165px;
+    margin-left: 15px;
+   
+}
+.middle_name a{
+    float: left;
+    max-width: 110px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.middle_name a:hover{
+    color: #31c27c;
+}
+.middle_name time{
+    float: right;
+    font: 14px/40px "微软雅黑";
+    color: #d5d5d5;   
+}
+.body_down{
+    text-align: center;
+    padding: 60px 0px;
+}
+.body_down ul{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0px;
+}
+.body_down li{
+    float: left;
+}
+.body_down li a{
+    display: block;
+    font: 15px/48px "微软雅黑";
+    padding: 0px 21px 2px;
+    color: #333;
+}
+.body_down li a:hover{
+    color: #fff;
+    background: #31c27c;
+}

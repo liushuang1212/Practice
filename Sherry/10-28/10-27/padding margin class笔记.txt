@@ -1,0 +1,51 @@
+padding 和 margin 
+	padding 内填充
+        - 边框以内的区域进行填充
+        - padding不计算在宽度以及高度内
+        - 背景不会受到padding的影响，依旧从左上角开始 
+
+		padding 接受多值
+		接受单方向指定
+            - padding-top: 30px 
+            - padding-right
+            - padding-bottom
+            - padding-left		padding-top padding-left
+
+	margin 外填充
+		- 在边框以外进行填充
+		- 接受多值，四种方式
+				-一个值 上下左右  margin: 5px;
+				-两个值 上下  左右
+				-三个值 上 左右 下
+				-四个值 上 右 下 左 margin: 20px 30px 23px 45px
+                    - margin: auto;和 margin：0 auto; 上下不填充 左右居中 
+        - 接受单方向指定
+		    - margin-left 
+            - margin-top 
+            - margin-right 
+            - margin-bottom
+        - margin 特性
+        	- 子级会传递给父级margin值 直至遇到同级则停止，若遇不到同级则找到最上面的父级
+        - margin-top 和 margin-left 这两个值可以作为定位上面的使用，接受负值
+        - margin-bottom 和margin-right 这两个值不会有效果
+        - margin-left：auto 向右
+        - margin-right：auto 向左
+    
+
+	margin和padding 都是复合值 
+	** 复合值可以覆盖单条属性** 
+        - 推荐同级使用margin 因为嵌套关系会产生传递
+        - 嵌套关系用padding
+	    - 同级元素，上下margin会重叠 上元素的margin-bottom会和下元素的margin-top重叠，哪个margin值大就显示哪个
+	盒模型：margin(外填充）+border（边框）+padding（内填充）+content
+	浏览器内选中该元素提供大小：content+padding+border	
+
+
+class 元素选择器
+    - 命名可以重复
+    - 开头不能以数字 中文和特殊符号（-_除外）
+
+
+
+
+	

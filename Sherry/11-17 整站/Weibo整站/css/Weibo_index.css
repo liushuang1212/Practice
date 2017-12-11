@@ -1,0 +1,375 @@
+.banner{
+    width: 100%;
+    height: 350px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+      
+}
+.banner .list{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+    width: 9000px;
+    animation: move 15s linear infinite;
+}
+.banner .list:hover{
+    animation-play-state: paused;
+}
+/* 当鼠标放入轮播图时,轮播图暂停轮播 */
+.banner .banner_move{
+    float: left;
+    width: 1500px;
+    height: 350px;
+}
+@keyframes move{
+    0%{
+        transform: translateX(0px);
+
+    }
+    10%{
+        transform: translateX(0px);
+    }
+    20%{
+        transform: translateX(-1500px);
+    }
+    30%{
+        transform: translateX(-1500px);
+    }
+    40%{
+        transform: translateX(-3000px);
+    }
+    50%{
+        transform: translateX(-3000px);
+    }
+    60%{
+        transform: translateX(-4500px);
+    }
+    70%{
+        transform: translateX(-4500px);
+    }
+    80%{
+        transform: translateX(-6000px);
+    }
+    90%{
+        transform: translateX(-6000px);
+    }
+    100%{
+        transform: translateX(-7500px);
+    }
+
+
+}
+/*
+     第一次: 第一张
+     transform: translateX(0px);
+     第二次: 第一张到第二张
+     transform: translateX(-1500px);
+     第三次: 第二张
+     transform: translateX(-1500px);
+     第四次:  第二张到第三张
+     transform: translate(-3000px);
+     第五次: 第三张
+     transform: translate(-3000px);
+     第六次: 第三张到第四张
+     transform: translate(-4500px);
+     第七次: 第四张
+     transform: translate(-4500px);
+     第八次: 第四张到第五张
+     transform: translate(-6000px);
+     第九次: 第五张
+     transform: translate(-6000px);
+     第十次: 第五张到第六张
+     transform: translate(-7500px);
+*/
+
+.banner_points{
+    position: absolute;
+    left: 50%;
+    top: 313px;
+    margin-left: -45px;
+    z-index: 5;
+    height: 37px;
+}
+.banner_points ul{
+    text-align: center;
+    font-size: 0px;
+}
+.banner_points li{
+    display: inline-block;
+    vertical-align: top;
+}
+.banner_points li a{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #0463b6;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    transition: 500ms;
+}
+.banner_points li:last-of-type a{
+    margin-right: 0px;
+}
+.banner_points li a:hover{
+    background-color: #5db5ec;
+}
+.function{
+    height: 182px;
+    padding-top: 18px;
+    margin-bottom: 21px;
+    background:
+        url(../img/bg_route_display.png)
+        no-repeat center top;
+}
+
+.function li{
+    float: left;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+}
+.function li:last-of-type{
+    margin-right: 0px;
+}
+/* 用了CSS3的选择器 */
+.function a{
+    display: block;
+    width: 229px;
+    height: 157px;
+    border-width:3px;
+    border-style: solid;
+    border-color:#fff;
+    transition: 400ms;
+} 
+.function a:hover{
+    border-color: #add5ed;
+}
+/* 下面每个a链接的背景图不同 */
+.function li:nth-of-type(1) a{
+    background:
+    #fff
+    url(../img/home_route.png)
+    no-repeat 17px -139px;
+}
+.function li:nth-of-type(2) a{
+    background:
+    #fff
+    url(../img/home_route.png)
+    no-repeat -175px -139px;
+}
+.function li:nth-of-type(3) a{
+    background:
+    #fff
+    url(../img/home_route.png)
+    no-repeat -365px -139px;
+}
+.function li:nth-of-type(4) a{
+    background:
+    #fff
+    url(../img/data_05.png)
+    no-repeat center center;
+}
+.content{
+    height: 1494px;
+    width: 882px;
+    border: 1px solid #e9ebeb;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 43px 48px 0px;
+}
+.title{
+    height: 40px;
+}
+.title h2{
+    float: left;
+    font: 23px/40px "黑体";
+    color: #333;
+}
+.title h2 em{
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: 
+    url(../img/new_icons.png)
+    no-repeat left 5px;
+}
+.more{
+    float: right;
+    padding-bottom: 5px;
+}
+.more a{
+    display:block;
+    font: 12px/26px "微软雅黑";
+    color: #3c7cb3;
+}
+.details{
+    padding-bottom: 26px;
+    background: 
+        url(../img/line.png)
+        no-repeat center bottom;
+}
+.details li{
+    float: left;
+    width: 360px;
+    margin-right: 80px;
+}
+.details a{
+    float: left;
+    font: 12px/30px "微软雅黑";
+}
+.details a:active{
+    text-decoration: underline;
+}
+.details span{
+    float: right;
+    font: 12px/30px "微软雅黑";
+    color: #999;
+}
+.introduction li{
+    padding-bottom:61px;
+    padding-top: 59px;
+    
+}
+.introduction li:nth-of-type(1){
+    background: 
+    url(../img/section1.png)
+    no-repeat 8px 62px;
+
+}
+.introduction li:nth-of-type(2){
+    padding-left: 479px;
+    padding-bottom: 51px;
+    padding-top: 49px;
+    background: 
+    url(../img/section2.png)
+    no-repeat 0px 45px;
+}
+.introduction li:nth-of-type(3){
+    padding-bottom: 51px;
+    background: 
+    url(../img/section3.png)
+    no-repeat 0px 25px;
+}
+.introduction h3{
+    font: bold 32px/56px "微软雅黑";
+}
+.introduction p{
+    width: 352px;
+    font: 16px/30px "微软雅黑";
+    color:#999;
+}
+.introduction a{
+    display: block;
+    margin-top: 12px;
+    width: 130px;
+    height: 40px;
+    background: 
+        url(../img/new_icons.png)
+        no-repeat 0px -51px;
+}
+.designer{
+    padding-top: 23px;
+    padding-bottom: 14px;
+}
+.designer h2{
+    float: left;
+    font: 22px/40px "微软雅黑";
+    color: #333;
+}
+.designer h2 em{
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: 
+    url(../img/new_icons.png)
+    no-repeat -50px 5px;
+
+}
+.apps{
+    padding-left: 46px;
+}
+.apps li{
+    float: left;
+    margin-right: 62px;
+}
+.apps li:last-of-type{
+    margin-right: 0px;
+}
+/* css3选择器 */
+.apps_img{
+    display:block;
+    width: 80px;
+    height: 80px;
+}
+.apps_img img{
+    width: 80px;
+    height: 80px;
+    border-radius:17.5%
+}
+.apps_name{
+    display:block;
+    margin-top: 4px;
+    font: bold 14px/27px "微软雅黑";
+    text-align: center;
+}
+.apps_name:hover{
+    text-decoration: underline;
+}
+.triangle{
+    height: 9px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+.xiaosanjiao{
+    position: absolute;
+    left: 73px;
+    top: -9px;
+    border:9px solid transparent;
+    border-bottom: 9px solid #e0e0e0;
+}
+.upxiaosanjiao{
+    position: absolute;
+    left: 76px;
+    bottom: 0px;
+    z-index: 10;
+    border: 6px solid transparent;
+    border-bottom: 6px solid #f3f5f5;
+}
+.apps_introductions{
+    height: 108px;
+    padding:0px 45px 48px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+.intro_txt{
+    border: 1px solid #e0e0e0;
+    border-radius: 1px;
+    background-color: #f3f5f5;
+    font: 14px/22px "微软雅黑";
+    padding: 20px 20px 42px 19px;
+   
+}
+.border_cover{
+    width: 14px;
+    height: 1px;
+    background-color: #f3f5f5;
+    position: absolute;
+    left: 75px;
+    top: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+

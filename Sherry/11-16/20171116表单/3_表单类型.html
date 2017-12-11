@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style media="screen">
+    table{
+        width: 500px;
+        margin:0 auto;
+    }
+</style>
+</head>
+<body>
+    <form action="https://www.baidu.com/s">
+        <table>
+            <tbody>
+                <tr>
+                    <td>文本输入框:</td>
+                    <td><input placeholder="妙味课堂" value="" name="textname" type="text"> </td>
+                </tr>
+                <tr>
+                    <td>提交按钮:</td>
+                    <td><input type="submit"></td>
+                </tr>
+                <tr>
+                    <td>密码:</td>
+                    <td><input name="pw" type="password"></td>
+                </tr>
+                <tr>
+                    <td>单选:</td>
+                    <td>
+                        <input name="gender" type="radio" value="男">男
+                        <input name="gender" type="radio" value="女">女
+
+                        <input name="relat" type="radio">同学
+                        <input name="relat" type="radio">同事
+                    </td>
+                </tr>
+                <tr>
+                    <td>多选</td>
+                    <td>
+                        <input name="sport" type="checkbox" value="篮球">篮球
+                        <input name="sport" type="checkbox" value="足球">足球
+                        <input name="sport" type="checkbox" value="乒乓球">乒乓球
+
+
+                        <input name="game" type="checkbox">王者荣耀
+                        <input name="game" type="checkbox">阴阳师
+                        <input name="game" type="checkbox">吃鸡
+                    </td>
+                </tr>
+                <tr>
+                    <td>下拉选框：</td>
+                    <td>
+                        <select>
+                            <option>北京</option>
+                            <option>上海</option>
+                            <option>深圳</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>文本域:</td>
+                    <td><textarea name="name" rows="2" cols="30"></textarea> </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <!--
+        form - 表单
+        action - 提交地址
+        method - 提交方式
+            - get
+            - post
+        input
+            - text 文本框类型
+            - submit 提交
+            - radio 单选（以name为分组）
+            - checkbox 多选框（以name为分组）
+        name - 区分你提交的数据（会出现在你的导航栏地址上）
+        value - 默认值、提示(表单内容)
+            * 密码不适合用value
+            * 多选和单选的情况一定要加value
+        placeholder - 提示
+    -->
+</body>
+</html>

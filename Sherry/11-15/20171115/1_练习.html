@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style media="screen">
+body,
+p,
+dl,
+dd{
+    margin:0px;
+}
+a{
+    text-decoration: none;
+    color: #004fcd;
+}
+ul{
+    margin:0px;
+    padding:0px;
+    list-style: none;
+}
+.clearfix:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.box{
+    width: 608px;
+    height: 395px;
+    border: 5px solid #000;
+    margin:0 auto;
+}
+.box header{
+    height: 30px;
+    border-bottom: 1px solid #e5e5e7;
+    border-top: 1px solid #e5e5e7;
+    background: #eaf9fe;
+}
+.nav_left{
+    float:left;
+}
+.nav_left a{
+    float: left;
+    height: 30px;
+    border: 1px solid #e5e5e7;
+    color: #054ece;
+    padding: 0 14px;
+    margin-left: -1px;
+    margin-top: -1px;
+    font: 14px/30px "宋体";
+}
+.nav_left .no-margin{
+    margin-left: 0;
+}
+.nav_left .active{
+    border-bottom:1px solid #fff;
+    background: #fff;
+    font-weight: bold;
+}
+.nav_right{
+    float: right;
+}
+.nav_right a{
+    float: left;
+    padding:0 9px 0 8px;
+    background:
+            url(img/icon1.jpg)
+            no-repeat right center;
+    font:12px/30px "宋体";
+}
+.nav_right .last{
+    padding-right: 14px;
+    background:none;
+}
+.tab{
+    height: 141px;
+    border-bottom: 1px solid #e5e5e5;
+    padding:14px 14px 0 14px;
+}
+.brand{
+    height: 28px;
+    /*padding: 14px 14px 0 14px;*/
+}
+.brand_left{
+    float: left;
+}
+.brand_left p{
+    float: left;
+}
+.jpjc{
+    width: 79px;
+    height: 18px;
+    background:
+            url(img/img1.jpg)
+            no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+}
+.pl{
+    width: 117px;
+    height: 18px;
+    background:
+            url(img/img2.jpg)
+            no-repeat;
+    margin-left: 21px;
+    line-height: 200px;
+    overflow: hidden;
+}
+.brand_txt{
+    font: 12px/25px "宋体";
+    padding-left: 8px;
+    color: #004fcf;
+}
+.brand_right{
+    float: right;
+}
+.brand_right a{
+    font:12px/19px "宋体";
+    color: #044fc4;
+    padding-left: 15px;
+}
+.list li{
+    width: 258px;
+    float: left;
+    padding-right: 42px;
+}
+.list .no-padding{
+    padding:0;
+}
+.list_left{
+    width: 128px;
+    float: left;
+}
+.list_img{
+    width: 128px;
+    height: 80px;
+    position: relative;
+}
+.list_img p{
+    height: 18px;
+    width: 128px;
+    position: absolute;
+    left:0;
+    bottom: 1px;
+    background: rgba(0,0,0,.5) url(img/icon2.jpg) no-repeat 107px 3px;
+    color: #fff;
+    text-indent: 7px;
+    font: 12px/18px "宋体";
+}
+.star{
+    font:12px/25px "宋体";
+    color: #004ad0;
+}
+.list_right{
+    width: 108px;
+    float:right;
+}
+.list_right li{
+    width: 108px;
+    padding: 0px;
+    font: 12px/20px "宋体";
+    color: #004fcc;
+}
+.show{
+    width: 600px;
+    padding:15px 5px 0 3px;
+    height: 134px;
+}
+.show li{
+    width: 128px;
+    float: left;
+    margin: 0 11px;
+}
+.show_img{
+    width: 124px;
+    height: 76px;
+    position: relative;
+    background:
+            url(img/icon3.jpg)
+            no-repeat;
+    padding:0 4px 4px 0;
+}
+.show_img p{
+    width: 124px;
+    height: 20px;
+    font:12px/20px "宋体";
+    color: #fff;
+    background:
+            rgba(0,0,0,.5)
+            url(img/icon2.jpg)
+            no-repeat 106px 4px;
+    position: absolute;
+    left:0;
+    bottom:4px;
+}
+.show_txt1, .show_txt2{
+    display: block;
+    padding-top: 5px;
+    font:12px/20px "宋体";
+    color: #004dcb;
+}
+.show_txt2{
+    font:12px/19px "宋体";
+    color: #8f8f8f;
+    padding: 0;
+}
+.fl{
+    padding-left: 14px;
+}
+.dq{
+    float: left;
+}
+.dq dt, .dq dd{
+    float: left;
+    font:12px/22px "宋体";
+}
+.dq dt{
+    color:#919191;
+}
+.dq dd{
+    padding:0 6px 0 7px;
+    background:
+            url(img/icon1.jpg)
+            no-repeat right center;
+    color: #004dc9;
+}
+.dq .no-pl{
+    padding-left: 0;
+}
+.dq .no-bg{
+    background: none;
+}
+.sy{
+    padding-left: 24px;
+}
+</style>
+</head>
+<body>
+    <section class="box">
+        <!-- 头部 -->
+        <header>
+            <nav class="nav_left">
+                <a class="no-margin active" href="#">最新电视剧</a>
+                <a href="#">大陆剧</a>
+                <a href="#">韩剧</a>
+                <a href="#">港台剧</a>
+            </nav>
+            <nav class="nav_right">
+                <a href="#">爱情有点蓝</a>
+                <a href="#">风语</a>
+                <a href="#">欢喜婆婆</a>
+                <a class="last" href="#">延安爱情</a>
+            </nav>
+        </header>
+        <!-- 切换 -->
+        <div class="tab">
+            <div class="brand">
+                <div class="brand_left">
+                    <p class="jpjc">金牌剧场</p>
+                    <p class="pl">盘龙云海药业</p>
+                    <p class="brand_txt">首席赞助</p>
+                </div>
+                <div class="brand_right">
+                    <a href="#">>>解密《五星红旗》</a>
+                    <a href="#">>>解密《五星红旗》</a>
+                </div>
+            </div>
+            <ul class="list">
+                <li>
+                    <div class="list_left">
+                        <div class="list_img">
+                            <img src="img/img3.jpg" alt="">
+                            <p>40集全</p>
+                        </div>
+                        <p class="star">《五星红旗》大结局</p>
+                    </div>
+                    <ul class="list_right">
+                        <li>文章变特种兵：雪豹</li>
+                        <li>文章变特种兵：雪豹</li>
+                        <li>文章变特种兵：雪豹</li>
+                        <li>文章变特种兵：雪豹</li>
+                        <li>文章变特种兵：雪豹</li>
+                    </ul>
+                </li>
+                <li class="no-padding">
+                    <div class="list_left">
+                        <div class="list_img">
+                            <img src="img/img3.jpg" alt="">
+                            <p>40集全</p>
+                        </div>
+                        <p class="star">《五星红旗》大结局</p>
+                    </div>
+                    <ul class="list_right">
+                        <li>文章变特种兵：雪豹</li>
+                        <li>文章变特种兵：雪豹</li>
+                        <li>文章变特种兵：雪豹</li>
+                        <li>文章变特种兵：雪豹</li>
+                        <li>文章变特种兵：雪豹</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="type">
+            <ul class="show">
+                <li>
+                    <div class="show_img">
+                        <img src="img/img4.jpg" alt="">
+                        <p>更新至6</p>
+                    </div>
+                    <p>
+                        <span class="show_txt1">江苏卫视：中国远征军</span>
+                        <span class="show_txt2">黄志忠张丰以枪林弹雨</span>
+                    </p>
+                </li>
+                <li>
+                    <div class="show_img">
+                        <img src="img/img4.jpg" alt="">
+                        <p>更新至6</p>
+                    </div>
+                    <p>
+                        <span class="show_txt1">江苏卫视：中国远征军</span>
+                        <span class="show_txt2">黄志忠张丰以枪林弹雨</span>
+                    </p>
+                </li>
+                <li>
+                    <div class="show_img">
+                        <img src="img/img4.jpg" alt="">
+                        <p>更新至6</p>
+                    </div>
+                    <p>
+                        <span class="show_txt1">江苏卫视：中国远征军</span>
+                        <span class="show_txt2">黄志忠张丰以枪林弹雨</span>
+                    </p>
+                </li>
+                <li>
+                    <div class="show_img">
+                        <img src="img/img4.jpg" alt="">
+                        <p>更新至6</p>
+                    </div>
+                    <p>
+                        <span class="show_txt1">江苏卫视：中国远征军</span>
+                        <span class="show_txt2">黄志忠张丰以枪林弹雨</span>
+                    </p>
+                </li>
+            </ul>
+            <footer class="fl clearfix">
+                <dl class="dq">
+                    <dt>地区:</dt>
+                    <dd class="no-pl">大陆</dd>
+                    <dd>香港</dd>
+                    <dd>韩国</dd>
+                    <dd>台湾</dd>
+                    <dd class="no-bg">美国</dd>
+                </dl>
+                <dl class="dq sy">
+                    <dt>上映:</dt>
+                    <dd class="no-pl">2010</dd>
+                    <dd>2009</dd>
+                    <dd>2008</dd>
+                    <dd>2007</dd>
+                    <dd>2006</dd>
+                    <dd>2005</dd>
+                    <dd class="no-bg">2004</dd>
+                </dl>
+                <dl class="dq">
+                    <dt>类型:</dt>
+                    <dd class="no-pl">言情</dd>
+                    <dd>古装</dd>
+                    <dd>古装</dd>
+                    <dd>古装</dd>
+                    <dd>古装</dd>
+                    <dd>古装</dd>
+                    <dd>古装</dd>
+                    <dd>古装</dd>
+                    <dd>古装</dd>
+                    <dd>古装</dd>
+                    <dd>古装</dd>
+                    <dd>古装</dd>
+                    <dd>古装</dd>
+                    <dd class="no-bg">科幻</dd>
+                </dl>
+            </footer>
+        </div>
+    </section>
+</body>
+</html>

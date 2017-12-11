@@ -1,0 +1,229 @@
+.content{
+    width: 100%;
+    height: 100%;
+    background: 
+        #e4e4e4
+        url(../img/banner_for_website.jpg)
+        no-repeat center -50px;
+}
+.banner{
+    height: 89px;
+    padding-top: 27px;
+}
+.banner h2{
+    height: 64px;
+    text-indent: -9931px;
+    overflow: hidden;
+    background:  
+        url(../img/help_logo_lumpsugar.png)
+            no-repeat 24px 0px;
+}
+.main{
+    width: 948px;
+    height: 750px;
+    background-color: #fff;
+    margin: 0 auto;
+    border: 1px solid #b6b6b6;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.main_left{
+    float: left;
+    width: 632px;
+    height: 674px;
+    padding: 28px;
+}
+.left_plat,
+.left_questions,
+.left_ask-answer,
+.left_knowledge,
+.left_cooperation,
+.left_contact{
+    float: left;
+}
+.left_plat,
+.left_questions{
+    width: 630px;
+}
+.left_plat h3,
+.left_questions h3{
+    height: 33px;
+    text-indent: 9px;
+    background-color: #f7f7f7;
+    border: 1px solid #f0f0f0;
+    border-radius: 2px;
+    font: 16px/33px "微软雅黑"; 
+    color: #666;
+}
+.plat_txt{
+    font-size: 0px;
+    padding: 15px 128px 42px 108px;
+}
+.plat_txt em,
+.plat_txt strong{
+    display: inline-block;
+    vertical-align: top;
+    font: 12px/12px "微软雅黑";
+    color: #666;
+}
+.plat_txt em{
+    margin-right: 238px;
+}
+.questions_ul{
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+.questions_ul li{
+    float: left;
+    width: 145px;
+    text-align: center;
+    margin-left: 10px;
+}
+.questions_ul a{
+    display: block;
+    background: linear-gradient(#f7fbfe 0px, #f3fafe 27px, #eff9fe 53px);
+    font: 16px/53px "微软雅黑";
+    border: 1px solid #e2ebf1;
+    color: #3c7cb3;
+}
+.questions_ul a:hover{
+    text-decoration: underline;
+}
+.main_right{
+    float: right;
+    width: 220px;
+    height: 748px;
+    padding-left: 20px;
+    padding-right: 18px;
+    border-right: 2px solid #fdfdfd;
+    background-color: #f7f7f7;
+}
+.right_title h3{
+    padding-top: 26px;
+    font: 15px/36px "宋体";
+    color: #484848;
+    border-bottom: 1px dotted #bababa;
+    margin-bottom: 15px;
+}
+.right_content{
+    height: 114px;
+    padding: 193px 0px;
+    background-color: #fff;
+    text-align: center;
+}
+.right_content img{
+    width: 37px;
+    height: 42px;
+    background: 
+        url(../img/icon_tips.png)
+        no-repeat -113px top;
+}
+.right_content p{
+    font: 12px/26px "微软雅黑";
+    color: #666;
+    text-align: center;
+    
+}
+.right_content p span{
+    color:#0082cb;
+}
+.right_content .different_indent{
+    text-indent: 1em;
+}
+.left_ask-answer{
+    width: 310px;
+    margin-right: 10px;
+}
+.left_ask-answer h3,
+.left_knowledge h3,
+.left_cooperation h3,
+.left_contact h3{
+    height: 33px;
+    text-indent: 9px;
+    background-color: #f7f7f7;
+    border: 1px solid #f0f0f0;
+    border-radius: 2px;
+    font: 16px/33px "微软雅黑"; 
+    color: #666;
+}
+.left_ask-answer p,
+.left_knowledge p,
+.left_cooperation p{
+    padding-left: 10px;
+    padding-bottom: 16px;
+    padding-top: 20px;
+    font: 12px/19px "微软雅黑";
+    color: #666;
+}
+.left_ask-answer a,
+.left_knowledge a{
+    display: block;
+    font: 12px/12px "微软雅黑";
+    color: #3c7cb3;
+    padding-left: 10px; 
+}
+.left_ask-answer a:hover,
+.left_knowledge a:hover,
+.left_cooperation a:hover,
+.left_contact a:hover{
+    text-decoration: underline;
+}
+.left_knowledge,
+.left_cooperation,
+.left_contact{
+    width: 310px;
+    padding-bottom: 34px;
+}
+.left_cooperation{
+    margin-right: 10px;
+}
+.left_cooperation span,
+.left_contact span{
+    display: block;
+    font: 12px/12px "微软雅黑";
+    color: #666;
+    padding-left: 10px;
+    padding-bottom: 13px;
+}
+.left_cooperation img,
+.left_contact img{
+    margin-left: 10px;
+    margin-right: 2px;
+    width: 15px;
+    height: 13px;
+    background: 
+        url(../img/help_icon.png)
+        no-repeat -25px top;
+}
+.left_contact img:last-of-type{
+    background-position: left top;
+}
+.left_cooperation em,
+.left_contact em{
+    display: inline-block;
+    vertical-align: top;
+    font: 12px/12px "微软雅黑";
+    color: #666;
+}
+.left_contact span:first-of-type{
+    padding-top: 23px; 
+    padding-bottom: 13px;
+}
+.left_contact span :last-of-type{
+    padding-top: 22px; 
+    padding-bottom: 13px;
+}
+.left_cooperation a,
+.left_contact a{
+    display: inline-block;
+    vertical-align: top;
+    font: 12px/12px "微软雅黑";
+    color: #3c7cb3;
+}
+footer{
+    padding-top: 0px;
+    background-color: #e4e4e4;
+}
+.copyRight{
+    border-top: 0px;
+}

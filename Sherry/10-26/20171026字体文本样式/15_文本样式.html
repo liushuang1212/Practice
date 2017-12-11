@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+            #div1{
+                width: 500px;
+                height: 30px;
+                line-height: 30px;
+                border: 1px solid #000;
+                word-spacing: 30px;
+                font-family: "宋体";
+                letter-spacing: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div1">
+            今天 大家 上午听了字体，下午我们说文本样式
+
+        </div>
+        <!--
+            word-spacing - 单词间距
+                 - 浏览器不认识单词，所以需要以空格分开，才会有word-spacing效果
+                 - 间隔：word-spacing+空格的大小
+            测量一个空格的方式：
+                在页面打上字，然后通过浏览器的文字选中，用ps进行测量
+            ** 空格的大小并不固定
+
+            letter-spacing - 字间距
+                 - 单位px
+
+            当文字既有word-spacing（必须有空格）+letter-spacing计算公式如下：
+
+                letter-spacing*2 + word-spacing + 空格
+
+
+                27-8
+        -->
+    </body>
+</html>

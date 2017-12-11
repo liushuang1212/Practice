@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*找到class为wrap的元素,内部的所有div,
+			并且这个div是他所在父级的第一个div*/
+			.wrap .box:first-of-type{
+				background-color: red;
+			}
+			.wrap p:first-of-type{
+				background-color: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<p>p</p>
+			<div class="box">div1</div>
+			<p>p</p>
+			<div class="box">div2</div>
+			<div class="box">div3</div>
+			<div class="box">
+				div4
+				<div>div4-1</div>
+				<div>div4-2</div>
+				<div>div4-3</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#wrap{
+				width: 200px;
+				height: 100px;
+				background-color: #fff;
+				border-radius: 50px;
+				box-shadow: 0 0 10px #333;
+			}
+			#tap{
+				display: block;
+				width: 100px;
+				height: 100px;
+				background-color: #fff;
+				border-radius: 50px;
+				box-shadow: 0 0 10px #666;
+				transition: .5s;
+			}
+			#wrap input{
+				display: none;
+			}
+			#wrap input:checked+#tap{
+				margin-left: 100px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<input type="checkbox" id="checkBox" />
+			<label for="checkBox" id="tap"></label>
+		</div>
+	</body>
+</html>

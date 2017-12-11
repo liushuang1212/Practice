@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		#box{
+			width:100px;
+			height:100px;
+			background-color:red;
+			position: relative;
+			left: 0px;
+			top: 0;
+			animation: changePos 1s;
+			animation-delay: 1s;
+			
+			/*animation-fill-mode:
+				规定动画在执行过程中之外的状态
+				none 不改变默认状态。
+				forwards当动画完成后，保持最后一个属性值（在最后一帧）。
+				backwards在动画执行之前的状态为第一帧的属性值
+				both在动画执行之前的状态为第一帧的属性值,当动画完成后，保持最后一个属性值（在最后一帧）。*/
+			
+			animation-fill-mode: none;
+			/*animation-fill-mode: backwards;*/
+			/*animation-fill-mode: forwards;*/
+			/*animation-fill-mode: both;*/
+			
+		}
+		@keyframes changePos{
+			from{
+				left: 200px;
+			}
+			to{
+				left: 500px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="box"></div>
+</body>
+</html>

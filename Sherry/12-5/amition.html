@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: orange;
+            position: relative;
+            left: 0;
+            top: 0;
+            animation: change 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        
+        @keyframes change{
+            0%{
+                left: 0;
+                top: 0;
+            }
+            50%{
+                left: 100px;
+                top: 100px;
+            }
+            100%{
+                left: 200px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    
+</body>
+</html>

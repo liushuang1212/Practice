@@ -1,0 +1,236 @@
+.clearfix:after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.wrap{
+    margin: 0 auto;
+    width: 924px;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    min-width: 924px;
+}
+header{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+header h1{
+    float: left;
+    padding: 22px 28px 0px 0px;
+}
+header .header_up nav{
+    float: left;
+    position: relative;
+}
+header .header_up a{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    font: 18px/88px "微软雅黑";
+    color: #333;
+    padding: 0px 20px 2px;
+    margin-left:-5px;
+}
+header nav .no_margin{
+    margin-left: 0px;
+}
+header nav a:hover{
+    color: #fff;
+    background-color: #31c27c;
+}
+.function{
+    float: right;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    padding-right: 50px;
+}
+.function img{
+    float: left;
+    padding-top: 2px;
+}
+.function .enter{
+    float: left;
+    display: block;
+    font: 16px/41px "微软雅黑";
+    color: #333;
+    padding: 0 23px;
+}
+.function .buy{
+    float: left;
+    padding: 0px 10px;
+    font: 13px/39px "微软雅黑";
+    color: #fff;
+    background: 
+        url(../img/stone.png)
+        no-repeat left top;
+}
+.header_nav nav{
+    border-top: 1px solid #f2f2f2;
+    padding: 17px 0px 19px 230px;
+    float: right;
+}
+.header_nav a{
+    float: left;
+    font: 15px/15px "微软雅黑";
+    color: #333;
+    margin-right: 47px;
+}
+.header_nav a:hover{
+    background-color: #fff;
+    color: #6ad3a0;
+}
+footer{
+    width: 100%;
+    height: 100%;
+    color:#676767;
+    background-color: #333;
+}
+footer a{
+    color:#676767;
+}
+.footer_infor{
+    padding-left: 10px;
+    font: 14px/14px "微软雅黑";
+    border-bottom: 1px solid #353535;
+} 
+.footer_download h3{
+    font-size: 15px;
+    font-family: "微软雅黑";
+    padding: 82px 0px 54px 0px; 
+}
+.footer_download{
+    float: left;
+}
+.footer_download li{
+    float: left;
+}
+.footer_download li a{
+    display: block;
+}
+.footer_download .type_PC {
+    margin-bottom: 15px;
+    padding-right: 41px;
+    width: 46px;
+    height: 45px;
+    background: 
+        url(../img/footer.png)
+        no-repeat left top;
+}
+.footer_download .type_Mac{
+    margin-bottom: 15px;
+    padding-right: 26px;
+    width: 46px;
+    height: 45px;
+    background: 
+        url(../img/footer.png)
+        no-repeat left -45px;
+}
+.footer_download .type_Android{
+    margin-bottom: 15px;
+    padding-right: 29px;
+    width: 46px;
+    height: 45px;
+    background: 
+        url(../img/footer.png)
+        no-repeat 14px -90px;
+}
+.footer_download .type_iphone{
+    margin-bottom: 15px;
+    width: 46px;
+    height: 45px;
+    background: 
+        url(../img/footer.png)
+        no-repeat 12px -135px;
+}
+.footer_product{
+    float: left;
+    padding-left: 55px;
+}
+.footer_product h3{
+    font-size: 15px;
+    font-family: "微软雅黑";
+    padding: 82px 0px 54px 1px; 
+}
+.footer_product li{
+    float: left;
+}
+.footer_product li a{
+    display: block;
+}
+.footer_product .product_all{
+    margin-bottom: 15px;
+    padding-right: 30px;
+    width: 46px;
+    height: 45px;
+    background: 
+        url(../img/footer.png)
+        no-repeat 5px -180px;
+}
+.footer_product .product_super{
+    margin-bottom: 15px;
+    padding-right: 72px;
+    width: 46px;
+    height: 45px;
+    background: 
+        url(../img/footer.png)
+        no-repeat 15px -225px;
+}
+.footer_product .product_play{
+    margin-bottom: 15px;
+    width: 46px;
+    height: 45px;
+    background: 
+        url(../img/footer.png)
+        no-repeat 15px -270px;
+}
+.footer_product .connection{
+    margin-top: 24px;
+}
+.footer_link{
+    float: left;
+    padding-left: 94px;
+}
+.footer_link h3{
+    font: 15px/15px "微软雅黑";
+    padding: 82px 0px 45px 0px; 
+}
+.footer_link .link_left,
+.footer_link .link_right{
+    float: left;
+}
+.footer_link .link_right{
+    margin-left: 12px;
+}
+.footer_link a{
+    display: block;
+    line-height: 33px;
+}
+.footer_plat{
+    margin-top: -27px;
+    padding-left: 10px;
+    float: left;
+}
+.footer_plat .plat_txt{
+    padding-bottom: 60px;
+}
+.footer_plat h3{
+    font: 15px/15px "微软雅黑";
+    padding-bottom: 53px;
+}
+.footer_plat a{
+    float: left;
+    font: 14px/14px "微软雅黑";
+    margin-right: 30px;
+}
+.footer_copyright .copyright_files{
+    font: 12px/12px "微软雅黑";
+    text-align: center;
+    padding-top: 31px; 
+    padding-bottom: 33px;
+}
+.footer_copyright .copyright_files p{
+    margin-top: 15px;
+}

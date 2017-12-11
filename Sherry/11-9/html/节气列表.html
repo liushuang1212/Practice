@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body,
+        h3,
+        p
+        {
+            margin: 0px;
+        }
+        ul{
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        img{
+            vertical-align: top;
+        }
+
+        .box{
+            width: 1250px;
+            height: 883px;
+            padding-top: 62px;
+            background: 
+                url(../img/bj.jpg)
+                no-repeat;
+        }
+        .list .up{
+            width: 442px;
+            height: 19px;
+            background: 
+                        url(../img/head.jpg)
+                        no-repeat;
+        }
+        .list .middle{
+            width: 410px;
+            background:
+                url(../img/middle.jpg)
+                repeat-y;
+                padding: 0px 16px;
+        }
+        .list .foot{
+            width: 442px;
+            height: 20px;
+            background:
+                url(../img/foot.jpg)
+                no-repeat;
+        }
+        .middle .winter{
+            border-bottom: 1px solid #d35056;
+        }
+        .middle .health{
+            margin-top: 2px;
+            border-top: 1px solid #d35056;
+            border-bottom: 1px solid #d35056;
+        }
+        .middle .doctor{
+            
+            margin-top: 2px;
+            border-top: 1px solid #d35056;
+        }
+        .middle .title{
+            font: 18px/50px "微软雅黑";
+            color: #d66065;
+            text-indent: 45px;
+            background: 
+                url(../img/weather.png)
+                no-repeat 20px 20px; 
+        }
+        .middle .self{
+            font: 18px/50px "微软雅黑";
+            color: #d66065;
+            text-indent: 45px;
+            background: 
+                url(../img/heart.png)
+                no-repeat 20px 20px;
+        }
+        .middle .know{
+            font: 18px/50px "微软雅黑";
+            color: #d66065;
+            text-indent: 45px;
+            background: 
+                url(../img/pill.png)
+                no-repeat 20px 20px;
+        }
+        .three1 a{
+            color: #d35056;
+            font: 14px/50px "微软雅黑";
+        }
+        .three1 .title,
+        .three1 a{
+            float: left;
+        }
+        .middle .three1:after{
+            content:"";
+            display: block;
+            clear: both;
+        }
+        .middle .three2{
+            padding-top: 3px;
+        }
+        .three2 a{
+            color: #d35056;
+            font: 14px/50px "微软雅黑";
+        }
+        .three2 .self,
+        .three2 a{
+            float: left;
+        }
+        .middle .three2:after{
+            content:"";
+            display: block;
+            clear: both;
+        }
+        .middle .three3{
+            padding-top: 2px;
+        }
+        .three3 a{
+            color: #d35056;
+            font: 14px/50px "微软雅黑";
+        }
+        .three3 .know,
+        .three3 a{
+            float: left;
+        }
+        .middle .three3:after{
+            content:"";
+            display: block;
+            clear: both;
+        }
+        .l .three1{
+            background:
+            url(../img/header.png)
+            no-repeat 124px 26px;
+        }
+        .l .three2{
+            background:
+            url(../img/header.png)
+            no-repeat 124px 29px;
+        }
+        .l .three3{
+            background:
+            url(../img/header.png)
+            no-repeat 124px 29px;
+        }
+        .three1 a,
+        .three2 a,
+        .three3 a{
+            margin-left: 231px;
+        }
+        .winter h3{
+            font: 16px/21px "微软雅黑";
+            color: #000;
+            text-indent: 21px;
+        }
+        .winter .many img{
+            padding: 4px;
+            border: 1px solid #b5b5b5;
+            margin: 3px 13px 0px 21px;
+        }
+        .winter .many .txt{
+            width: 219px;
+            font: 12px/26px "微软雅黑";
+            color: #979797;
+            padding-bottom: px;
+            border-bottom: 1px dashed #e5e5e5;
+        }
+        .winter .many a{
+            color: #d35056;
+        }
+        .winter .many .movie{
+            font: 14px/32px "微软雅黑";
+            text-indent: 9px;
+            padding-top: 9px;
+            padding-bottom: 11px;
+        }
+        .winter .many .movie li{
+            background: 
+                url(../img/point.jpg)
+                no-repeat 0px 12px;
+        }
+        .winter .para{
+            width: 246px;
+        }
+        .winter .many .little,
+        .winter .many .para{
+            float: left;
+
+        }
+        .winter .many:after{
+            content:'';
+            display: block;
+            clear: both;
+        }
+        .winter .many{
+            padding-top: 9px;
+        }
+        .health .movie{
+           
+            padding-bottom: 11px;
+            margin-left: 21px;
+            margin-top: 3px;
+        }
+        .health .movie .left,
+        .health .movie .right{
+            width: 184px;
+            float: left;
+        }
+        .health .movie:after{
+            content:'';
+            display: block;
+            clear: both;
+        }
+        .health .movie .left li,
+        .health .movie  .right li{
+            font: 14px/32px "微软雅黑";
+            text-indent: 15px;
+            background: 
+                url(../img/point.jpg)
+                no-repeat 0px 13px;
+                text-indent: 15px;
+        }  
+        .doctor .movie{
+            padding-bottom: 11px;
+            margin-left: 21px;
+            margin-top: 2px;
+        }
+        .doctor .movie .left,
+        .doctor .movie .right{
+            width: 184px;
+            float: left;
+        }
+        .doctor .movie:after{
+            content:'';
+            display: block;
+            clear: both;
+        }
+        .doctor .movie .left li,
+        .doctor .movie .right li{
+            font: 14px/32px "微软雅黑";
+            text-indent: 15px;
+            background: 
+                url(../img/point.jpg)
+                no-repeat 0px 13px;
+                text-indent: 15px;
+        }  
+        .r .middle{
+            width: 410px;
+            border: 1px solid #d35056;
+            padding: 0px;
+            background: #fff;
+        }
+        .box .l,
+        .box .r{
+            float: left;
+            width:442px;
+            padding: 10px;
+            background: #fff;
+        }
+        .list .r{
+            padding: 23px 25px 27px 25px;
+        }
+        .box .list:after{
+            content:"";
+            display: block;
+            clear: both;
+         }
+        .r .middle .three1{
+            padding-top: 5px;
+        }
+        .r .middle .winter,
+        .r .middle .doctor{
+            background-color: #fbedee;
+        }
+        .r .three1{
+            background:
+                url(../img/flower.png)
+                no-repeat 124px 24px;
+        }
+        .r .three2{
+            background:
+                url(../img/flower.png)
+                no-repeat 124px 24px;
+        }
+      .r .three3{
+            background:
+                url(../img/flower.png)
+                no-repeat 124px 26px;
+        }
+      
+        
+        
+        
+    </style>
+   
+</head>
+<body>
+    <section class="box">
+        <ul class="list">
+            <li class="l">
+                <div class="up"></div>
+                <div class="middle">
+                    <div class="winter">
+                        <div class="three1">
+                            <header class="title">精彩专题</header>
+                            <!-- <img  src="../img/header.jpg" alt=""> -->
+                            <a href="#more">更多&gt;&gt;</a>
+                        </div>
+                        <h3>冬季六节气：冬雪雪冬小大寒</h3>
+                        <div class="many">
+                            <img  class="little" width="120" src="../img/littlesnow.jpg">
+                            <div class="para">
+                                <div class="txt">立冬六七日时游"同理，立春时间加上6天7个时辰，再加上中间的小月数，就是立冬的交节时间。初8辰时十6日7…<a href="#details">详细&gt&gt</a>
+                                </div>
+                                <ul class="movie">
+                                    <li>《巴别塔》：好的故事引人深思</li>
+                                    <li>《洛杉矶之战》：外星人那么弱智？</li>
+                                    <li>《让子弹飞》：姜文是我的偶像</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="health">
+                            <div class="three2">
+                            <header class="self">健康自检</header>
+                            <!-- <img  src="../img/header.jpg" alt=""> -->
+                            <a href="#more">更多&gt&gt</a>
+                            </div>
+                            <ul class="movie"> 
+                                <li class="left">  
+                                    <ul>
+                                        <li>自测：你是气虚体质吗</li>
+                                        <li>自测：你是气虚体质吗</li>
+                                        <li>自测：你是气虚体质吗</li>
+                                        <li>自测：你是气虚体质吗</li>
+                                    </ul> 
+                                </li>
+                                <li class="right">
+                                    <ul >
+                                        <li>中医：手脚冰凉是怎么回事</li>
+                                        <li>中医：手脚冰凉是怎么回事</li>
+                                        <li>中医：手脚冰凉是怎么回事</li>
+                                        <li>中医：手脚冰凉是怎么回事</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="doctor">
+                            <div class="three3">
+                            <header class="know">就医知识</header>
+                            <!-- <img  src="../img/header.jpg" alt=""> -->
+                            <a href="#more">更多&gt&gt</a>
+                            </div>
+                            <ul class="movie"> 
+                                    <li class="left">  
+                                        <ul >
+                                            <li>自测：你是气虚体质吗</li>
+                                            <li>自测：你是气虚体质吗</li>
+                                            <li>自测：你是气虚体质吗</li>
+                                            <li>自测：你是气虚体质吗</li>
+                                            <li>自测：你是气虚体质吗</li>
+                                        </ul> 
+                                    </li>
+                                    <li class="right">
+                                        <ul >
+                                            <li>中医：手脚冰凉是怎么回事</li>
+                                            <li>中医：手脚冰凉是怎么回事</li>
+                                            <li>中医：手脚冰凉是怎么回事</li>
+                                            <li>中医：手脚冰凉是怎么回事</li>
+                                            <li>中医：手脚冰凉是怎么回事</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                    </div>
+                </div>
+                <div class="foot"></div>
+
+             </li>
+            <li class="r">
+                <div class="middle">
+                        <div class="winter">
+                            <div class="three1">
+                                <header class="title">精彩专题</header>
+                                <!-- <img  src="../img/header.jpg" alt=""> -->
+                                <a href="#more">更多&gt;&gt;</a>
+                            </div>
+                            <h3>冬季六节气：冬雪雪冬小大寒</h3>
+                            <div class="many">
+                                <img  class="little" width="120" src="../img/littlesnow.jpg">
+                                <div class="para">
+                                    <div class="txt">立冬六七日时游"同理，立春时间加上6天7个时辰，再加上中间的小月数，就是立冬的交节时间。初8辰时十6日7…<a href="#details">详细&gt&gt</a>
+                                    </div>
+                                    <ul class="movie">
+                                        <li>《巴别塔》：好的故事引人深思</li>
+                                        <li>《洛杉矶之战》：外星人那么弱智？</li>
+                                        <li>《让子弹飞》：姜文是我的偶像</li>
+                                    </ul>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="health">
+                                <div class="three2">
+                                <header class="self">健康自检</header>
+                                <!-- <img  src="../img/header.jpg" alt=""> -->
+                                <a href="#more">更多&gt;&gt;</a>
+                                </div>
+                                <ul class="movie"> 
+                                    <li>  
+                                        <ul class="left">
+                                            <li>自测：你是气虚体质吗</li>
+                                            <li>自测：你是气虚体质吗</li>
+                                            <li>自测：你是气虚体质吗</li>
+                                            <li>自测：你是气虚体质吗</li>
+                                        </ul> 
+                                    </li>
+                                    <li>
+                                        <ul class="right">
+                                            <li>中医：手脚冰凉是怎么回事</li>
+                                            <li>中医：手脚冰凉是怎么回事</li>
+                                            <li>中医：手脚冰凉是怎么回事</li>
+                                            <li>中医：手脚冰凉是怎么回事</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                        </div>
+                        <div class="doctor">
+                                <div class="three3">
+                                <header class="know">就医知识</header>
+                                <!-- <img  src="../img/header.jpg" alt=""> -->
+                                <a href="#more">更多&gt&gt</a>
+                                </div>
+                                <ul class="movie"> 
+                                        <li>  
+                                            <ul class="left">
+                                                <li>自测：你是气虚体质吗</li>
+                                                <li>自测：你是气虚体质吗</li>
+                                                <li>自测：你是气虚体质吗</li>
+                                                <li>自测：你是气虚体质吗</li>
+                                                <li>自测：你是气虚体质吗</li>
+                                            </ul> 
+                                        </li>
+                                        <li>
+                                            <ul class="right">
+                                                <li>中医：手脚冰凉是怎么回事</li>
+                                                <li>中医：手脚冰凉是怎么回事</li>
+                                                <li>中医：手脚冰凉是怎么回事</li>
+                                                <li>中医：手脚冰凉是怎么回事</li>
+                                                <li>中医：手脚冰凉是怎么回事</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                        </div>
+                    </div>
+                
+            </li>
+        </ul>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{
+				width:100px;
+				height:100px;
+				background-color:red;
+				position: relative;
+				left: 0;
+				top: 0;
+				/*动画持续时间	
+					单位 秒|毫秒*/
+				/*设置关键帧动画的时候,一定要写上持续时间否则无效*/
+				animation-duration: 1000ms;
+				
+				
+				animation-name: changePos;
+			}
+			@keyframes changePos{
+				0%{
+					left: 0;
+					top: 0;
+				}
+				50%{
+					left: 400px;
+					top: 0;
+				}
+				100%{
+					left: 400px;
+					top: 300px;
+				}
+			} 
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+	</body>
+</html>

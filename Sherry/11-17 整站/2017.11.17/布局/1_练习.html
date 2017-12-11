@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style media="screen">
+body{
+    margin:0px;
+}
+ul{
+    margin:0px;
+    padding:0px;
+    list-style: none;
+}
+img{
+    vertical-align: top;
+    border: none;
+}
+.list{
+    width: 840px;
+    margin:0 auto;
+    border:5px solid #000;
+}
+.list:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.list li{
+    width: 400px;
+    float: left;
+    margin: 10px;
+    background: orange;
+}
+.list .list_img{
+    width: 390px;
+    height: 390px;
+    vertical-align: middle;
+    display: table-cell;
+    overflow: hidden;
+    text-align: center;
+    border:5px solid red;
+}
+.list_img img{
+    max-width: 390px;
+    max-height: 390px;
+}
+.list p{
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<ul class="list">
+    <li>
+        <div class="list_img">
+            <img src="img/1.jpg" alt="">
+        </div>
+        <p>这是第一张图片</p>
+    </li>
+    <li>
+        <div class="list_img">
+            <img src="img/2.jpg" alt="">
+        </div>
+        <p>这是第一张图片</p>
+    </li>
+    <li>
+        <div class="list_img">
+            <img src="img/3.jpg" alt="">
+        </div>
+        <p>这是第一张图片</p>
+    </li>
+    <li>
+        <div class="list_img">
+            <img src="img/4.jpg" alt="">
+        </div>
+        <p>这是第一张图片</p>
+    </li>
+
+
+</ul>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		/*元素的内部为空*/
+			div:empty{
+				width:100px;
+				height:100px;
+				background-color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+		<div> </div>
+		<div><!--注释--></div>
+		<div>
+			<!--注释-->
+		</div>
+		<div>abc</div>
+		<div><div>div</div></div>
+	</body>
+</html>

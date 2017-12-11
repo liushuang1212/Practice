@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{
+				width:100px;
+				height:100px;
+				background-color:red;
+				margin: 100px auto;
+				transition: .3s;
+			}
+			#box:hover{
+				box-shadow: 0 0 10px #000;
+			}
+			/*#box:active{
+				background-color: green;
+			}*/
+		</style>
+	</head>
+	<body>
+		<!--<button>按钮</button>-->
+		<div id="box"></div>
+		
+		<script>
+			var box = document.getElementById("box");
+			box.onmousedown = function(){
+				box.style.boxShadow = "inset 0 0 10px #000";
+			}
+			
+			box.onmouseup = function(){
+				box.style.boxShadow = "";
+			}
+		</script>
+	</body>
+</html>

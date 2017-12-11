@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style media="screen">
+    .box{
+        /*width: 100px;
+        height: 100px;*/
+        background: pink;
+        position: fixed;
+        left:0;
+        top: 0;
+    }
+    .div1{
+        width: 100px;
+        height: 900px;
+        background: orange;
+    }
+    .big_box{
+        width: 500px;
+        height:1200px;
+        background: #ccc;
+        margin:0 auto;
+        position: relative;
+    }
+    span{
+        position: fixed;
+        width: 100px;
+        height: 100px;
+        background: green;
+        left:0;
+        top:0;
+    }
+</style>
+</head>
+<body>
+<section class="big_box">
+    <div class="box">
+        023245112312123
+    </div>
+    <div class="div1">
+
+    </div>
+</section>
+<span>212121212</span>
+
+    <!--
+        position: fixed 固定定位
+            1. 层级提高
+            2. BFC
+            3.
+                加了left、right、top、bottom之后 基于可视区定位
+                如果没有加，就在当前的父级
+            4.  不设置宽度的情况下，内容撑开
+            5.  内嵌元素支持宽高的设置
+
+    -->
+</body>
+</html>

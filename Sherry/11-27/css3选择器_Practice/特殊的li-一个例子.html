@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+ol{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+ol{
+    width: 540px;
+    height: 200px;
+    border: 1px solid #000;
+}
+li{
+    float: left;
+    width: 50px;
+    height: 80px;
+    background: red;
+    margin-right: 20px;
+}
+.margin-right_none{
+    margin-right: 0px;
+}
+/* 想要所有的li都在一行显示，就要去掉最后一个的margin-right，
+    -其中一种方法是个最后的一个li起一个class，然后通过选择class来写margin-right： 0；
+    -另一种方法就是，通过nth-of-type（）  ，其中括号里可以写n,n是从0开始算的。如果是第八个可以写8n,若果是每行第五个里需要去除margin-right，则括号里可以写5n
+ */
+.box li:nth-of-type(8n){
+    margin-right: 0px;
+}
+</style>
+</head>
+<body>
+    <ol>
+        <li>box1</li>
+        <li>box2</li>
+        <li>box3</li>
+        <li>box4</li>
+        <li>box5</li>
+        <li>box6</li>
+        <li>box7</li>
+        <li class="margin-right_none">box8</li>
+    </ol>
+    <ol class="box">
+            <li>box1</li>
+            <li>box2</li>
+            <li>box3</li>
+            <li>box4</li>
+            <li>box5</li>
+            <li>box6</li>
+            <li>box7</li>
+            <li>box8</li>
+    </ol>
+    
+</body>
+</html>

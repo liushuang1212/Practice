@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			input{
+				background-color: red;
+			}
+			/*表单控件禁用状态下*/
+			input:disabled{
+				background-color: yellow;
+			}
+			/*表单控件可使用状态下*/
+			input:enabled{
+				background-color: orange;
+			}
+			/*表单控件获得焦点状态下*/
+			input:focus{
+				background-color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="text" value="text1" disabled />
+		<input type="text" value="text2" />
+		<input type="text" value="text3" />
+		<input type="text" value="text4" />
+		
+		<input type="radio" name="sex" disabled />男
+		<input type="radio" name="sex"/>女
+	</body>
+</html>

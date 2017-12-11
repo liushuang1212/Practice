@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style media="screen">
+    .box{
+        border: 5px solid #000;
+        /*height: 100px;*/
+    }
+    .left{
+        width: 100px;
+        height: 100px;
+        background: red;
+        float: left;
+    }
+    .right{
+        width: 100px;
+        height: 100px;
+        background: blue;
+        float: right;
+    }
+    .clearFix:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .clearFix{
+        zoom:1;
+        /*display:inline-block;*/
+        /*float: left;*/
+        /*position: absolute;*/
+        /*writing-mode:tb-rl;*/
+        font-size: 30px;
+        color: #fff;
+    }
+</style>
+</head>
+<body>
+    <div class="box clearFix">
+        <div class="left">你好</div>
+        <div class="right"></div>
+    </div>
+    <!--
+        ie6加固定宽度也可以达到清除浮动的效果
+    -->
+    <!--
+
+    display：inline-block
+    height不为auto
+    width不为auto
+    float不为none
+    position：absolute
+    writing-mode:tb-rl
+    zoom不为normal
+    -->
+</body>
+</html>
