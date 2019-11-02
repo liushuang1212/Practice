@@ -1,2 +1,2 @@
 # Practice
-My Practice of Html, CSS, JS
+Practice of Html, CSS, JS
